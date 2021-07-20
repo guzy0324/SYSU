@@ -1,0 +1,90 @@
+\documentclass[UTF8, a4paper, 11pt]{article}
+\usepackage{diagbox}
+\usepackage{subfigure}
+\usepackage[UTF8, scheme=plain]{ctex}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{amsmath}
+\newtheorem{myDef}{Definition}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage[linesnumbered,boxed]{algorithm2e}    
+\usepackage{xeCJK}
+\usepackage{indentfirst} 
+\graphicspath{{Pics/}} 	% 在于.tex同级的目录下创建名为pic的文件夹，存放图片
+
+
+\setlength{\parindent}{2em}
+
+\lstset{
+    language={python},
+    frame=shadowbox,
+    breaklines=true,
+    numbers=left,
+    backgroundcolor=\color[RGB]{245,245,244},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberstyle={\color[RGB]{0,192,192}\tiny},
+    basicstyle=\footnotesize \fontspec{Source Code Pro}
+}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge 数电实验9\\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{18308045 谷正阳}
+\date{\normalsize\today}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{仿真实验}
+\subsection{汽车尾灯}
+\subsubsection{电路图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex10.1电路图.png}
+\end{figure}
+本质是一个Johnson counter，从左到右标号分别为$0,1,2,3$，右移状态为$0111$时清零，左移状态为$1110$时清零。
+假设$\overline{CLR}$用于控制清零，$\overline{RIGHT}/LEFT$用于控制左移右移，可得：
+$$\overline{R_i}=\overline{(Q_0\oplus Q_3)\cdot(Q_3\oplus LEFT)}\cdot\overline{CLR}$$
+。另外J-K触发器的$J_i,\overline{K_i}$按照Johnson counter连，特别地，要用二选一选择器选择从左还是右获得数据。
+\subsubsection{演示视频}
+\href{1.mp4}{点击观看演示视频1.mp4}
+\subsection{小键盘}
+\subsubsection{电路图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex10.2电路图.png}
+\end{figure}
+由于仿真运算量过大，仿真时间流逝比真实时间慢很多，可能按键时间太短但第二个单稳态触发器脉冲未结束。
+因而将单稳态触发器的单稳态时间常数调到$1\mu$。
+\subsubsection{演示视频}
+\href{2.mp4}{点击观看演示视频2.mp4}
+\section{实验箱实验}
+\subsection{汽车尾灯}
+\href{3.MP4}{点击观看演示视频3.MP4}
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,11 @@
+{
+    "hash": "TQy4wolU6o",
+    "writeHash": "nBlc6G2zxgFxexr",
+    "versionDate": "2020-10-12T12:53:26.000Z",
+    "files": {
+        "blocks.pddl": "(define (problem prob)\r\n    (:domain blocks)\r\n    (:objects A B C D E F - physob)\r\n    (:init\r\n        (clear A)\r\n        (on A B)\r\n        (on B C)\r\n        (ontable C)\r\n        (ontable D)\r\n        (ontable F)\r\n        (on E D)\r\n        (clear E)\r\n        (clear F)\r\n    )\r\n    (:goal (and (clear F)\r\n                (on F A)\r\n                (on A C)\r\n                (ontable C)\r\n                (clear E)\r\n                (on E B)\r\n                (on B D)\r\n                (ontable D)))\r\n)",
+        "domain_blocks.pddl": "(define (domain blocks)\n    (:requirements :strips :typing:equality\n                    :universal-preconditions\n                    :conditional-effects\n                    :negative-preconditions)\n    (:types physob)\n    (:predicates\n        (ontable ?x - physob)\n        (clear ?x - physob)\n        (on ?x ?y - physob))\n    (:action move\n        :parameters (?x ?y - physob)\n        :precondition (and (clear ?x) (clear ?y) (not (= ?x ?y)))\n        :effect (and (forall (?z - physob)\n                            (when (on ?x ?z)\n                                (and (not (on ?x ?z)) (clear ?z))))\n                        (when (ontable ?x) (not (ontable ?x)))\n                        (not (clear ?y))\n                        (on ?x ?y))\n    )\n    (:action moveToTable\n        :parameters (?x - physob)\n        :precondition (and (clear ?x) (not (ontable ?x)))\n        :effect (and (forall (?z - physob)\n                            (when (on ?x ?z)\n                                (and (not (on ?x ?z)) (clear ?z))))\n                        (ontable ?x))\n    )\n)",
+        "domain_blocks.ptest.json": "{\n  \"defaultDomain\": \"domain_blocks.pddl\",\n  \"defaultOptions\": \"\",\n  \"cases\": [\n    {\n      \"problem\": \"blocks.pddl\"\n    }\n  ]\n}"
+    },
+    "plugins": {}
+}

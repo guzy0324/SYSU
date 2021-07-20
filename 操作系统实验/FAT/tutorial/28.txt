@@ -1,0 +1,227 @@
+1、最小的子目录包括哪些内容？ 构造一个子目录，最少占用多少字节磁盘空间？ 
+	32B目录项+512B数据块=544B
+
+2、DOSSYS虚拟盘上这棵目录树，所有子目录占用了总共多少个盘块? 
+	root下1+user下3+join下3+music下1=8
+
+3、FAT12文件系统，根目录区和所有数据块都用来构造子目录，最矮的目录树高度是多少？总共有多少个目录项？
+	∵	root下：14*512/32=224
+		子目录下：512/32-2=14
+	∴	第1层：224
+		第2层：224*14=3136	共计：196扇区<2847扇区
+		第3层：3136*14=43904	共计：2940扇区>2847扇区
+	∴	高度：2847
+		总共：2847*512/32+224=‭45776目录项
+ 
+4、原创设计：SYSU版本的FAT12目录树初步设想是只用根目录区空间和目录项中保留未用的字节构造，给出一个详细描述的实现方案。如果每一级目录最多7个文件，说明最矮和最高的目录树的高度。 
+	/*1B父亲，1B兄弟，1B孩子
+	0作null
+	1作root*/
+	#define SIZE 224
+	#define Null 0
+	#define ROOT 1
+	struct RootEntry
+	{
+		char DIR_Name[11];
+		unsigned char DIRR_Attr;
+		unsigned char parent;
+		unsigned char last_sibling;
+		unsigned char next_sibling;
+		unsigned char last_child;
+		//unsigned char reserve[6];
+		//unsigned short DIR_WrtTime;
+		//unsigned short DIR_WrtDate;
+		//unsigned short DIR_FstClus;
+		//unsigned int DIR_FileSize;
+	};
+	struct RootEntry space1[SIZE];
+	struct RootEntry space2[SIZE];
+	void init(struct RootEntry space[SIZE])
+	{
+		space[Null].last_child = 2;
+		for (int i = 2; i < SIZE; i++)
+		{
+			space[i].last_child = i + 1;
+		}
+		const char *name = "root";
+		for (int i = 0; i < 11; i++)
+		{
+			space[ROOT].DIR_Name[i] = name[i];
+		}
+		space[ROOT].DIRR_Attr = 0x10;
+		space[ROOT].parent = Null;
+		space[ROOT].last_sibling = Null;
+		space[ROOT].next_sibling = Null;
+		space[ROOT].last_child = Null;
+	}
+	void assign(unsigned char node, const char name[11], unsigned char DIRR_Attr, unsigned char parent, struct RootEntry space[SIZE])
+	{
+		for (int i = 0; i < 11; i++)
+		{
+			space[node].DIR_Name[i] = name[i];
+		}
+		space[node].DIRR_Attr = DIRR_Attr;
+		space[node].parent = parent;
+		space[node].last_sibling = space[parent].last_child;
+		space[node].next_sibling = Null;
+		space[node].last_child = Null;
+		space[parent].last_child = node;
+		space[space[node].last_sibling].next_sibling = node;
+	}
+	unsigned char memory_alloc(struct RootEntry space[SIZE])
+	{
+		unsigned char node = space[Null].last_child;
+		space[Null].last_child = space[space[Null].last_child].last_child;
+		return node;
+	}
+	void memory_delete(unsigned char node, struct RootEntry space[SIZE])
+	{
+		space[node].last_child = space[Null].last_child;
+		space[Null].last_child = node;
+	}
+
+5、给出计算一个FAT12虚拟盘上面的目录树高度的算法。 
+	//O(n)
+	int height(unsigned char cur, struct RootEntry space[SIZE])
+	{
+		int h = 0, temp;
+		for (unsigned char iter = space[cur].last_child; iter != Null; iter = space[iter].last_sibling)
+		{
+			temp = height(iter, space);
+			h = h > temp ? h : temp;
+		}
+		if (cur != ROOT)
+		{
+			h += 1;
+		}
+		return h;
+	}
+	
+6、给出统计一个FAT12虚拟盘上面的目录树中普通文件数目的算法。 
+	//O(n)
+	int count_file(unsigned char cur)
+	{
+		int num = 0;
+		for (unsigned char iter = space[cur].child; iter != null; iter = space[iter].last_sibling)
+		{
+			num += count_file(iter);
+		}
+		if (space[cur].DIRR_Attr != 0x10)
+		{
+			num += 1;
+		}
+		return num;
+	}
+	
+7、给出删除一个FAT12虚拟盘上面的目录树中一棵子目录树的算法。 
+	//O(n)
+	void delete_tree(unsigned char cur)
+	{
+		for (unsigned char iter = space[cur].child; iter != null; iter = space[iter].last_sibling)
+		{
+			delete_tree(iter);
+		}
+		if (space[space[cur].parent].child == cur)
+		{
+			space[space[cur].parent].child = space[cur].last_sibling;
+		}
+		if (space[cur].last_sibling != null)
+		{
+			space[space[cur].last_sibling].next_sibling = space[cur].next_sibling;
+		}
+		if (space[cur].next_sibling != null)
+		{
+			space[space[cur].next_sibling].last_sibling = space[cur].last_sibling;
+		}
+		memory_delete(cur);
+	}
+	
+8、给出判断两个FAT12虚拟盘上面的目录树同构的算法。同构的定义是：两个系统文件系统F1和F2的根目录中普通文件数和子目录数目相等，且F1各级目录中任一个目录路径名d1，在F2也是合法子目录路径，反之亦然。 
+	//平均O(Σni*log(ni))
+	int DIR_Name_cmp(char* DIR_Name1, char* DIR_Name2) {
+		int i;
+		for (i = 0; i < 11 && DIR_Name1[i] != '\0' && DIR_Name2[i] != '\0'; i++) {
+			if (DIR_Name1[i] < DIR_Name2[i]) {
+				return -1;
+			}
+			if (DIR_Name1[i] > DIR_Name2[i]) {
+				return 1;
+			}
+		}
+		if (i == 11 || DIR_Name1[i] == DIR_Name2[i]) {
+			return 0;
+		}
+		if (DIR_Name1[i] == '\0') {
+			return -1;
+		}
+		return 1;
+	}
+	void quick_sort(unsigned char a[], unsigned char left, unsigned char right, struct RootEntry space[SIZE])
+	{
+		unsigned char pivot = a[left], p1 = left, p2 = right;
+		while (p1 < p2)
+		{
+			while (p1 < p2 && DIR_Name_cmp(space[a[p2]].DIR_Name, space[pivot].DIR_Name) >= 0)
+			{
+				p2--;
+			}
+			if (p1 < p2)
+			{
+				a[p1] = a[p2];
+			}
+			while (p1 < p2 && DIR_Name_cmp(space[a[p1]].DIR_Name, space[pivot].DIR_Name) < 0)
+			{
+				p1++;
+			}
+			if (p1 < p2)
+			{
+				a[p2] = a[p1];
+			}
+		}
+		a[p1] = pivot;
+		if (left < p1 - 1)
+		{
+			quick_sort(a, left, p1 - 1, space);
+		}
+		if (p1 + 1 < right)
+		{
+			quick_sort(a, p1 + 1, right, space);
+		}
+	}
+	int isomorphy(unsigned char cur1, unsigned char cur2, struct RootEntry space1[SIZE], struct RootEntry space2[SIZE])
+	{
+		unsigned char p, cnt1, cnt2, a1[224], a2[224];
+		for (p = space1[cur1].last_child, cnt1 = 0; p != Null; p = space1[p].last_sibling)
+		{
+			a1[cnt1++] = p;
+		}
+		for (p = space2[cur2].last_child, cnt2 = 0; p != Null; p = space2[p].last_sibling)
+		{
+			a2[cnt2++] = p;
+		}
+		if (cnt1 != cnt2)
+		{
+			return 0;
+		}
+		if (cnt1 == 0)
+		{
+			return 1;
+		}
+		quick_sort(a1, 0, cnt1 - 1, space1);
+		quick_sort(a2, 0, cnt2 - 1, space2);
+		for (p = 0; p < cnt1; p++)
+		{
+			if (DIR_Name_cmp(space1[a1[p]].DIR_Name, space2[a2[p]].DIR_Name))
+			{
+				return 0;
+			}
+			if (!isomorphy(a1[p], a2[p], space1, space2))
+			{
+				return 0;
+			}
+		}
+		return 1;
+	}
+	
+9、给出判断同一个FAT12虚拟盘上面的两颗子目录树同构的算法。 
+	同上

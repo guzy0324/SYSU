@@ -1,0 +1,12 @@
+/* Test case 2: undelcared variable */
+program err2;
+class myTest
+{
+	declarations
+		int x, y;
+	enddeclarations
+	method void main()
+	{
+	z:=x+y;
+	}
+}

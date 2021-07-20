@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 05 21:12:17 2019
+# Process ID: 14744
+# Current directory: G:/project/pri_carry
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4368 G:\project\pri_carry\pri_carry.xpr
+# Log file: G:/project/pri_carry/vivado.log
+# Journal file: G:/project/pri_carry\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/project/pri_carry/pri_carry.xpr
+launch_simulation
+source chaoadder.tcl
+file mkdir G:/project/pri_carry/pri_carry.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v w ]
+add_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+file delete -force G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v w ]
+add_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v
+update_compile_order -fileset sim_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+close_sim
+launch_simulation
+source chaoadder.tcl
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source simadder.tcl
+close_sim
+close_sim

@@ -1,0 +1,25 @@
+Line	Column	Token           	Index in String table
+2	8	PROGRAMnum      
+2	12	IDnum           	0
+2	13	SEMInum         
+3	6	CLASSnum        
+3	11	IDnum           	4
+3	13	LBRACEnum       
+4	11	METHODnum       
+4	16	VOIDnum         
+4	21	IDnum           	9
+4	22	LPARENnum       
+4	23	RPARENnum       
+4	25	LBRACEnum       
+5	15	IDnum           	14
+5	16	DOTnum          
+5	23	IDnum           	21
+5	24	LPARENnum       
+5	41	SCONSTnum       	29
+5	42	RPARENnum       
+5	43	SEMInum         
+6	6	RBRACEnum       
+7	2	RBRACEnum       
+8	1	EOFnum          
+
+String Table : xyz Test main System println Hello World !!! 

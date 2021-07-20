@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul  2 09:20:08 2021
+# Process ID: 22020
+# Current directory: C:/Users/guzy0/Desktop/dbg/dc/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11824 C:\Users\guzy0\Desktop\dbg\dc\project_1\project_1.xpr
+# Log file: C:/Users/guzy0/Desktop/dbg/dc/project_1/vivado.log
+# Journal file: C:/Users/guzy0/Desktop/dbg/dc/project_1\vivado.jou
+#-----------------------------------------------------------start_gui
+oopen_project C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.xprSScanning sources...Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+IINFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/guzy0/Desktop/dbg/dc/74IP_2017_sysu'.INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 829.129 ; gain = 142.148
+uupdate_compile_order -fileset sources_1eopen_bd_design {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:user:sysu_74LS283:1.0 - sysu_74LS283_0
+Adding cell -- xilinx.com:user:sysu_74LS86:1.0 - sysu_74LS86_0
+Adding cell -- sysu:user:sysu_74LS32:1.0 - sysu_74LS32_0
+Adding cell -- sysu:user:sysu_74LS08:1.0 - sysu_74LS08_0
+Adding cell -- sysu:user:sysu_74LS04:1.0 - sysu_74LS04_0
+Adding cell -- xilinx.com:user:sysu_high_level:1.0 - sysu_high_level_0
+Adding cell -- xilinx.com:user:sysu_low_level:1.0 - sysu_low_level_0
+Adding cell -- xilinx.com:user:sysu_74LS197:1.0 - sysu_74LS197_0
+Successfully read diagram <design_1> from BD file <C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 874.309 ; gain = 88.090
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 874.309 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_bd_design {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]'
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]'
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+copy_bd_objs /  [get_bd_ports {M}]
+set_property location {470 752} [get_bd_ports M1]
+delete_bd_objs [get_bd_ports CLK]
+set_property location {341 94} [get_bd_ports M1]
+set_property name I0 [get_bd_ports M1]
+copy_bd_objs /  [get_bd_ports {I0}]
+set_property location {532 37} [get_bd_ports I1]
+copy_bd_objs /  [get_bd_ports {I1}]
+set_property location {592 -108} [get_bd_ports I2]
+copy_bd_objs /  [get_bd_ports {I2}]
+set_property location {649 37} [get_bd_ports I3]
+connect_bd_net [get_bd_ports I0] [get_bd_pins sysu_74LS283_0/A0]
+connect_bd_net [get_bd_ports I1] [get_bd_pins sysu_74LS283_0/A1]
+connect_bd_net [get_bd_ports I2] [get_bd_pins sysu_74LS283_0/A2]
+connect_bd_net [get_bd_ports I3] [get_bd_pins sysu_74LS283_0/A3]
+regenerate_bd_layout
+generate_target all [get_files  C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/sysu_74LS32_0/A4
+/sysu_74LS32_0/B4
+/sysu_74LS04_0/A2
+/sysu_74LS04_0/A3
+/sysu_74LS04_0/A4
+/sysu_74LS04_0/A5
+/sysu_74LS04_0/A6
+
+Wrote  : <C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_74LS283_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_74LS86_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_74LS32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_74LS08_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_74LS04_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_high_level_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sysu_low_level_0 .
+Exporting to file C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jul  2 09:33:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_74LS04_0_0/design_1_sysu_74LS04_0_0.dcp' for cell 'sysu_74LS04_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_74LS08_0_0/design_1_sysu_74LS08_0_0.dcp' for cell 'sysu_74LS08_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_74LS283_0_0/design_1_sysu_74LS283_0_0.dcp' for cell 'sysu_74LS283_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_74LS32_0_0/design_1_sysu_74LS32_0_0.dcp' for cell 'sysu_74LS32_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_74LS86_0_0/design_1_sysu_74LS86_0_0.dcp' for cell 'sysu_74LS86_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_high_level_0_1/design_1_sysu_high_level_0_1.dcp' for cell 'sysu_high_level_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_sysu_low_level_0_1/design_1_sysu_low_level_0_1.dcp' for cell 'sysu_low_level_0'
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK'. [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/constrs_1/new/design_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1921.656 ; gain = 294.629
+startgroup
+set_property package_pin "" [get_ports [list  O3]]
+place_ports F U18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O2]]
+place_ports O3 N18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O1]]
+place_ports O2 P18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O0]]
+place_ports O1 T18
+endgroup
+place_ports O0 P15
+save_constraints
+launch_runs impl_1 -jobs 4
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2293.367 ; gain = 0.000
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+[Fri Jul  2 09:37:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jul  2 09:38:46 2021] Launched impl_1...
+Run output will be captured here: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  2 09:44:48 2021...

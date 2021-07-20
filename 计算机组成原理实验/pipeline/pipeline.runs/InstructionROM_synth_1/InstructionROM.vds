@@ -1,0 +1,508 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Dec 18 15:42:20 2019
+# Process ID: 2972
+# Current directory: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1
+# Command line: vivado.exe -log InstructionROM.vds -mode batch -messageDb vivado.pb -notrace -source InstructionROM.tcl
+# Log file: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1/InstructionROM.vds
+# Journal file: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstructionROM.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'InstructionROM' generated file not found 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'InstructionROM' generated file not found 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'InstructionROM' generated file not found 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'InstructionROM' generated file not found 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'InstructionROM' generated file not found 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top InstructionROM -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -171 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 302.664 ; gain = 131.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'InstructionROM' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/synth/InstructionROM.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: InstructionROM.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_9' declared at 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:140' bound to instance 'U0' of component 'dist_mem_gen_v8_0_9' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/synth/InstructionROM.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_9' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:196]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: InstructionROM.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_9_synth' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2877]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 256 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: InstructionROM.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 8 - type: integer 
+	Parameter c_depth bound to: 256 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: InstructionROM.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rom' declared at 'c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:533' bound to instance 'rom_inst' of component 'rom' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2898]
+INFO: [Synth 8-638] synthesizing module 'rom' [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:561]
+	Parameter c_addr_width bound to: 8 - type: integer 
+	Parameter c_depth bound to: 256 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: InstructionROM.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:684]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:688]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:755]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:893]
+WARNING: [Synth 8-3848] Net qspo in module/entity rom does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:558]
+INFO: [Synth 8-256] done synthesizing module 'rom' (1#1) [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:561]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3064]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3070]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3075]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3081]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3087]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3092]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3097]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3102]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3110]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3115]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3123]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3128]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3136]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3144]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3152]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3157]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3162]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3167]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3175]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3180]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3189]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3194]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3199]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3204]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3209]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_9_synth does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2869]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_9_synth does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2871]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_9_synth' (2#1) [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2877]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0_9 does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:224]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0_9 does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:223]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0_9 does not have driver. [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:225]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_9' (3#1) [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'InstructionROM' (4#1) [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/synth/InstructionROM.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 339.801 ; gain = 168.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[31] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[30] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[29] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[28] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[27] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[26] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[25] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[24] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[23] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[22] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[21] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[20] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[19] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[18] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[17] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[16] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[15] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[14] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[13] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[12] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[11] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[10] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[9] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[8] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[7] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[6] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[5] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[4] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[3] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[2] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[1] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[0] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[7] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[6] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[5] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[4] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[3] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[2] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[1] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[0] to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :clk to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :we to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :i_ce to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_ce to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_ce to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_clk to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_rst to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_rst to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_srst to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_srst to constant 0 [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/dist_mem_gen_v8_0_9/hdl/dist_mem_gen_v8_0.vhd:232]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 339.801 ; gain = 168.383
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 532.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 532.961 ; gain = 361.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 532.961 ; gain = 361.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 532.961 ; gain = 361.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 532.961 ; gain = 361.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 532.961 ; gain = 361.543
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 551.633 ; gain = 380.215
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 551.633 ; gain = 380.215
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+------------+---------------+----------------+
+|Module Name         | RTL Object | Depth x Width | Implemented As | 
++--------------------+------------+---------------+----------------+
+|rom                 | rom__1     | 256x32        | LUT            | 
+|dist_mem_gen_v8_0_9 | rom        | 256x32        | LUT            | 
++--------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 551.633 ; gain = 380.215
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 551.633 ; gain = 380.215
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 582.625 ; gain = 411.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 582.625 ; gain = 411.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 593.328 ; gain = 421.910
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     1|
+|2     |LUT5 |    28|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+--------------------+------+
+|      |Instance |Module              |Cells |
++------+---------+--------------------+------+
+|1     |top      |                    |    29|
+|2     |  U0     |dist_mem_gen_v8_0_9 |    29|
++------+---------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 593.328 ; gain = 421.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 593.328 ; gain = 171.750
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 593.328 ; gain = 421.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/guzy0/pipeline/pipeline.srcs/sources_1/ip/InstructionROM/InstructionROM_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 593.328 ; gain = 366.262
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 593.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 18 15:43:43 2019...

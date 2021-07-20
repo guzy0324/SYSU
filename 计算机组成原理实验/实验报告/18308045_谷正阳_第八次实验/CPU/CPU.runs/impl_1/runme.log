@@ -1,0 +1,446 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp' for cell 'imem/imem1'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp' for cell 'imem/imem2'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp' for cell 'imem/imem3'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp' for cell 'imem/imem4'
+INFO: [Netlist 29-17] Analyzing 644 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/guzy0/CPU/CPU.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/guzy0/CPU/CPU.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/guzy0/CPU/CPU.runs/irom_synth_1/irom.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.205 . Memory (MB): peak = 500.266 ; gain = 1.141
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 13ada3cf1
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: febee6fd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.725 . Memory (MB): peak = 951.266 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: febee6fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 951.266 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 1944 unconnected nets.
+INFO: [Opt 31-11] Eliminated 8 unconnected cells.
+Phase 3 Sweep | Checksum: 17d314d95
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 951.266 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 951.266 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 17d314d95
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 951.266 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Pwropt 34-322] Received HACOOException
+WARNING: [Pwropt 34-321] HACOOException: Too many fanin/fanouts in design, exiting pwropt. You can change this limit with the param pwropt.maxFaninFanoutToNetRatio
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 17d314d95
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1132.988 ; gain = 181.723
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1132.988 ; gain = 633.863
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1132.988 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/guzy0/CPU/CPU.runs/impl_1/top_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 755cf614
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.1.2 IO and Clk Clean Up
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clkin_IBUF_inst (IBUF.O) is locked to IOB_X0Y11
+	clkin_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 755cf614
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 755cf614
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 265c619e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b4a0771a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+Phase 1.2.1 Place Init Design | Checksum: 153d62d5d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 153d62d5d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 153d62d5d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 153d62d5d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 153d62d5d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 18514544f
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18514544f
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11dc0a8b4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1489fcdcf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.4 Small Shape Detail Placement
+
+Phase 3.4.1 Commit Small Macros and Core Logic
+
+Phase 3.4.1.1 Commit Slice Clusters
+Phase 3.4.1.1 Commit Slice Clusters | Checksum: f7302003
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 3.4.1 Commit Small Macros and Core Logic | Checksum: f7302003
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: f7302003
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: f7302003
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 3.4 Small Shape Detail Placement | Checksum: f7302003
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: f7302003
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: f7302003
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: f7302003
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: f7302003
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: f7302003
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: f7302003
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: e8915b54
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e8915b54
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Ending Placer Task | Checksum: e41f6a6a
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.988 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1132.988 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1132.988 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1132.988 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1132.988 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PLCK-12) Clock Placer Checks - Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clkin_IBUF_inst (IBUF.O) is locked to V17
+	clkin_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 647a199d ConstDB: 0 ShapeSum: 7fa550cd RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18fee5a7c
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: 18fee5a7c
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.988 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: dc26f234
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1132.988 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: e87b1e4e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2601
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+Phase 4 Rip-up And Reroute | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.25528 %
+  Global Horizontal Routing Utilization  = 9.22319 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 55.8559%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+Phase 7 Route finalize | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: f2305562
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 105df43cc
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1137.699 ; gain = 4.711
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1137.699 ; gain = 4.711
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 1137.699 ; gain = 4.711
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1137.699 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/guzy0/CPU/CPU.runs/impl_1/top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0 input alu/aluRes0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0 input alu/aluRes0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__0 input alu/aluRes0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__0 input alu/aluRes0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__1 input alu/aluRes0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__1 input alu/aluRes0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__2 input alu/aluRes0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP alu/aluRes0__2 input alu/aluRes0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP alu/aluRes0 output alu/aluRes0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP alu/aluRes0__0 output alu/aluRes0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP alu/aluRes0__1 output alu/aluRes0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP alu/aluRes0__2 output alu/aluRes0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP alu/aluRes0 multiplier stage alu/aluRes0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP alu/aluRes0__0 multiplier stage alu/aluRes0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP alu/aluRes0__1 multiplier stage alu/aluRes0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP alu/aluRes0__2 multiplier stage alu/aluRes0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net imem/hi_reg[31]_60 is a gated clock net sourced by a combinational pin imem/flag_reg[1]_i_2/O, cell imem/flag_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net imem/pc_reg[1] is a gated clock net sourced by a combinational pin imem/zero_reg_i_2/O, cell imem/zero_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1521.125 ; gain = 350.484
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file top.hwdef
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 21:15:32 2019...

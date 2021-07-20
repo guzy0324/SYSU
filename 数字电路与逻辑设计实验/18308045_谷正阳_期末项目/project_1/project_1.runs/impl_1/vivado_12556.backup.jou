@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul  2 09:37:39 2021
+# Process ID: 12556
+# Current directory: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log design_1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1.tcl -notrace
+# Log file: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.vdi
+# Journal file: C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1.tcl -notrace

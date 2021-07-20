@@ -1,0 +1,10 @@
+{
+    "hash": "UzVmEwKjCt",
+    "writeHash": "LBFOGblv7mdY7f6",
+    "versionDate": "2020-10-12T09:46:16.000Z",
+    "files": {
+        "domain-puzzle.pddl": "(define (domain puzzle)\n    (:requirements :strips :equality:typing)\n    (:types num loc)\n    (:predicates\n        (at ?x - num ?y - loc)\n        (adjacent ?x ?y - loc)\n    )\n    (:action slide\n        :parameters (?x - num ?from ?to - loc)\n        :precondition (and (at ?x ?from)\n                            (at n0 ?to)\n                            (adjacent ?from ?to))\n        :effect (and (not (at ?x ?from))\n                        (not (at n0 ?to))\n                        (at n0 ?from)\n                        (at ?x ?to))\n    )\n)",
+        "puzzle.pddl": "(define (problem prob)\n    (:domain puzzle)\n    (:objects n1 n2 n3 n4 n5 n6 n7 n8 n0 - num\n                l11 l12 l13 l21 l22 l23 l31 l32 l33 - loc)\n    (:init\n        (at n1 l11)\n        (at n2 l12)\n        (at n3 l13)\n        (at n7 l21)\n        (at n8 l22)\n        (at n0 l23)\n        (at n6 l31)\n        (at n4 l32)\n        (at n5 l33)\n        (adjacent l11 l12)\n        (adjacent l11 l21)\n        (adjacent l12 l11)\n        (adjacent l12 l13)\n        (adjacent l12 l22)\n        (adjacent l13 l12)\n        (adjacent l13 l23)\n        (adjacent l21 l11)\n        (adjacent l21 l22)\n        (adjacent l21 l31)\n        (adjacent l22 l12)\n        (adjacent l22 l21)\n        (adjacent l22 l23)\n        (adjacent l22 l32)\n        (adjacent l23 l13)\n        (adjacent l23 l22)\n        (adjacent l23 l33)\n        (adjacent l31 l21)\n        (adjacent l31 l32)\n        (adjacent l32 l22)\n        (adjacent l32 l31)\n        (adjacent l32 l33)\n        (adjacent l33 l23)\n        (adjacent l33 l32)\n    )\n    (:goal (and (at n1 l11)\n                (at n2 l12)\n                (at n3 l13)\n                (at n4 l21)\n                (at n5 l22)\n                (at n6 l23)\n                (at n7 l31)\n                (at n8 l32)\n                (at n0 l33))\n    )\n)"
+    },
+    "plugins": {}
+}

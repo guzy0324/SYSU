@@ -1,0 +1,20 @@
+/* Test case 1: duplicate declarations */
+program err1;
+class myTest
+{
+	declarations
+		int x, y;
+		int x;
+	enddeclarations
+	method void main()
+	{
+	/* nothing */	
+	}
+	method int func(int m, n)
+	declarations
+	int m;
+	enddeclarations
+	{
+	/* nothing */	
+	}
+}

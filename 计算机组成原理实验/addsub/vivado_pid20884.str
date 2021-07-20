@@ -1,0 +1,148 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 20884
+
+Current time: 	11/6/19 3:55:57 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	guzy0
+User home directory: C:/Users/guzy0
+User working directory: G:/project/addsub
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/guzy0/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/guzy0/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	231 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 407 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: G:\project\addsub\addsub.xpr. Version: Vivado v2015.4 
+// bF:g (cq:JFrame):  Open Project : addNotify
+// [GUI Memory]: 46 MB (+45512kb) [00:00:08]
+// [Engine Memory]: 359 MB (+224532kb) [00:00:08]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project G:/project/addsub/addsub.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project G:/project/addsub/addsub.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+2773kb) [00:00:12]
+// [Engine Memory]: 440 MB (+66402kb) [00:00:12]
+// [Engine Memory]: 494 MB (+33711kb) [00:00:14]
+// [Engine Memory]: 534 MB (+15736kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 32 MB. Current time: 11/6/19 3:56:05 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 55 MB (+1638kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: addsub; location: G:/project/addsub; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 863.449 ; gain = 270.781 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // y:k (I:JPanel, cq:JFrame)
+// PAPropertyPanels.initPanels (addsub.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// [GUI Memory]: 61 MB (+4010kb) [00:01:30]
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// [GUI Memory]: 66 MB (+1852kb) [00:02:02]
+// Elapsed time: 84 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// [GUI Memory]: 71 MB (+1641kb) [00:03:12]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// Elapsed time: 161 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, add4_pin.xdc]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("add4_pin.xdc", 376, 179); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("add4_pin.xdc", 368, 238); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 76 MB (+1318kb) [00:06:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 35 MB. Current time: 11/6/19 4:02:10 PM CST
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// [Engine Memory]: 561 MB (+87kb) [00:07:44]
+// Elapsed time: 65 seconds
+selectCodeEditor("add4_pin.xdc", 369, 292); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("add4_pin.xdc", 346, 300); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("add4_pin.xdc", 387, 308); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 31 seconds
+closeMainWindow("addsub - [G:/project/addsub/addsub.xpr] - Vivado 2015.4"); // cq:JFrame
+// G:aY (cq:JFrame): Exit Vivado: addNotify
+dismissDialog("Exit Vivado"); // G:aY (cq:JFrame)
+selectCodeEditor("add4_pin.xdc", 225, 189); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 694 seconds
+selectCodeEditor("add4_pin.xdc", 327, 192); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("add4_pin.xdc", 327, 165); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("add4_pin.xdc", 331, 210); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("add4_pin.xdc", 326, 182); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "add4_pin.xdc", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 80 MB (+511kb) [00:22:09]
+// Elapsed time: 164 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, addsub (addsub.v)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 37 MB. Current time: 11/6/19 4:32:10 PM CST

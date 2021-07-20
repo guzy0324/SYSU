@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_sysu_74LS283_0_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_74LS283_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_sysu_74LS86_0_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_74LS86_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_sysu_high_level_1_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_high_level_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_sysu_low_level_1_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_low_level_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_sysu_high_level_0_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_high_level_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_sysu_high_level_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_sysu_low_level_0_0_synth_1" LaunchDir="C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/design_1_sysu_low_level_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_sysu_low_level_1_0_synth_1"/>
+	</Run>
+</Runs>
+

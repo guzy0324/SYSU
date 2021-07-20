@@ -1,0 +1,72 @@
+     1                                  ; Disassembly of file: upper32.o
+     2                                  ; Thu May 14 21:56:59 2020
+     3                                  ; Mode: 32 bits
+     4                                  ; Syntax: YASM/NASM
+     5                                  ; Instruction set: 80386
+     6                                  
+     7                                  
+     8                                  global upper: ;function
+     9                                  global Message
+    10                                  
+    11                                  
+    12                                  SECTION .text   align=1 ;execute                         ; section number 1, code
+    13                                  
+    14                                  upper:  ; Function begin
+    15 00000000 55                              push    ebp                                     ; 0000 _ 55
+    16 00000001 89E5                            mov     ebp, esp                                ; 0001 _ 89. E5
+    17 00000003 83EC04                          sub     esp, 4                                  ; 0003 _ 83. EC, 04
+    18 00000006 C745FC00000000                  mov     dword [ebp-4H], 0                       ; 0006 _ C7. 45, FC, 00000000
+    19 0000000D EB38                            jmp     ?_003                                   ; 000D _ EB, 38
+    20                                  
+    21 0000000F 8B45FC                  ?_001:  mov     eax, dword [ebp-4H]                     ; 000F _ 8B. 45, FC
+    22 00000012 05[00000000]                    add     eax, Message                            ; 0012 _ 05, 00000000(d)
+    23 00000017 8A00                            mov     al, byte [eax]                          ; 0017 _ 8A. 00
+    24 00000019 3C60                            cmp     al, 96                                  ; 0019 _ 3C, 60
+    25 0000001B 7E27                            jle     ?_002                                   ; 001B _ 7E, 27
+    26 0000001D 8B45FC                          mov     eax, dword [ebp-4H]                     ; 001D _ 8B. 45, FC
+    27 00000020 05[00000000]                    add     eax, Message                            ; 0020 _ 05, 00000000(d)
+    28 00000025 8A00                            mov     al, byte [eax]                          ; 0025 _ 8A. 00
+    29 00000027 3C7A                            cmp     al, 122                                 ; 0027 _ 3C, 7A
+    30 00000029 7F19                            jg      ?_002                                   ; 0029 _ 7F, 19
+    31 0000002B 8B45FC                          mov     eax, dword [ebp-4H]                     ; 002B _ 8B. 45, FC
+    32 0000002E 05[00000000]                    add     eax, Message                            ; 002E _ 05, 00000000(d)
+    33 00000033 8A00                            mov     al, byte [eax]                          ; 0033 _ 8A. 00
+    34 00000035 83E820                          sub     eax, 32                                 ; 0035 _ 83. E8, 20
+    35 00000038 88C2                            mov     dl, al                                  ; 0038 _ 88. C2
+    36 0000003A 8B45FC                          mov     eax, dword [ebp-4H]                     ; 003A _ 8B. 45, FC
+    37 0000003D 05[00000000]                    add     eax, Message                            ; 003D _ 05, 00000000(d)
+    38 00000042 8810                            mov     byte [eax], dl                          ; 0042 _ 88. 10
+    39 00000044 FF45FC                  ?_002:  inc     dword [ebp-4H]                          ; 0044 _ FF. 45, FC
+    40 00000047 8B45FC                  ?_003:  mov     eax, dword [ebp-4H]                     ; 0047 _ 8B. 45, FC
+    41 0000004A 05[00000000]                    add     eax, Message                            ; 004A _ 05, 00000000(d)
+    42 0000004F 8A00                            mov     al, byte [eax]                          ; 004F _ 8A. 00
+    43 00000051 84C0                            test    al, al                                  ; 0051 _ 84. C0
+    44 00000053 75BA                            jnz     ?_001                                   ; 0053 _ 75, BA
+    45 00000055 90                              nop                                             ; 0055 _ 90
+    46 00000056 C9                              leave                                           ; 0056 _ C9
+    47 00000057 C3                              ret                                             ; 0057 _ C3
+    48                                  ; upper End of function
+    49                                  
+    50                                  
+    51                                  SECTION .data   align=4 ;noexecute                       ; section number 2, data
+    52                                  
+    53                                  Message:                                                ; tbyte
+    54 00000000 4161426243634464                db 41H, 61H, 42H, 62H, 43H, 63H, 44H, 64H       ; 0000 _ AaBbCcDd
+    55 00000008 4565                            db 45H, 65H                                     ; 0008 _ Ee
+    56                                  
+    57                                  
+    58                                  SECTION .bss    align=1 ;noexecute                       ; section number 3, bss
+    59                                  
+    60                                  
+    61                                  SECTION .eh_frame align=4 ;noexecute                     ; section number 4, const
+    62                                  
+    63 00000000 1400000000000000                db 14H, 00H, 00H, 00H, 00H, 00H, 00H, 00H       ; 0000 _ ........
+    64 00000008 017A5200017C0801                db 01H, 7AH, 52H, 00H, 01H, 7CH, 08H, 01H       ; 0008 _ .zR..|..
+    65 00000010 1B0C040488010000                db 1BH, 0CH, 04H, 04H, 88H, 01H, 00H, 00H       ; 0010 _ ........
+    66 00000018 1C0000001C000000                db 1CH, 00H, 00H, 00H, 1CH, 00H, 00H, 00H       ; 0018 _ ........
+    67 00000020 (C0FFFFFF)                      dd upper-$-20H                                  ; 0020 _ 00000000 (rel)
+    68 00000024 5800000000410E08                dd 00000058H, 080E4100H                         ; 0024 _ 88 135151872 
+    69 0000002C 8502420D050254C5                dd 0D420285H, 0C5540205H                        ; 002C _ 222429829 -984350203 
+    70 00000034 0C040400                        dd 0004040CH                                    ; 0034 _ 263180 
+    71                                  
+    72                                  

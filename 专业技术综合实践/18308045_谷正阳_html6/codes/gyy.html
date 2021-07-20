@@ -1,0 +1,49 @@
+﻿<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+          #container {
+             width:500px;
+             height:700px;
+             margin:10px auto;
+             padding:1px;
+             background-color: LightYellow;
+          }
+          #profile {
+             width:340px;
+             position: relative;
+             top: -50px;
+             left: -50px;
+             transform: rotate(-45deg);
+          }
+          #d1 {
+              width:240px;
+              height:240px;
+              position: relative;
+              top: 100px;
+              transform: rotate(45deg);
+              overflow: hidden;
+              margin: 115px auto;
+              border: blue 1px solid;
+              animation-name: ani;
+              animation-duration: 3s;
+              animation-timing-function: cubic-bezier(0.7,0.3,0.3,0.7);
+          }
+          @keyframes ani {
+              0% {transform: scale(0.2) rotate(-315deg); opacity: 0;}
+              50% {transform: scale(0.6) rotate(-155deg); opacity: 0.1;}
+              100% {transform: scale(1) rotate(45deg); opacity: 1}
+          }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <div id="d1">
+            <img id="profile" src="images/gyy_profile.jpg">
+         </div>
+      </div>
+    </body>
+</html>
+            

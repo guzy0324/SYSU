@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>18308045_谷正阳.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="center%E5%AE%9E%E9%AA%8C%E5%9B%9B%E5%85%B7%E6%9C%89%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86%E7%9A%84%E5%86%85%E6%A0%B8center"><center>实验四：具有中断处理的内核</center></h1>
+<h3 id="%E4%B8%80%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84">一、实验目的：</h3>
+<ol>
+<li>
+<p>PC系统的中断机制和原理。</p>
+</li>
+<li>
+<p>理解操作系统内核对异步事件的处理方法。</p>
+</li>
+<li>
+<p>掌握中断处理编程的方法。</p>
+</li>
+<li>
+<p>掌握内核中断处理代码组织的设计方法。</p>
+</li>
+<li>
+<p>了解查询式I/O控制方式的编程方法。</p>
+</li>
+</ol>
+<h3 id="%E4%BA%8C%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86">二、实验原理：</h3>
+<ol>
+<li>
+<p>两片可编程中断控制器8259形成级联，提供15个中断信号</p>
+</li>
+<li>
+<p>连接到INTR为，可屏蔽中断，可通过<code>cli</code>，<code>sti</code>设置IF标志，来决定是否屏蔽</p>
+</li>
+<li>
+<p>中断存在优先级，IR0最高，IR7最低，从片连接主片的IR2，当优先级更高的中断来时，先处理高优先级的中断</p>
+</li>
+<li>
+<p>中断向量表物理地址：0x0-0x3ff，用于存放256种中断对应的256个程序</p>
+</li>
+<li>
+<p>每个中断对应4B，为中断程序的段地址和偏移地址</p>
+</li>
+<li>
+<p>处理器收到中断号：</p>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>压栈<code>flags</code>，清除<code>if</code>，<code>tf</code>，然后当前<code>cs</code>，<code>ip</code>压栈</li>
+<li>中断号，从中断向量表中取出<code>cs</code>，<code>ip</code>。若要中断嵌套需要<code>sti</code></li>
+<li><code>iret</code>，弹出<code>ip</code>，<code>cs</code>，<code>flags</code>。注意已经恢复<code>flags</code>可以收到新中断</li>
+</ul>
+</blockquote>
+<ol start="7">
+<li>
+<p>非可屏蔽中断自动生成中断号码2，其他过程同上</p>
+</li>
+<li>
+<p>CMOS RAM的0x70或0x74指定内存单元，0x71或0x75用于读写数据</p>
+</li>
+<li>
+<p>CMOS RAM保存的日期和时间使用BCD，每四位二进制表示一位十进制</p>
+</li>
+<li>
+<p>CMOS RAM偏移地址0x0A-0x0D分别对应寄存器ABCD</p>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>用寄存器AB设置RTC功能</li>
+<li>寄存器CD表示RTC工作状态</li>
+</ul>
+</blockquote>
+<ol start="11">
+<li>
+<p><code>eflags</code>寄存器：https://blog.csdn.net/jn1158359135/article/details/7761011</p>
+</li>
+<li>
+<p><code>pushad</code>，<code>popad</code>：https://blog.csdn.net/longintchar/article/details/50866801</p>
+</li>
+<li>
+<p><code>int 13h</code>：https://www.cnblogs.com/heisenberg-/p/6582124.html</p>
+</li>
+<li>
+<p>键盘中断：https://blog.csdn.net/zhaixh_89/article/details/102639921?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase</p>
+</li>
+<li>
+<p><code>int 9</code>与<code>int 16h</code>：https://blog.csdn.net/ZCMUCZX/article/details/80462394</p>
+</li>
+</ol>
+<h3 id="%E4%B8%89%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82">三、实验要求：</h3>
+<ol>
+<li>
+<p>知道PC系统的中断硬件系统的原理。</p>
+</li>
+<li>
+<p>掌握x86汇编语言对时钟中断的响应处理编程方法。</p>
+</li>
+<li>
+<p>重写和扩展实验三的的内核程序，增加时钟中断的响应处理和键盘中断响应。</p>
+</li>
+<li>
+<p>编写实验报告，描述实验工作的过程和必要的细节，如截屏或录屏，以证实实验工作的真实性。</p>
+</li>
+</ol>
+<h3 id="%E5%9B%9B%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9">四、实验内容：</h3>
+<ol>
+<li>
+<p>编写x86汇编语言对时钟中断的响应处理程序：设计一个汇编程序，在一段时间内系统时钟中断发生时，屏幕变化显示信息。在屏幕24行79列位置轮流显示’|’、’/’和’\’(无敌风火轮)，适当控制显示速度，以方便观察效果，也可以屏幕上画框、反弹字符等，方便观察时钟中断多次发生。将程序生成COM格式程序，在DOS或虚拟环境运行。</p>
+</li>
+<li>
+<p>重写和扩展实验三的的内核程序，增加时钟中断的响应处理和键盘中断响应。在屏幕右下角显示一个转动的无敌风火轮，确保内核功能不比实验三的程序弱，展示原有功能或加强功能可以工作。</p>
+</li>
+<li>
+<p>扩展实验三的的内核程序，但不修改原有的用户程序，实现在用户程序执行期间，若触碰键盘，屏幕某个位置会显示”OUCH!OUCH!”。</p>
+</li>
+<li>
+<p>编写实验报告，描述实验工作的过程和必要的细节，如截屏或录屏，以证实实验工作的真实性。</p>
+</li>
+</ol>
+<h3 id="%E4%BA%94%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">五、实验结果：</h3>
+<h4 id="1-%E8%AF%A5%E6%AD%A5%E4%B8%AD%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E9%97%AE%E9%A2%98">1. 该步中遇到如下问题：</h4>
+<blockquote>
+<p><strong>问题1：</strong> 问题文件为“.bin”，将“.bin”填入虚拟软盘，在bochs中无法时钟中断切换字符，但是在VirtualBox和DOSBox中可以。<br>
+<strong>解决1：</strong> 观察IF标志位，发现bochs运行时，IF标志位为0。<br>
+<img src="eflags0.png" alt="avator"><br>
+根据<em>实验原理 11</em>，第9位为IF标志位此时为0。而根据<em>实验原理 2</em>，需要用<code>sti</code>设置<code>if</code>为1，使其不被屏蔽。</p>
+<pre class="hljs"><code><div>org <span class="hljs-number">7c00h</span>                    <span class="hljs-comment">; 程序加载到100h，可用于生成COM</span>
+                             <span class="hljs-comment">; 设置时钟中断向量（08h），初始化段寄存器</span>
+<span class="hljs-keyword">sti</span>
+<span class="hljs-keyword">xor</span> <span class="hljs-built_in">ax</span>,<span class="hljs-built_in">ax</span>                    <span class="hljs-comment">; AX = 0</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>,<span class="hljs-built_in">ax</span>                    <span class="hljs-comment">; ES = 0</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span> [<span class="hljs-built_in">es</span>:<span class="hljs-number">20h</span>],Timer      <span class="hljs-comment">; 设置时钟中断向量的偏移地址</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>,<span class="hljs-built_in">cs</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span> [<span class="hljs-built_in">es</span>:<span class="hljs-number">22h</span>],<span class="hljs-built_in">ax</span>         <span class="hljs-comment">; 设置时钟中断向量的段地址=CS</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>,<span class="hljs-built_in">ax</span>                    <span class="hljs-comment">; DS = CS</span>
+<span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>,<span class="hljs-built_in">ax</span>                    <span class="hljs-comment">; ES = CS</span>
+</div></code></pre>
+<p>结果如下：<br>
+<img src="eflags1.png" alt="avatar"><br>
+可以看到，第9位变成了1。</p>
+</blockquote>
+<h4 id="2-%E8%AF%A5%E6%AD%A5%E4%B8%AD%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E9%97%AE%E9%A2%98">2. 该步中遇到如下问题：</h4>
+<blockquote>
+<p><strong>问题1：</strong> 时钟中断其他函数坏掉，行为混乱，如光标持续后移。<br>
+<strong>解决1：</strong> 使用<code>push</code>和<code>pop</code>保护寄存器。<br>
+根据<em>实验原理 6</em>，中断调用就是跳到中断向量表中写的指定<code>cs</code>和<code>ip</code>，而中断调用和<code>iret</code>并不会恢复<code>cs</code>，<code>ip</code>，<code>flags</code>之外的寄存器值，因此若中断调用修改了原本函数用到的寄存器值，跳回原本函数的时候会破坏函数。根据<em>实验原理原理 12</em>使用<code>pushad</code>，<code>popad</code>等对寄存器进行保护。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_clock_timer:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">dec</span> <span class="hljs-built_in">byte</span> [count]               <span class="hljs-comment">; 递减计数变量</span>
+   <span class="hljs-keyword">jnz</span> _timer_end                 <span class="hljs-comment">; &gt;0：跳转</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> clock
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">byte</span>[count],delay          <span class="hljs-comment">; 重置计数变量=初值delay</span>
+<span class="hljs-symbol">_timer_end:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>,<span class="hljs-number">20h</span>                     <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>,<span class="hljs-built_in">al</span>                     <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>,<span class="hljs-built_in">al</span>                    <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>                           <span class="hljs-comment">; 从中断返回</span>
+</div></code></pre>
+<p><strong>问题2：</strong> 风火轮的拓展性不够好。<br>
+<strong>解决2：</strong> 对风火轮拆成多个函数。</p>
+<ol>
+<li>将设置中断向量表，拆成一个函数<code>void _set_timer()</code>，未来若有需要，可将<code>_clock_timer</code>和<code>count</code>设置成参数。</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-symbol">_set_timer:</span>
+   <span class="hljs-keyword">sti</span>
+   <span class="hljs-keyword">xor</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">ax</span>                     <span class="hljs-comment">; AX = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>, <span class="hljs-built_in">ax</span>                     <span class="hljs-comment">; ES = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span>[<span class="hljs-built_in">es</span>:<span class="hljs-number">20h</span>], _clock_timer <span class="hljs-comment">; 设置时钟中断向量的偏移地址</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span>[<span class="hljs-built_in">es</span>:<span class="hljs-number">22h</span>], <span class="hljs-built_in">ax</span>           <span class="hljs-comment">; 设置时钟中断向量的段地址=CS</span>
+   <span class="hljs-keyword">ret</span>
+   delay <span class="hljs-built_in">equ</span> <span class="hljs-number">4</span>                    <span class="hljs-comment">; 计时器延迟计数</span>
+   count <span class="hljs-built_in">db</span> delay                 <span class="hljs-comment">; 计时器计数变量，初值=delay</span>
+</div></code></pre>
+<ol start="2">
+<li>将中断程序修改为asm函数<code>void _clock_timer()</code>包裹c函数<code>void clock()</code>。其中asm函数用于中断调用的延迟、保护寄存器和返回，c函数用于实际的效果。</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-symbol">_clock_timer:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">dec</span> <span class="hljs-built_in">byte</span> [count]               <span class="hljs-comment">; 递减计数变量</span>
+   <span class="hljs-keyword">jnz</span> _timer_end                 <span class="hljs-comment">; &gt;0：跳转</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> clock
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">byte</span>[count],delay          <span class="hljs-comment">; 重置计数变量=初值delay</span>
+<span class="hljs-symbol">_timer_end:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>,<span class="hljs-number">20h</span>                     <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>,<span class="hljs-built_in">al</span>                     <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>,<span class="hljs-built_in">al</span>                    <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>                           <span class="hljs-comment">; 从中断返回</span>
+</div></code></pre>
+<ol start="3">
+<li>将写显存封装为函数<code>void display(char ch, int x, int y, int color)</code>。用于不需要设置光标的显示字符操作。</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-symbol">_display:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">eax</span>, <span class="hljs-built_in">dword</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">12</span>]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebx</span>, <span class="hljs-number">80</span>
+   <span class="hljs-keyword">mul</span> <span class="hljs-built_in">ebx</span>
+   <span class="hljs-keyword">add</span> <span class="hljs-built_in">eax</span>, <span class="hljs-built_in">dword</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">8</span>]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebx</span>, <span class="hljs-number">2</span>
+   <span class="hljs-keyword">mul</span> <span class="hljs-built_in">ebx</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebx</span>, <span class="hljs-built_in">eax</span>
+   <span class="hljs-keyword">mov</span>	<span class="hljs-built_in">ax</span>, <span class="hljs-number">0B800h</span>                 <span class="hljs-comment">; 文本窗口显存起始地址</span>
+   <span class="hljs-keyword">mov</span>	<span class="hljs-built_in">gs</span>, <span class="hljs-built_in">ax</span>                     <span class="hljs-comment">; GS = B800h</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">ah</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">16</span>]           <span class="hljs-comment">; 0000：黑底、1111：亮白字（默认值为07h）</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">4</span>]            <span class="hljs-comment">; AL = 显示字符值（默认值为20h=空格符）</span>
+   <span class="hljs-keyword">mov</span> [<span class="hljs-built_in">gs</span>:<span class="hljs-built_in">ebx</span>], <span class="hljs-built_in">ax</span>               <span class="hljs-comment">; 屏幕第 x 行, 第 y 列</span>
+   <span class="hljs-keyword">ret</span>
+</div></code></pre>
+<p><strong>问题3：</strong> 风火轮功能实用性不强。<br>
+<strong>解决3：</strong> 在风火轮尾部增加一个系统时间。<br>
+根据<em>实验原理 8 9 10</em>，可以通过访问CMOS RAM获得系统时间，如下：</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_get_time:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">0</span>                      <span class="hljs-comment">; Get seconds (00 to 59)</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0x70</span>, <span class="hljs-built_in">al</span>
+   <span class="hljs-keyword">in</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">0x71</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">byte</span>[_second], <span class="hljs-built_in">al</span>
+</div></code></pre>
+<p>我将系统时间存在一个数列<code>unsigned char _time[6]</code>中，使用<code>void _get_time()</code>更新系统时间。另外，由于从CMOS RAM获得的系统时间是BCD，所以使用<code>void BCD2str(unsigned char BCD, char *str)</code>进行转换。</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">BCD2str</span><span class="hljs-params">(<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">char</span> BCD, <span class="hljs-keyword">char</span> *str)</span>
+</span>{
+   str[<span class="hljs-number">0</span>] = (BCD &gt;&gt; <span class="hljs-number">4</span>) + <span class="hljs-string">'0'</span>;
+   str[<span class="hljs-number">1</span>] = (BCD &amp; <span class="hljs-number">0xf</span>) + <span class="hljs-string">'0'</span>;
+}
+</div></code></pre>
+<p><strong>问题4：</strong> 在DOSBox中可以正确显示时间，填写到软盘在虚拟机内不能正确显示时间。<br>
+<strong>解决4：</strong> 经过漫长的排查，终于发现在<code>void BCD2str(unsigned char BCD, char *str)</code>函数中，使用<code>ds:0xfe34</code>来访问<code>*str</code>，之前都是在<code>ss:0xfe34</code>访问的<code>*str</code>，而此处的<code>ds</code>和<code>ss</code>竟然是不一样的！<br>
+<img src="ds40.png" alt="avator"><br>
+段地址0x800为正常，换言之<code>ds</code>寄存器的0x40是不正常的。然而观察未进行中断调用时，<code>ds</code>是正常的，怀疑是中断调用应该初始化<code>ds</code>寄存器。另外，如果只修改<code>ds</code>寄存器而不保护它，会出现奇怪的错误，应该是中断调用需要用到<code>ds</code>为0x40。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_clock_timer:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">dec</span> <span class="hljs-built_in">byte</span> [count]               <span class="hljs-comment">; 递减计数变量</span>
+   <span class="hljs-keyword">jnz</span> _timer_end                 <span class="hljs-comment">; &gt;0：跳转</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> clock
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">byte</span>[count],delay          <span class="hljs-comment">; 重置计数变量=初值delay</span>
+<span class="hljs-symbol">_timer_end:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>,<span class="hljs-number">20h</span>                     <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>,<span class="hljs-built_in">al</span>                     <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>,<span class="hljs-built_in">al</span>                    <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>                           <span class="hljs-comment">; 从中断返回</span>
+</div></code></pre>
+<p>果然成功。<br>
+<strong>问题5：</strong> bochs设置的有的断点不起作用。<br>
+<strong>解决5：</strong> 在设置中断向量表的时候，设置的程序位置在0x81f1<br>
+<img src="81f1.png" alt="avator"><br>
+然而在bochs中并没有在0x81f1的指令。<br>
+<img src="没有81f1.png" alt="avator"><br>
+又发现，<code>popad</code>前后sp相差0x20，刚好是8个dword，和<em>实验原理 12</em>不谋而合。<br>
+<img src="popa前.png" alt="avator"><br>
+<img src="popa后.png" alt="avator"><br>
+可以从机器码中发现，按照<em>实验原理 12</em>的说法，<code>pushad</code>的机器码应为0x6660，而bochs却将0x66认作是前一条指令，而<code>popad</code>对应的0x6661是正确的。另外，通过对比<code>popad</code>前栈和<code>popad</code>后寄存器的值，可以看出<em>实验原理 12</em>给出的压栈顺序<code>eax</code>，<code>ecx</code>，<code>edx</code>，<code>ebx</code>，<code>esp</code>，<code>ebp</code>，<code>esi</code>，<code>edi</code>是正确的。<br>
+<img src="popa前栈.png" alt="avator"><br>
+<img src="popa后寄.png" alt="avator"><br>
+分析得知代码中<code>pushad</code>前的<code>count db delay</code>污染了<code>pushad</code>，因而将<code>count db delay</code>放在最后，果然得到了正确的<code>pushad</code>。<br>
+<img src="正确pushad.png" alt="avator"><br>
+<strong>问题6：</strong> 在DOSBox中时钟中断时可以使用<code>int 16h</code>读取字符，填写到软盘在虚拟机内时钟中断时不能使用<code>int 16h</code>读取字符。<br>
+<strong>解决6：</strong> 断点调试时，发现一直停在<code>int 16h</code>读取字符服务的阻塞位置。<br>
+<img src="中断阻塞.png" alt="avator"><br>
+尝试用其他的方法阻塞而不是中断的方式阻塞。根据<em>实验原理 13</em>如用<code>int 16h</code>的非阻塞的检测键盘输入服务，循环阻塞。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_get:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">ah</span>, <span class="hljs-number">1</span>
+   <span class="hljs-keyword">int</span> <span class="hljs-number">16h</span>
+   <span class="hljs-keyword">jz</span> _get
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">ah</span>, <span class="hljs-number">0</span>
+   <span class="hljs-keyword">int</span> <span class="hljs-number">16h</span>
+   <span class="hljs-keyword">ret</span>
+</div></code></pre>
+<p>果真成功。</p>
+</blockquote>
+<h4 id="3-%E8%AF%A5%E6%AD%A5%E4%B8%AD%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E9%97%AE%E9%A2%98">3. 该步中遇到如下问题：</h4>
+<blockquote>
+<p><strong>问题1：</strong> <code>void _set_timer()</code>扩展性不够。<br>
+<strong>解决1：</strong> 将<code>void _set_timer()</code>修改为<code>void _set_int(int cs, void (*inter)(), int index)</code>。另外，要保证运行<code>_set_int(int cs, void (*inter)(), int index)</code>时，不被中断，因而分别在首尾加上<code>cli</code>，<code>sti</code>。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_set_int:</span>
+   <span class="hljs-keyword">cli</span>
+   <span class="hljs-keyword">xor</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">ax</span>                <span class="hljs-comment">; AX = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>, <span class="hljs-built_in">ax</span>                <span class="hljs-comment">; ES = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">word</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">8</span>]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebx</span>, <span class="hljs-built_in">dword</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">12</span>]
+   <span class="hljs-keyword">shl</span> <span class="hljs-built_in">ebx</span>, <span class="hljs-number">2</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span>[<span class="hljs-built_in">es</span>:<span class="hljs-built_in">ebx</span>], <span class="hljs-built_in">ax</span>    <span class="hljs-comment">; 设置中断向量的偏移地址</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">word</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">4</span>]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">word</span>[<span class="hljs-built_in">es</span>:<span class="hljs-built_in">ebx</span>+<span class="hljs-number">2</span>], <span class="hljs-built_in">ax</span>  <span class="hljs-comment">; 设置中断向量的段地址</span>
+   <span class="hljs-keyword">sti</span>
+   <span class="hljs-keyword">ret</span>
+</div></code></pre>
+<p>另外，将<code>delay</code>修改为在中断中初始化的变量<code>_delay</code>，这样每个中断都会有不同的<code>_delay</code>并且将<code>void _clock_timer()</code>改名为<code>void _clock()</code>。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_clock:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_delay], <span class="hljs-number">10</span>
+   <span class="hljs-keyword">dec</span> <span class="hljs-built_in">dword</span>[_count]      <span class="hljs-comment">; 递减计数变量</span>
+   <span class="hljs-keyword">jnz</span> _clock_end         <span class="hljs-comment">; &gt;0：跳转</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> clock
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">eax</span>, <span class="hljs-built_in">dword</span>[_delay]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_count], <span class="hljs-built_in">eax</span> <span class="hljs-comment">; 重置计数变量=初值delay</span>
+<span class="hljs-symbol">_clock_end:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">20h</span>            <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>, <span class="hljs-built_in">al</span>            <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>, <span class="hljs-built_in">al</span>           <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>                   <span class="hljs-comment">; 从中断返回</span>
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-symbol">_data_define:</span>
+   _delay <span class="hljs-built_in">dd</span> <span class="hljs-number">1</span>
+   _count <span class="hljs-built_in">dd</span> <span class="hljs-number">1</span>               <span class="hljs-comment">; 计时器计数变量，初值=delay</span>
+</div></code></pre>
+<p><strong>问题2：</strong> <code>void display_str(char *str, int x, int y, int color)</code>和<code>void print(char *str)</code>不支持对<code>'\n'</code>操作。<br>
+<strong>解决2：</strong> 进行如下拓展。</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">display_str</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *str, <span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> color)</span>
+</span>{
+   <span class="hljs-keyword">int</span> offset_x = <span class="hljs-number">0</span>, offset_y = <span class="hljs-number">0</span>;
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; str[i] != <span class="hljs-number">0</span>; i++)
+   {
+       <span class="hljs-keyword">if</span> (str[i] == <span class="hljs-string">'\n'</span>)
+       {
+           offset_x = <span class="hljs-number">0</span>;
+           offset_y++;
+       }
+       <span class="hljs-keyword">else</span>
+       {
+           _display(str[i], x + offset_x, y + offset_y, color);
+           offset_x++;
+       }
+   }
+}
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *str)</span>
+</span>{
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; str[i] != <span class="hljs-string">'\0'</span>; i++)
+   {
+       <span class="hljs-keyword">if</span> (str[i] == <span class="hljs-string">'\n'</span>)
+       {
+           cursor_x = <span class="hljs-number">0</span>;
+           cursor_y++;
+       }
+       <span class="hljs-keyword">else</span>
+       {
+           _put(str[i]);
+           cursor_x++;
+       }
+       _move(cursor_x, cursor_y);
+   }
+}
+</div></code></pre>
+<p><strong>问题3：</strong> 在调用<code>void callf(int cl, int ch, int dh, int len)</code>时需要设置键盘中断程序<code>void _ouch()</code>。<br>
+<strong>解决3：</strong> 重写<code>void callf(int cl, int ch, int dh, int len)</code>，使其能够调用<code>void _set_int(int cs, void (*inter)(), int index)</code>，设置键盘中断程序<code>void _ouch()</code>。另外根据<em>实验原理 14</em>，<code>int 16h</code>中断会用到<code>int 9</code>中断将60端口扫描码转成缓冲区的字符，因而需要保存原有的<code>int 9</code>中断，以便回来时恢复<code>int 9</code>。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_callf:</span>
+   <span class="hljs-keyword">xor</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">ax</span>             <span class="hljs-comment">; AX = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>, <span class="hljs-built_in">ax</span>             <span class="hljs-comment">; ES = 0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">eax</span>, <span class="hljs-built_in">dword</span>[<span class="hljs-built_in">es</span>:<span class="hljs-number">36</span>]  <span class="hljs-comment">; 设置中断向量的偏移地址</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_int_9], <span class="hljs-built_in">eax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-number">0xb00</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">es</span>, <span class="hljs-built_in">ax</span>             <span class="hljs-comment">; es:bx</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">cl</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">4</span>]    <span class="hljs-comment">; 扇区号</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">ch</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">8</span>]    <span class="hljs-comment">; 柱面号 ; 起始编号为0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">dh</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">12</span>]   <span class="hljs-comment">; 磁头号 ; 起始编号为0</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-built_in">byte</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">16</span>]   <span class="hljs-comment">; 扇区数</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">bx</span>, <span class="hljs-number">0x100</span>          <span class="hljs-comment">; 偏移地址; 存放数据的内存偏移地址</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-number">ah</span>, <span class="hljs-number">2</span>              <span class="hljs-comment">; 功能号</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dl</span>, <span class="hljs-number">0</span>              <span class="hljs-comment">; 驱动器号 ; 软盘为0，硬盘和U盘为80H</span>
+   <span class="hljs-keyword">int</span> <span class="hljs-number">13H</span>                <span class="hljs-comment">; 调用读磁盘BIOS的13h功能</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-number">9</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> _ouch
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-number">0x800</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> _set_int
+   <span class="hljs-keyword">add</span> <span class="hljs-built_in">esp</span>, <span class="hljs-number">12</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-number">0xb00</span>:<span class="hljs-number">0x100</span>       <span class="hljs-comment">; 0xb100</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>             <span class="hljs-comment">; 恢复段地址</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-number">9</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span>[_int_9]
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span>[_int_9+<span class="hljs-number">2</span>]
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> _set_int
+   <span class="hljs-keyword">add</span> <span class="hljs-built_in">esp</span>, <span class="hljs-number">12</span>
+   <span class="hljs-keyword">ret</span>
+</div></code></pre>
+<p><strong>问题4：</strong> 刚运行用户程序就开始显示<code>&quot;OUCH!OUCH!&quot;</code>。<br>
+<strong>解决4：</strong> 通过运行如下代码，发现每次进入用户程序，都会发生一次键盘中断，表现为每次进入用户程序不按键盘，都会产生不同颜色的<code>OUCH!OUCH!</code></p>
+<pre class="hljs"><code><div><span class="hljs-keyword">int</span> color = <span class="hljs-number">0b11100100</span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ouch</span><span class="hljs-params">()</span>
+</span>{
+   display_str(<span class="hljs-string">"OUCH!OUCH!"</span>, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, color);
+   color = ~color;
+}
+</div></code></pre>
+<p>另外，进入用户程序的时候，按下键盘和松开键盘都会改变一次颜色，即都会发生键盘中断。这样，上面的问题可以这样解释：按Enter键还未松开时，进入用户程序，松开Enter刚好触发一次中断导致出现<code>&quot;OUCH!OUCH!&quot;</code>。可以通过增加一个变量<code>_press</code>在调用用户程序的时候初始化，键盘中断每两次展示一次<code>&quot;OUCH!OUCH!&quot;</code>。</p>
+<pre class="hljs"><code><div>   <span class="hljs-keyword">int</span> <span class="hljs-number">13H</span>                <span class="hljs-comment">; 调用读磁盘BIOS的13h功能</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_press], <span class="hljs-number">0</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-number">9</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> _ouch
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-number">0x800</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> _set_int
+   <span class="hljs-keyword">add</span> <span class="hljs-built_in">esp</span>, <span class="hljs-number">12</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-number">0xb00</span>:<span class="hljs-number">0x100</span>       <span class="hljs-comment">; 0xb100</span>
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-symbol">_ouch:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">in</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">60h</span>
+   <span class="hljs-keyword">cmp</span> <span class="hljs-built_in">dword</span>[_press], <span class="hljs-number">0</span>
+   <span class="hljs-keyword">jz</span> _ouch_end
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> ouch
+<span class="hljs-symbol">_ouch_end:</span>
+   <span class="hljs-keyword">xor</span> <span class="hljs-built_in">dword</span>[_press], <span class="hljs-number">0xffff</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">20h</span>            <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>, <span class="hljs-built_in">al</span>            <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>, <span class="hljs-built_in">al</span>           <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>
+</div></code></pre>
+<p><strong>问题4：</strong> <code>void ouch()</code>需要设置成显示一段时间，然后不显示。<br>
+<strong>解决4：</strong> 起初想通过调用<code>void _get_time()</code>刷新时间数组<code>unsigned short _time</code>，据此可以设置成1s变换1次颜色共显示4s。但是却发现，中断过程中CMOS RAM的值一直没有发生变化，怀疑是CMOS RAM值的更新也需要可屏蔽中断控制，根据*实验原理 6.*运行中断前先cli，因而无法执行其他可屏蔽中断，因而无法修改。</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ouch</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-keyword">int</span> color = <span class="hljs-number">0b11100100</span>;
+   _get_time();
+   <span class="hljs-keyword">unsigned</span> short sec = _time[<span class="hljs-number">5</span>];
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)
+   {
+       <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>)
+       {
+           _get_time();
+           <span class="hljs-keyword">if</span> (_time[<span class="hljs-number">5</span>] != sec)
+           {
+               sec = _time[<span class="hljs-number">5</span>];
+               <span class="hljs-keyword">break</span>;
+           }
+       }
+       display_str(<span class="hljs-string">"OUCH!OUCH!"</span>, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, color);
+       color = ~color;
+   }
+   display_str(<span class="hljs-string">"          "</span>, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, <span class="hljs-number">0x0f</span>);
+}
+</div></code></pre>
+<p><img src="cmos_ram.png" alt="avator"><br>
+因而改成循环。</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ouch</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-keyword">int</span> color = <span class="hljs-number">0b11100100</span>;
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++)
+   {
+       display_str(<span class="hljs-string">"OUCH!OUCH!"</span>, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, color);
+       color = ~color;
+       <span class="hljs-keyword">for</span> (<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">0x3ffffff</span>; j++)
+           ;
+   }
+   display_str(<span class="hljs-string">"          "</span>, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, <span class="hljs-number">0x0f</span>);
+}
+</div></code></pre>
+<p><strong>问题5：</strong> 如果用户程序需要键盘服务，则重写中断向量表会导致无法正常使用。<br>
+<strong>解决5：</strong> 根据<em>实验原理 15</em>，<code>int 9</code>将键盘扫描码转成对应ascii放入键盘缓冲区中，<code>int 16h</code>通过读取键盘缓冲区，返回键盘输入。因而，若要使用键盘服务，则需要保留原本<code>int 9</code>的服务。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_ouch:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">in</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">60h</span>
+   <span class="hljs-keyword">pushf</span>
+   <span class="hljs-keyword">pushf</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">and</span> <span class="hljs-number">ah</span>, <span class="hljs-number">0b11111100</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">popf</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span>[_int_9]
+   <span class="hljs-keyword">cmp</span> <span class="hljs-built_in">dword</span>[_press], <span class="hljs-number">0</span>
+   <span class="hljs-keyword">jz</span> _ouch_end
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> ouch
+</div></code></pre>
+<p>根据<em>实验原理 6</em>，可以通过模拟中断调用的方式，来调用存在<code>_int_9</code>位置的函数。另外，根据<em>实验原理 11</em>，可以通过栈和掩码的操作修改<code>if</code> <code>tf</code>的值。因此第一次<code>pushf</code>将flags压入栈，在运行<code>dword[_int_9]</code>到iret时，弹出。第二次pushf，连同后面的popf用来修改<code>if</code> <code>tf</code>。另外，若要使用<code>call 段:偏移</code>的方式调用，需要段是立即数，因而设置立即数<code>_int_9_cs</code>，<code>_int_9_ip</code>。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_ouch:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">in</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">60h</span>
+   <span class="hljs-keyword">pushf</span>
+   <span class="hljs-keyword">pushf</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">and</span> <span class="hljs-number">ah</span>, <span class="hljs-number">0b11111100</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">popf</span>
+   <span class="hljs-keyword">call</span> _int_9_cs:_int_9_ip
+   <span class="hljs-keyword">cmp</span> <span class="hljs-built_in">dword</span>[_press], <span class="hljs-number">0</span>
+   <span class="hljs-keyword">jz</span> _ouch_end
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> ouch
+</div></code></pre>
+<p><strong>问题6：</strong> 发现上次写的cal.com是存在BUG的，无法返回监控程序。<br>
+<strong>解决6：</strong> 首先是，返回的时候应该使用<code>retf</code>从而弹出<code>cs</code>和<code>ip</code>。另外<code>ss</code>寄存器初始化后需要恢复，然而ss寄存器决定了栈的段地址，因而只有将旧的<code>ss</code>存在新的栈中才行，这就需要先用其他寄存器拷贝一下<code>ss</code>的值。另外，<code>esp</code>也应当初始化，因为<code>esp</code>寄存器决定了决定了栈大小，而新进入所有用户程序栈应该是一个定长的。因此不妨将<code>esp</code>设为0xffff。同样，其他nasm代码入口也应改成这样，而stoneN.asm系列不改也无妨，因为它们没有用到栈。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_start:</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">ebp</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">bx</span>, <span class="hljs-built_in">ss</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ss</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebp</span>, <span class="hljs-built_in">esp</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">esp</span>, <span class="hljs-number">0xffff</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">bx</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">ebp</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> main
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">bx</span>, <span class="hljs-built_in">word</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">4</span>]
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">esp</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ss</span>, <span class="hljs-built_in">bx</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">ebp</span>
+   <span class="hljs-keyword">retf</span>&gt;_start:
+</div></code></pre>
+<p><strong>问题7：</strong> 在cal.com中，时间乱码。<br>
+<strong>解决7：</strong> 见<em>步骤2.问题4</em>分析，即要求中断进行过程中<code>ss</code>寄存器<code>ds</code>值相同。<br>
+然而因为中断程序是内核程序的一部分，在用户程序调用中断程序时可能修改内核程序的栈，因而起初并未对<code>ss</code>寄存器进行设置。<br>
+由于设置了常规程序栈顶在0xffff，而且目前com文件前0x100是没有内容的，所以不妨将栈顶设在0x100。但是这样一来，栈只有256B大小，所以规定中断程序相关的函数内不能有数组出现。</p>
+<pre class="hljs"><code><div><span class="hljs-symbol">_clock:</span>
+   <span class="hljs-keyword">pushad</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ax</span>, <span class="hljs-built_in">cs</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ds</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">bx</span>, <span class="hljs-built_in">ss</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ss</span>, <span class="hljs-built_in">ax</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ebp</span>, <span class="hljs-built_in">esp</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">esp</span>, <span class="hljs-number">0x100</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">bx</span>
+   <span class="hljs-keyword">push</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">ebp</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_delay], <span class="hljs-number">10</span>
+   <span class="hljs-keyword">dec</span> <span class="hljs-built_in">dword</span>[_count]      <span class="hljs-comment">; 递减计数变量</span>
+   <span class="hljs-keyword">jnz</span> _clock_end         <span class="hljs-comment">; &gt;0：跳转</span>
+   <span class="hljs-keyword">call</span> <span class="hljs-built_in">dword</span> clock
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">eax</span>, <span class="hljs-built_in">dword</span>[_delay]
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">dword</span>[_count], <span class="hljs-built_in">eax</span> <span class="hljs-comment">; 重置计数变量=初值delay</span>
+<span class="hljs-symbol">_clock_end:</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">al</span>, <span class="hljs-number">20h</span>            <span class="hljs-comment">; AL = EOI</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">20h</span>, <span class="hljs-built_in">al</span>            <span class="hljs-comment">; 发送EOI到主8529A</span>
+   <span class="hljs-keyword">out</span> <span class="hljs-number">0A0h</span>, <span class="hljs-built_in">al</span>           <span class="hljs-comment">; 发送EOI到从8529A</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">bx</span>, <span class="hljs-built_in">word</span>[<span class="hljs-built_in">esp</span>+<span class="hljs-number">4</span>]
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">dword</span> <span class="hljs-built_in">esp</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">ss</span>
+   <span class="hljs-keyword">mov</span> <span class="hljs-built_in">ss</span>, <span class="hljs-built_in">bx</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">ds</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">gs</span>
+   <span class="hljs-keyword">pop</span> <span class="hljs-built_in">word</span> <span class="hljs-built_in">es</span>
+   <span class="hljs-keyword">popad</span>
+   <span class="hljs-keyword">iret</span>                   <span class="hljs-comment">; 从中断返回</span>
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">char</span> HW_arr[] = <span class="hljs-string">"\\|/"</span>;
+<span class="hljs-keyword">int</span> HW_cur = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">char</span> clock_str[<span class="hljs-number">20</span>] = <span class="hljs-string">"20yy/mm/dd hh:mm:ss"</span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-keyword">if</span> (HW_arr[HW_cur] == <span class="hljs-number">0</span>)
+   {
+       HW_cur = <span class="hljs-number">0</span>;
+   }
+   _display(HW_arr[HW_cur++], <span class="hljs-number">60</span>, <span class="hljs-number">24</span>, <span class="hljs-number">0b00111111</span>);
+   _get_time();
+   <span class="hljs-keyword">char</span> *ptr = clock_str + <span class="hljs-number">2</span>;
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++)
+   {
+       BCD2str(_time[i], ptr);
+       ptr += <span class="hljs-number">3</span>;
+   }
+   display_str(clock_str, <span class="hljs-number">61</span>, <span class="hljs-number">24</span>, <span class="hljs-number">0b00111101</span>);
+}
+</div></code></pre>
+<p><strong>问题8：</strong> 上次使用<code>ret</code>而非<code>o32 ret</code>的原则如今不适用。<br>
+<strong>解决8：</strong> 观察发现nasm中<code>ret</code>机器码不带<code>0x66</code>，而gcc中<code>ret</code>机器码带<code>0x66</code>，应该将<code>ret</code>改成<code>o32 ret</code>即可。<br>
+<strong>问题9：</strong> 用户程序运行和<code>void _ouch()</code>运行是互斥的，即显示<code>&quot;OUCH!OUCH!&quot;</code>的同时其他程序是不工作的，如果用户程序需要输入就会持续打断非常不人性化。<br>
+<strong>解决9：</strong> 扩展<code>void clock()</code>。使其可以按需求显示字符串。基本原理如下：</p>
+<ol>
+<li>类似FAT表项的可复用的链表数据结构<code>struct node</code>。</li>
+</ol>
+<blockquote>
+<p>将之前写的用于存字符的链表节点结构<code>struct node</code>的<code>int next</code>和<code>int last</code>属性单独剥离出来，构成新的数据结构<code>struct node</code>，一种类似FAT表项的数据结构。</p>
+<pre class="hljs"><code><div><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span>
+{</span>
+   <span class="hljs-keyword">int</span> next;
+   <span class="hljs-keyword">int</span> last;
+};
+</div></code></pre>
+<p>这样之前的游标空间的数组<code>struct node ndsp[NDSPSZ]</code>，就改为两个数组<code>char chsp[CHSPSZ]</code>和<code>struct node chndsp[CHSPSZ]</code>分别用来存节点值，和节点的前驱后继位置。<br>
+相应的，构造函数<code>new_node</code>和析构函数<code>delete_node</code>也做成只处理节点前驱后继位置的函数，不处理节点值。<br>
+这样一来，就可以让链表节点值和前驱后继位置形成像FAT表项和文件之间的关系，做到一个可以复用链表数据结构。</p>
+</blockquote>
+<ol start="2">
+<li>要实时显示的内容数据结构<code>struct layer</code>。</li>
+</ol>
+<blockquote>
+<p>通过<code>void display_str(char *str, int x, int y, int color)</code>函数显示一个字符串需要<code>char *str</code>，<code>int x</code>，<code>int y</code>，<code>int color</code>四个参数，分别表示显示内容，x轴位置，y轴位置，颜色。这样一来只需要这四个参数，再调用这个函数就可以显示字符串。同时由于<em>步骤3.问题2</em>使<code>void display_str(char *str, int x, int y, int color)</code>函数已经支持<code>'\n'</code>，所以只需要一个字符串就可以显示多行。</p>
+<pre class="hljs"><code><div><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">layer</span>
+{</span>
+   <span class="hljs-keyword">char</span> *str;
+   <span class="hljs-keyword">int</span> x;
+   <span class="hljs-keyword">int</span> y;
+   <span class="hljs-keyword">int</span> color;
+};
+</div></code></pre>
+<p>类似的，用<code>struct node</code>使其可以串成一个链表。</p>
+</blockquote>
+<ol start="3">
+<li>用于实时生成显示内容的数据结构<code>struct layfun</code>。</li>
+</ol>
+<blockquote>
+<p>其中<code>void (*fun)(int *n_ptr)</code>成员表示用于实时生成显示内容<code>struct layer</code>的函数。<code>int n</code>成员表示剩余显示次数；<code>int *n_ptr</code>用于接收<code>int n</code>以便<code>fun</code>修改之。一旦<code>int n</code>归零，表示该函数失效，就需要将该节点删掉。</p>
+<pre class="hljs"><code><div><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">layfun</span>
+{</span>
+   <span class="hljs-keyword">void</span> (*fun)(<span class="hljs-keyword">int</span> *n_ptr);
+   <span class="hljs-keyword">int</span> n;
+};
+</div></code></pre>
+<p>同样用struct node使其可以串成一个链表。</p>
+</blockquote>
+<ol start="4">
+<li>重写的<code>void clock()</code>，用于实时处理两个链表。</li>
+</ol>
+<blockquote>
+<p><code>void clock()</code>先从头部遍历一次<code>struct layfun</code>的链表，执行链表中的每个函数。每个函数会生成一个<code>struct layer</code>类型的节点在<code>struct layer</code>链表的头部；还会修改<code>int n</code>的值，因此在函数执行完毕后，检查一下<code>int n</code>是否为0，如果为0，就删掉该节点。<br>
+再从头部遍历一次<code>struct lay</code>的链表，每遍历一个显示其中的内容，并且将其删除。</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock</span><span class="hljs-params">()</span>
+</span>{
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> ptr = lyfnheader; lyfnsp[ptr].fun != <span class="hljs-literal">NULL</span>; ptr = lyfnndsp[ptr].next)
+   {
+       lyfnsp[ptr].fun(&amp;lyfnsp[ptr].n);
+       <span class="hljs-keyword">if</span> (lyfnsp[ptr].n == <span class="hljs-number">0</span>)
+       {
+           delete_node(ptr, &amp;lyfnheader, lyfnndsp);
+       }
+   }
+   <span class="hljs-keyword">while</span> (lysp[lyheader].str != <span class="hljs-literal">NULL</span>)
+   {
+       display_str(lysp[lyheader].str, lysp[lyheader].x, lysp[lyheader].y, lysp[lyheader].color);
+       delete_node(lyheader, &amp;lyheader, lyndsp);
+   }
+}
+</div></code></pre>
+</blockquote>
+<ol start="5">
+<li>重写风火轮，显示时间，显示OUCH，使其符合上述<code>void (*fun)(int *n_ptr)</code>的规范，即生成<code>struct layer</code>和修改<code>int n</code>。</li>
+</ol>
+<blockquote>
+<p>这里有一些有创意的设计，比如修改刷新频率：</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock_time</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *n_ptr)</span>
+</span>{
+   <span class="hljs-keyword">if</span> (*n_ptr % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)
+   {
+       _get_time();
+       <span class="hljs-keyword">char</span> *ptr = clock_str + <span class="hljs-number">2</span>;
+       <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++)
+       {
+           BCD2str(_time[i], ptr);
+           ptr += <span class="hljs-number">3</span>;
+       }
+       new_layer(clock_str, <span class="hljs-number">61</span>, <span class="hljs-number">24</span>, <span class="hljs-number">0b00111101</span>, lyheader);
+   }
+   *n_ptr -= <span class="hljs-number">1</span>;
+   ...
+}
+</div></code></pre>
+<p>实时可变的显示颜色：</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock_ouch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *n_ptr)</span>
+</span>{
+   ...
+   <span class="hljs-keyword">else</span>
+   {
+       ouch_color = ~ouch_color;
+   }
+}
+</div></code></pre>
+<p>有限的生命：</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock_ouch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *n_ptr)</span>
+</span>{
+   new_layer(ouch_str, <span class="hljs-number">35</span>, <span class="hljs-number">12</span>, ouch_color, lyheader);
+   *n_ptr -= <span class="hljs-number">1</span>;
+   <span class="hljs-keyword">if</span> (*n_ptr == <span class="hljs-number">1</span>)
+   {
+       ouch_color = <span class="hljs-number">0</span>;
+   }
+   ...
+}
+</div></code></pre>
+<p>续命：</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">clock_hotwheel</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *n_ptr)</span>
+</span>{
+   hotwheel_str[<span class="hljs-number">0</span>] = hotwheel_arr[*n_ptr % <span class="hljs-number">3</span>];
+   new_layer(hotwheel_str, <span class="hljs-number">60</span>, <span class="hljs-number">24</span>, <span class="hljs-number">0b00111111</span>, lyheader);
+   *n_ptr -= <span class="hljs-number">1</span>;
+   <span class="hljs-keyword">if</span> (*n_ptr % <span class="hljs-number">3</span> == <span class="hljs-number">0</span>)
+   {
+       *n_ptr = <span class="hljs-number">3</span>;
+   }
+}
+</div></code></pre>
+</blockquote>
+<ol start="6">
+<li>不同显示内容的覆盖关系。</li>
+</ol>
+<blockquote>
+<p>由4可以看出，<code>struct layer</code>不同节点显示之间，是有覆盖关系的。<br>
+<code>struct layer</code>的链表是先入后出的，因此是先入链表的显示内容会覆盖后入链表的显示内容。<br>
+因此需要<code>struct layfun</code>链表同样先入后访问，这样才能使先放入<code>struct layfun</code>链表的函数后生成<code>struct layer</code>节点，从而先显示被后显示的覆盖。因此，再<code>struct layfun</code>链表每次插入新结点的时候，从头部插入，然后遍历的时候从头部访问。</p>
+<pre class="hljs"><code><div>   new_layfun(clock_hotwheel, <span class="hljs-number">3</span>, lyfnheader);
+</div></code></pre>
+<p>这样才能满足后打开的窗口覆盖先打开的窗口的自然的覆盖关系。</p>
+</blockquote>
+</blockquote>
+<h4 id="4-%E8%AF%A5%E6%AD%A5%E4%B8%AD%E9%81%87%E5%88%B0%E5%A6%82%E4%B8%8B%E9%97%AE%E9%A2%98">4. 该步中遇到如下问题：</h4>
+<blockquote>
+<p><strong>问题1：</strong> 之前使用word+模板的方式编写实验报告，虽然模板很美观但是报告却有很多问题：间距不合适要么太松要么分页太乱，代码选用文本形式没有语法高亮，使用图片格式无法直接拷贝文本。<br>
+<strong>解决1：</strong> 使用markdown编写报告，没有分页不需要因为分页问题而担忧，提供代码高亮服务不用为代码的形式而发愁。<br>
+<strong>问题2：</strong> 实验真实性证明。<br>
+<strong>解决2：</strong> 虽然旧的代码被新的代码覆盖掉了，但是保有debug时必要的截图还有代码。另外有录屏用于展示功能。</p>
+</blockquote>
+<h3 id="%E5%85%AD%E5%AE%9E%E9%AA%8C%E4%BA%AE%E7%82%B9">六、实验亮点：</h3>
+<ol>
+<li>基本实现实验基本要求</li>
+<li>在linux环境下编译</li>
+<li>使用了C代码bug在gdb来debug，其他bug在bochsdbg来debug的策略</li>
+<li>将上次代码的遗留的未发现的问题逐一解决</li>
+<li>将链表的逻辑关系单独提炼出来，为今后的开发铺平道路</li>
+<li>实现了一套可以多层实时显示的结构</li>
+<li>首次使用markdown来编写实验报告</li>
+</ol>
+<h3 id="%E4%B8%83%E5%AE%9E%E9%AA%8C%E5%8F%8D%E6%80%9D">七、实验反思：</h3>
+<blockquote>
+<p>首先是bug的问题，几次实验我将绝大多数时间花费到了写bug和debug上。虽然现在debug越来越熟练了，但是还是很浪费时间。因此今后要认真地听课，百度，看博客，在自己的知识水平足够高的时候再动手写代码，所谓磨刀不误砍柴工。</p>
+<p>第二是对后续工作的构想。我希望后面能把我之前写的FAT12文件系统搬进我的操作系统，这样一方面我之前的功夫没有白费，另一方面可以让操作系统更加完善。但这就要求更多的时间。我本来是打算在这次实验将之前的FAT12文件系统彻底搬进来，但是两个周的时间，一个周用来划水，一个周用来debug，导致实质性的工作并没有完成多少。所以希望下次能够花更少的时间划水和debug，卯足劲将整个FAT12文件系统搬进来。</p>
+<p>第三是实验报告书写的问题。我的思路不明，语言乏力的问题是很难立刻解决了，但是排版不好的问题可以通过换工具来快速解决。这次是第一次使用markdown，难免还会有排版不熟练的问题，希望助教能够指正。另外这次markdown的体验，我感觉很好。我认为它的排版比word简洁不少，很容易就可以获得一个相对美观的实验报告，另外可以用熟悉的vscode编辑，又可以练习vim的熟练度。所以今后如果没有学习latex，我会持续使用markdown来写作业。</p>
+<p>第四是代码管理的问题。由于实验报告是随着写代码一同进行的，代码是不停迭代的，而实验报告却仍保有旧的代码，这样对应起来是不太方便的。所以我打算在下次实验，每做完一个步骤提交一次代码，这样可以通过看提交历史来找到获得旧的代码。</p>
+<p>最后是实验报告的反馈问题。我是最近才发现，原来学委一个月前发的反馈文档是在线文档，导致最近才看到之前实验报告的反馈情况。没看到反馈，导致一直以来我对实验报告都不是很重视。虽然之前的代码平平无奇，但是对我而言是有一定工作量的（主要是在debug上），比如国庆那次作业由于是在外地，代码都是远程用pad到电脑上写的，debug非常的艰苦（但是也因此学会了gdb和bochsdbg的操作，这些都是后话了）。反馈是很重要的，不仅仅是分数的问题，更是自我提高的一个途径，所谓见贤思齐，见不贤自省。可能有的同学和我之前一样，也不知道原来每次实验报告都有反馈，所以希望助教能够提示学委，让他们告知同学反馈的文档是在线文档。</p>
+</blockquote>
+
+</body>
+</html>

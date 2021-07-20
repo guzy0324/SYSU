@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX-post</title>
+  <style>
+    p {font-size:20px}
+  </style>
+</head>
+<body>
+  <h1>Ajax-post</h1>
+  <p>id：<input id="t1" type="text"></p>
+  <p>姓名：<input id="t2" type="text"></p>
+  <p><span id="t4"></span></p>
+  <script>
+    t1 = document.getElementById("t1");
+    t2 = document.getElementById("t2");
+    t2.addEventListener("blur", post);
+    t4 = document.getElementById("t4");
+    function post()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function ()
+        {
+            if (xmlhttp.readyState == 4)
+            {
+                if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status >= 304)
+                {
+                    t4.innerHTML = xmlhttp.responseText;
+                }
+                else
+                {
+                    alert("error");
+                }
+            }
+        }
+        xmlhttp.open("post", "http://172.18.187.251:8080/jsp/post.jsp", true);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        var param = "id=" + t1.value + "&name=" + encodeURIComponent(t2.value); // 汉字需要编码
+        xmlhttp.send(param); // 没有参数就用 null 。
+    }
+  </script>
+</body>
+</html>

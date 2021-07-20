@@ -1,0 +1,7 @@
+PatientAge: ['0-30','31-65','65+']
+CTScanResult: ['Ischemic Stroke','Hemmorraghic Stroke']
+MRIScanResult: ['Ischemic Stroke','Hemmorraghic Stroke']
+StrokeType: ['Ischemic Stroke','Hemmorraghic Stroke', 'Stroke Mimic']
+Anticoagulants: ['Used','Not used']
+Mortality: ['True', 'False']
+Disability: ['Negligible', 'Moderate', 'Severe']

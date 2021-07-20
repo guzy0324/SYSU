@@ -1,0 +1,21 @@
+/* Optional test Case 3: duplicate "main" method */
+program erropt3;
+class myTest
+{
+	declarations
+		int x, y;
+	enddeclarations
+
+	method void main()
+	{
+	return x;
+	}
+}
+
+class test1
+{
+	method void main()
+	{
+	/* nothing */
+	}
+}

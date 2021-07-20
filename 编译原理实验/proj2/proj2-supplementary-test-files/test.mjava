@@ -1,0 +1,18 @@
+/* Demo program.  */
+
+program p2;
+class Test {
+    method void main()
+    declarations
+        int x;
+        int i = 0;
+    enddeclarations 
+    { /* While Loop begins */
+        while (i < 10) {
+            System.readln(x);
+            System.println(x);
+            i := i + 1;
+        }; /* end while */
+        System.println('End of Program');
+    }
+}

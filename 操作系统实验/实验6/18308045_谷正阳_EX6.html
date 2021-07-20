@@ -1,0 +1,784 @@
+<!DOCTYPE html><html><head>
+      <title>18308045_&#x8C37;&#x6B63;&#x9633;_EX6</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\guzy0\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.12\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\guzy0\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.12\node_modules\@shd101wyy\mume\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      
+      
+      
+      <style>
+      /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	/* padding: 0; */
+
+	padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="center%E5%AE%9E%E9%AA%8C%E5%85%AD%E5%AE%9E%E7%8E%B0%E6%97%B6%E9%97%B4%E7%89%87%E8%BD%AE%E8%BD%AC%E7%9A%84%E4%BA%8C%E6%80%81%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8Bcenter"><center>&#x5B9E;&#x9A8C;&#x516D;&#xFF1A;&#x5B9E;&#x73B0;&#x65F6;&#x95F4;&#x7247;&#x8F6E;&#x8F6C;&#x7684;&#x4E8C;&#x6001;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</center></h1>
+
+<h3 class="mume-header" id="%E4%B8%80-%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84">&#x4E00;&#x3001;&#x5B9E;&#x9A8C;&#x76EE;&#x7684;&#xFF1A;</h3>
+
+<ol>
+<li>&#x5B66;&#x4E60;&#x591A;&#x9053;&#x7A0B;&#x5E8F;&#x4E0E;CPU&#x5206;&#x65F6;&#x6280;&#x672F;</li>
+<li>&#x638C;&#x63E1;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7684;&#x4E8C;&#x6001;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;</li>
+<li>&#x638C;&#x63E1;&#x8FDB;&#x7A0B;&#x8868;&#x793A;&#x65B9;&#x6CD5;</li>
+<li>&#x638C;&#x63E1;&#x65F6;&#x95F4;&#x7247;&#x8F6E;&#x8F6C;&#x8C03;&#x5EA6;&#x7684;&#x5B9E;&#x73B0;</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%8C-%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82">&#x4E8C;&#x3001;&#x5B9E;&#x9A8C;&#x8981;&#x6C42;&#xFF1A;</h3>
+
+<ol>
+<li>&#x4E86;&#x89E3;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x7684;&#x4E8C;&#x6001;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</li>
+<li>&#x6269;&#x5C55;&#x5B9E;&#x9A8C;&#x4E94;&#x7684;&#x7684;&#x5185;&#x6838;&#x7A0B;&#x5E8F;&#xFF0C;&#x589E;&#x52A0;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x53EF;&#x540C;&#x65F6;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x5206;&#x65F6;&#x8FD0;&#x884C;&#xFF0C;&#x589E;&#x52A0;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x548C;&#x8FDB;&#x7A0B;&#x8868;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</li>
+<li>&#x4FEE;&#x6539;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x8C03;&#x7528;&#x65F6;&#x95F4;&#x7247;&#x8F6E;&#x8F6C;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#x3002;</li>
+<li>&#x8BBE;&#x8BA1;&#x5B9E;&#x73B0;&#x65F6;&#x95F4;&#x7247;&#x8F6E;&#x8F6C;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#xFF0C;&#x6BCF;&#x6B21;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#xFF0C;&#x5C31;&#x5207;&#x6362;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B9E;&#x73B0;&#x8FDB;&#x7A0B;&#x8F6E;&#x6D41;&#x8FD0;&#x884C;&#x3002;</li>
+<li>&#x4FEE;&#x6539;save()&#x548C;restart()&#x4E24;&#x4E2A;&#x6C47;&#x7F16;&#x8FC7;&#x7A0B;&#xFF0C;&#x5229;&#x7528;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x88AB;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x7684;&#x73B0;&#x573A;&#xFF0C;&#x5E76;&#x4ECE;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x6062;&#x590D;&#x4E0B;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x73B0;&#x573A;&#x3002;</li>
+<li>&#x7F16;&#x5199;&#x5B9E;&#x9A8C;&#x62A5;&#x544A;&#xFF0C;&#x63CF;&#x8FF0;&#x5B9E;&#x9A8C;&#x5DE5;&#x4F5C;&#x7684;&#x8FC7;&#x7A0B;&#x548C;&#x5FC5;&#x8981;&#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x5982;&#x622A;&#x5C4F;&#x6216;&#x5F55;&#x5C4F;&#xFF0C;&#x4EE5;&#x8BC1;&#x5B9E;&#x5B9E;&#x9A8C;&#x5DE5;&#x4F5C;&#x7684;&#x771F;&#x5B9E;&#x6027;</li>
+</ol>
+<h3 class="mume-header" id="%E4%B8%89-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF">&#x4E09;&#x3001;&#x6280;&#x672F;&#x8DEF;&#x7EBF;&#xFF1A;</h3>
+
+<div class="mermaid">graph TD
+A(&quot;&#x67E5;&#x770B;&#x5B9E;&#x9A8C;&#x8981;&#x6C42;&quot;)
+B(&quot;&#x8FDB;&#x884C;&#x7406;&#x8BBA;&#x51C6;&#x5907;&quot;)
+C(&quot;&#x7F16;&#x5199;&#x4EE3;&#x7801;&quot;)
+D(&quot;&#x8C03;&#x8BD5;&#x4EE3;&#x7801;&quot;)
+E(&quot;&#x7F16;&#x5199;&#x5B9E;&#x9A8C;&#x5185;&#x5BB9;&quot;)
+F(&quot;&#x7F16;&#x5199;&#x5B9E;&#x9A8C;&#x53CD;&#x601D;&quot;)
+A==&gt;B==&gt;C==&gt;D
+D==&quot;&#x51FA;&#x9519;&quot;==&gt;C
+D==&quot;&#x65E0;&#x9519;&quot;==&gt;E
+E==&quot;&#x82E5;&#x8FD8;&#x6709;&#x5269;&#x4F59;&#x8981;&#x6C42;&quot;==&gt;A
+E==&quot;&#x82E5;&#x65E0;&#x5269;&#x4F59;&#x8981;&#x6C42;&quot;==&gt;F
+</div><h3 class="mume-header" id="%E5%9B%9B-%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9">&#x56DB;&#x3001;&#x5B9E;&#x9A8C;&#x5185;&#x5BB9;&#xFF1A;</h3>
+
+<h5 class="mume-header" id="1-%E4%BF%AE%E6%94%B9%E5%AE%9E%E9%AA%8C5%E7%9A%84%E5%86%85%E6%A0%B8%E4%BB%A3%E7%A0%81%E5%AE%9A%E4%B9%89%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97pcb%E7%B1%BB%E5%9E%8B%E5%8C%85%E6%8B%AC%E8%BF%9B%E7%A8%8B%E5%8F%B7-%E7%A8%8B%E5%BA%8F%E5%90%8D-%E8%BF%9B%E7%A8%8B%E5%86%85%E5%AD%98%E5%9C%B0%E5%9D%80%E4%BF%A1%E6%81%AF-cpu%E5%AF%84%E5%AD%98%E5%99%A8%E4%BF%9D%E5%AD%98%E5%8C%BA-%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E7%AD%89%E5%BF%85%E8%A6%81%E6%95%B0%E6%8D%AE%E9%A1%B9%E5%86%8D%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AApcb%E6%95%B0%E7%BB%84%E6%9C%80%E5%A4%A7%E8%BF%9B%E7%A8%8B%E6%95%B0%E4%B8%BA10%E4%B8%AA">(1) &#x4FEE;&#x6539;&#x5B9E;&#x9A8C;5&#x7684;&#x5185;&#x6838;&#x4EE3;&#x7801;&#xFF0C;&#x5B9A;&#x4E49;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;PCB&#x7C7B;&#x578B;&#xFF0C;&#x5305;&#x62EC;&#x8FDB;&#x7A0B;&#x53F7;&#x3001;&#x7A0B;&#x5E8F;&#x540D;&#x3001;&#x8FDB;&#x7A0B;&#x5185;&#x5B58;&#x5730;&#x5740;&#x4FE1;&#x606F;&#x3001;CPU&#x5BC4;&#x5B58;&#x5668;&#x4FDD;&#x5B58;&#x533A;&#x3001;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7B49;&#x5FC5;&#x8981;&#x6570;&#x636E;&#x9879;&#xFF0C;&#x518D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;PCB&#x6570;&#x7EC4;&#xFF0C;&#x6700;&#x5927;&#x8FDB;&#x7A0B;&#x6570;&#x4E3A;10&#x4E2A;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x5C06;&#x4E0A;&#x6B21;&#x5199;&#x7684;&#x5728;asm&#x4E2D;&#x5B9A;&#x4E49;&#x7684;<code>_register</code>&#xFF0C;&#x91CD;&#x5199;&#x6210;C&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x65B9;&#x4FBF;&#x5EFA;&#x7ACB;&#x591A;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x4EE5;&#x7ED9;&#x591A;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x3002;</li>
+<li>&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x7ED3;&#x6784;&#x4F53;&#x5728;asm&#x4E2D;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x4F7F;&#x7528;<code>equ</code>&#x8BED;&#x6CD5;&#xFF0C;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x504F;&#x79FB;&#x3002;</li>
+<li>&#x5B9A;&#x4E49;PCB&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x8FDB;&#x7A0B;&#x5185;&#x5B58;&#x5730;&#x5740;&#x4FE1;&#x606F;&#x5B58;&#x5728;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x3002;&#x5982;&#x6BB5;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;<code>esp</code>&#xFF0C;<code>ip</code>&#x7B49;&#x3002;&#x56E0;&#x800C;&#x7ED3;&#x6784;&#x4F53;&#x9700;&#x8981;&#x5B58;&#x7684;&#x6210;&#x5458;&#x6709;<code>pregs</code>&#xFF0C;<code>pid</code>&#xFF0C;<code>pname</code>&#xFF0C;<code>pstate</code>&#x3002;</li>
+<li><code>pid</code>&#x4ECE;1&#x5F00;&#x59CB;&#x3002;</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99">&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;</h6>
+
+<ol>
+<li>&#x91CD;&#x5199;<code>_register</code>&#x4E3A;&#x7ED3;&#x6784;&#x4F53;<code>struct reg</code>&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">struct</span> reg
+<span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> ax<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> bx<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> cx<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> dx<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> sp<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> bp<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> si<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> di<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> ip<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> flags<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> es<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> cs<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> ss<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> ds<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> fs<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> gs<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> reg regs<span class="token punctuation">;</span>
+</pre><ol start="2">
+<li><code>equ</code>&#x8BED;&#x6CD5;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#xFF0C;&#x4FDD;&#x6301;&#x7ED3;&#x6784;&#x4F53;&#x5728;asm&#x4E2D;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_ax equ 0
+_bx equ 4
+_cx equ 8
+_dx equ 12
+_sp equ 16
+_bp equ 20
+_si equ 24
+_di equ 28
+_ip equ 32
+_flags equ 36
+_es equ 40
+_cs equ 44
+_ss equ 48
+_ds equ 52
+_fs equ 56
+_gs equ 60
+</code></pre><ol start="3">
+<li><code>struct PCB</code>&#x7684;&#x6784;&#x5EFA;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">struct</span> PCB
+<span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> reg pregs<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> pid<span class="token punctuation">;</span>
+    <span class="token keyword">char</span> pname<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> pstate<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> PCB pcblist<span class="token punctuation">[</span>MaxProcessNo<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><h5 class="mume-header" id="2-%E6%89%A9%E5%B1%95%E5%AE%9E%E9%AA%8C%E4%BA%94%E7%9A%84%E7%9A%84%E5%86%85%E6%A0%B8%E7%A8%8B%E5%BA%8F%E5%A2%9E%E5%8A%A0%E4%B8%80%E6%9D%A1%E5%91%BD%E4%BB%A4%E5%8F%AF%E5%90%8C%E6%97%B6%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7%E7%A8%8B%E5%BA%8F%E5%86%85%E6%A0%B8%E5%8A%A0%E8%BD%BD%E8%BF%99%E4%BA%9B%E7%A8%8B%E5%BA%8F%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%86%8D%E5%AE%9E%E7%8E%B0%E5%88%86%E6%97%B6%E8%BF%90%E8%A1%8C">(2) &#x6269;&#x5C55;&#x5B9E;&#x9A8C;&#x4E94;&#x7684;&#x7684;&#x5185;&#x6838;&#x7A0B;&#x5E8F;&#xFF0C;&#x589E;&#x52A0;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x53EF;&#x540C;&#x65F6;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#xFF0C;&#x5185;&#x6838;&#x52A0;&#x8F7D;&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#xFF0C;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x518D;&#x5B9E;&#x73B0;&#x5206;&#x65F6;&#x8FD0;&#x884C;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-1">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x547D;&#x4EE4;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF1A;</li>
+</ol>
+<div class="mermaid">graph TD
+A(&quot;&#x52A0;&#x8F7D;&#x82E5;&#x5E72;&#x4E2A;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&quot;)
+B(&quot;&#x521D;&#x59CB;&#x5316;PCB&#x8868;&quot;)
+A==&gt;B
+</div><ol start="2">
+<li>&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x540C;&#x65F6;&#x52A0;&#x8F7D;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x539F;&#x5148;&#x7684;<code>_callf</code>&#x5206;&#x6210;&#x52A0;&#x8F7D;&#x548C;&#x8C03;&#x7528;&#x4E24;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x53E6;&#x5916;&#x52A0;&#x8F7D;&#x8981;&#x5C06;&#x52A0;&#x8F7D;&#x5230;&#x7684;&#x6570;&#x636E;&#x6BB5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x9891;&#x7E41;&#x5220;&#x9664;&#xFF0C;&#x6240;&#x4EE5;&#x5C06;PCB&#x8868;&#x6539;&#x6210;&#x94FE;&#x8868;&#x5B58;&#x50A8;&#x3002;</li>
+<li>&#x5C06;&#x547D;&#x4EE4;&#x547D;&#x540D;&#x4E3A;<code>&quot;SYNC&quot;</code>&#x3002;</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-1">&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;</h6>
+
+<ol>
+<li>&#x62C6;<code>_callf</code>&#x6210;<code>load</code>&#x548C;<code>_callf</code>&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info class="language-"><code>_callf:
+    push dword ebx
+    push dword ebp
+    mov ax, 0x1000
+    mov ds, ax
+    mov word [0], 0x20cd
+    mov word [0x2e], sp
+    mov word [0x30], ss
+    mov sp, 0xffff
+    mov ss, ax
+    push word 0x1000
+    push word 0x0
+    jmp 0x1000:0x100           ; 0xb100
+_after_user_ret:
+    pop dword ebp
+    pop dword ebx
+    o32 ret
+</code></pre><p>&#x6CE8;&#x610F;<code>_load</code>&#x4E5F;&#x8981;&#x5199;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_load:
+    mov ax, word[esp+20]
+    mov es, ax                ; es:bx
+    mov cl, byte[esp+4]       ; &#x6247;&#x533A;&#x53F7;
+    mov ch, byte[esp+8]       ; &#x67F1;&#x9762;&#x53F7; ; &#x8D77;&#x59CB;&#x7F16;&#x53F7;&#x4E3A;0
+    mov dh, byte[esp+12]      ; &#x78C1;&#x5934;&#x53F7; ; &#x8D77;&#x59CB;&#x7F16;&#x53F7;&#x4E3A;0
+    mov al, byte[esp+16]      ; &#x6247;&#x533A;&#x6570;
+    push dword ebx
+    mov bx, 0x100             ; &#x504F;&#x79FB;&#x5730;&#x5740;; &#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#x5185;&#x5B58;&#x504F;&#x79FB;&#x5730;&#x5740;
+    mov ah, 2                 ; &#x529F;&#x80FD;&#x53F7;
+    mov dl, 0                 ; &#x9A71;&#x52A8;&#x5668;&#x53F7; ; &#x8F6F;&#x76D8;&#x4E3A;0&#xFF0C;&#x786C;&#x76D8;&#x548C;U&#x76D8;&#x4E3A;80H
+    int 13H                   ; &#x8C03;&#x7528;&#x8BFB;&#x78C1;&#x76D8;BIOS&#x7684;13h&#x529F;&#x80FD;
+    pop dword ebx
+    o32 ret
+</code></pre><ol start="2">
+<li>&#x5229;&#x7528;<code>node</code>&#x94FE;&#x5F0F;&#x5B58;&#x50A8;PCB&#x8868;&#xFF0C;&#x64CD;&#x4F5C;&#x5927;&#x540C;&#x5C0F;&#x5F02;&#xFF0C;&#x5728;&#x6B64;&#x53EA;&#x5C55;&#x793A;&#x5206;&#x914D;&#x65B0;&#x7684;PCB&#x8868;&#x8FC7;&#x7A0B;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x5BC4;&#x5B58;&#x5668;&#x521D;&#x59CB;&#x5316;&#x5373;&#x521D;&#x59CB;&#x5316;&#x6BB5;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;<code>ip</code>&#xFF0C;<code>sp</code>&#x548C;<code>flags</code>&#x3002;&#x53E6;&#x5916;<code>pid</code>&#x4E3A;0&#x8868;&#x793A;&#x94FE;&#x8868;&#x5C3E;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> <span class="token function">new_pcb</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> cs<span class="token punctuation">,</span> <span class="token keyword">int</span> pid<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>pname<span class="token punctuation">,</span> <span class="token keyword">int</span> cursor<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> neo_pcb <span class="token operator">=</span> <span class="token function">new_node</span><span class="token punctuation">(</span>cursor<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pcbheader<span class="token punctuation">,</span> pcbndsp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>neo_pcb <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>bx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>cx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>dx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>sp <span class="token operator">=</span> <span class="token number">0xffff</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>bp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>si <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>di <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ip <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>flags <span class="token operator">=</span> <span class="token number">512</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>es <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>cs <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ss <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ds <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>fs <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>gs <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">=</span> pid<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> pname<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pname<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> pname<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> neo_pcb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="3-%E4%BF%AE%E6%94%B9save%E5%92%8Crestart%E4%B8%A4%E4%B8%AA%E6%B1%87%E7%BC%96%E8%BF%87%E7%A8%8B%E5%88%A9%E7%94%A8%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E4%BF%9D%E5%AD%98%E5%BD%93%E5%89%8D%E8%A2%AB%E4%B8%AD%E6%96%AD%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8E%B0%E5%9C%BA%E5%B9%B6%E4%BB%8E%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E6%81%A2%E5%A4%8D%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%BF%9B%E7%A8%8B%E7%9A%84%E8%BF%90%E8%A1%8C">(3) &#x4FEE;&#x6539;save()&#x548C;restart()&#x4E24;&#x4E2A;&#x6C47;&#x7F16;&#x8FC7;&#x7A0B;&#xFF0C;&#x5229;&#x7528;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x88AB;&#x4E2D;&#x65AD;&#x8FDB;&#x7A0B;&#x7684;&#x73B0;&#x573A;&#xFF0C;&#x5E76;&#x4ECE;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x6062;&#x590D;&#x4E0B;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8FD0;&#x884C;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-2">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x672C;&#x6765;&#x8BE5;&#x6B65;&#x5728;&#x8001;&#x5E08;&#x7684;&#x8981;&#x6C42;&#x4E2D;&#x662F;&#x6B65;&#x9AA4;5&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x8BA4;&#x4E3A;&#x5E94;&#x8BE5;&#x63D0;&#x524D;&#x5B9A;&#x4E49;&#x597D;<code>save</code>&#x548C;<code>restart</code>&#x7684;&#x64CD;&#x4F5C;&#x624D;&#x80FD;&#x7EE7;&#x7EED;&#x539F;&#x672C;&#x7684;&#x7B2C;&#x4E09;&#x6B65;&#xFF08;&#x73B0;&#x5728;&#x7684;&#x7B2C;&#x56DB;&#x6B65;&#xFF09;&#x3002;</li>
+<li>&#x539F;&#x672C;&#x7684;<code>_save</code>&#x548C;<code>_restart</code>&#x53EA;&#x80FD;&#x64CD;&#x4F5C;&#x6700;&#x5F00;&#x59CB;&#x5B9A;&#x4E49;&#x7684;<code>regs</code>&#x5185;&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x64CD;&#x4F5C;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;PCB&#x8868;&#x4E2D;&#x7684;&#x5185;&#x5B58;&#x5668;&#x503C;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x4F1A;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x3002;&#x5047;&#x8BBE;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x65F6;&#xFF0C;&#x8C03;&#x7528;<code>_save</code>&#x5C06;&#x5BC4;&#x5B58;&#x5668;&#x5B58;&#x5728;<code>regs</code>&#xFF0C;&#x63A5;&#x7740;&#x5C06;&#x5F53;&#x524D;CPU&#x5BC4;&#x5B58;&#x5668;&#x5B58;&#x5230;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x7684;PCB&#x8868;<code>pregs</code>&#x4E2D;&#xFF0C;&#x8F6E;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x3002;&#x63A5;&#x7740;&#x5C06;&#x65B0;&#x7684;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;PCB&#x8868;&#x4E2D;<code>pregs</code>&#x6362;&#x5165;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E4B;&#x540E;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x4E2D;&#x65AD;&#x8C03;&#x7528;&#xFF0C;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;<code>_save</code>&#xFF0C;&#x800C;&#x4E14;&#x5C06;&#x4E00;&#x5F00;&#x59CB;&#x7684;<code>regs</code>&#x8986;&#x76D6;&#x6389;&#x4E86;&#x3002;&#x53E6;&#x5916;&#x6CE8;&#x610F;&#x5230;<code>pregs</code>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x662F;&#x4E0D;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x6362;&#x5165;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x540E;&#xFF0C;&#x662F;&#x65E0;&#x7528;&#x7684;&#x6570;&#x636E;&#x3002;&#x56E0;&#x800C;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x8FDB;&#x5165;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x8F6E;&#x8F6C;&#x524D;&#x8C03;&#x7528;<code>_save</code>&#x540E;&#x5C06;<code>regs</code>&#x548C;<code>pregs</code>&#x4EA4;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x8F6E;&#x8F6C;&#x540E;&#xFF0C;&#x5C06;<code>regs</code>&#x548C;<code>pregs</code>&#x503C;&#x4EA4;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x6B63;&#x5E38;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4E2D;&#x65AD;&#x8C03;&#x7528;&#xFF0C;&#x53EA;&#x4F1A;&#x4FEE;&#x6539;&#x5F53;&#x524D;<code>regs</code>&#x7684;&#x503C;&#xFF0C;&#x5F53;&#x524D;<code>pregs</code>&#x662F;&#x88AB;&#x4FDD;&#x62A4;&#x7684;&#xFF0C;&#x800C;&#x5F53;&#x524D;<code>regs</code>&#x503C;&#x662F;&#x65E0;&#x7528;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x3002;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x5C06;&#x5BC4;&#x5B58;&#x5668;&#x5B58;&#x5230;<code>regs</code>&#xFF0C;&#x518D;&#x5C06;<code>regs</code>&#x548C;<code>pregs</code>&#x503C;&#x4EA4;&#x6362;&#x3002;&#x7ED8;&#x5236;&#x793A;&#x610F;&#x56FE;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ol>
+<div class="mermaid">graph TD
+A(&quot;CPU&quot;)
+B(&quot;regs&quot;)
+C(&quot;pregs&quot;)
+A--&#x8FDB;&#x65F6;&#x949F;&#x4E2D;&#x65AD;/&#x4E2D;&#x65AD;&#x8C03;&#x7528;--&gt;B
+B--&#x51FA;&#x65F6;&#x949F;&#x4E2D;&#x65AD;/&#x4E2D;&#x65AD;&#x8C03;&#x7528;--&gt;A
+B--&#x8FDB;&#x8FDB;&#x7A0B;,&#x4EA4;&#x6362;---C
+B--&#x51FA;&#x8FDB;&#x7A0B;,&#x4EA4;&#x6362;---C
+</div><h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-2">&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;</h6>
+
+<ol>
+<li>&#x7528;&#x4E8E;&#x4EA4;&#x6362;<code>struct regs</code>&#x7684;&#x51FD;&#x6570;<code>reg_swap</code>&#x5B9E;&#x73B0;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6765;&#x505A;&#x5230;&#x7528;&#x5FAA;&#x73AF;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token keyword">struct</span> reg<span class="token operator">*</span> reg1<span class="token punctuation">,</span> <span class="token keyword">struct</span> reg<span class="token operator">*</span> reg2<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span>p1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>reg1<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span>p2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>reg2<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">16</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        p1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> p2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        p2<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> p1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> p2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        p1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-=</span> p2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="4-%E4%BF%AE%E6%94%B9%E6%97%B6%E9%92%9F%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F%E4%BF%9D%E7%95%99%E6%97%A0%E6%95%8C%E9%A3%8E%E7%81%AB%E8%BD%AE%E6%98%BE%E7%A4%BA%E8%80%8C%E4%B8%94%E5%A2%9E%E5%8A%A0%E8%B0%83%E7%94%A8%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B">(4) &#x4FEE;&#x6539;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x4FDD;&#x7559;&#x65E0;&#x654C;&#x98CE;&#x706B;&#x8F6E;&#x663E;&#x793A;&#xFF0C;&#x800C;&#x4E14;&#x589E;&#x52A0;&#x8C03;&#x7528;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x8FC7;&#x7A0B;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-3">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x4E4B;&#x524D;<code>_clock</code>&#x662F;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x56FA;&#x5B9A;&#x9891;&#x7387;&#x5730;&#x8C03;&#x7528;<code>clock</code>&#x5904;&#x7406;<code>layfun</code>&#x548C;<code>layer</code>&#xFF0C;&#x8FD9;&#x91CC;&#x518D;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x8C03;&#x5EA6;&#x7A0B;&#x5E8F;&#x5373;&#x53EF;&#xFF08;&#x4E0D;&#x80FD;&#x5C06;&#x8C03;&#x5EA6;&#x7A0B;&#x5E8F;&#x52A0;&#x5728;<code>clock</code>&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;<code>clock</code>&#x9891;&#x7387;&#x592A;&#x4F4E;&#x4E86;&#xFF09;&#x3002;</li>
+<li>&#x6839;&#x636E;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5C3E;&#x90E8;&#x8282;&#x70B9;&#xFF08;<code>pid</code>&#x4E3A;0&#xFF09;&#x662F;&#x4E0D;&#x4F7F;&#x7528;&#x7684;&#x3002;&#x800C;&#x5F53;PCB&#x94FE;&#x8868;&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;<code>pcbheader</code>&#x5C31;&#x662F;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x8981;&#x4FDD;&#x8BC1;PCB&#x94FE;&#x8868;&#x4E3A;&#x7A7A;&#x65F6;&#x4E0D;&#x6267;&#x884C;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#xFF08;&#x5426;&#x5219;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x7ED3;&#x675F;&#x540E;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x4E3A;&#x5C3E;&#x90E8;&#x8282;&#x70B9;&#x7684;<code>pregs</code>&#x503C;&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E2A;&#x5224;&#x65AD;&#x3002;</li>
+<li>&#x8F6E;&#x8F6C;&#x65F6;&#xFF0C;<code>cur_pcb</code>&#x5982;&#x679C;&#x5230;&#x5C3E;&#x90E8;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x5176;&#x4FEE;&#x6539;&#x4E3A;&#x5934;&#x90E8;&#xFF0C;&#x6240;&#x4EE5;&#x52A0;&#x4E00;&#x4E2A;&#x5224;&#x65AD;&#x3002;</li>
+<li>&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#x8FC7;&#x7A0B;&#xFF1A;</li>
+</ol>
+<div class="mermaid">graph TD
+A(&quot;_save&quot;)
+B(&quot;&#x5904;&#x7406;struct lyfn&quot;)
+C(&quot;&#x5904;&#x7406;struct layer&quot;)
+D(&quot;reg_swap(pregs,regs)&quot;)
+E(&quot;cur_pcb=cur_pcb-&gt;next&quot;)
+F(&quot;cur_pcb=pcbheader&quot;)
+G(&quot;reg_swap(pregs,regs)&quot;)
+H(&quot;_restart&quot;)
+I(&quot;iret&quot;)
+A--&gt;B--&gt;C
+C--pid!=0--&gt;D
+C--pid==0--&gt;H
+D--&gt;E
+E--pid!=0--&gt;G
+E--pid==0--&gt;F
+F--&gt;G--&gt;H--&gt;I
+</div><ol start="5">
+<li>&#x7531;&#x4E8E;&#x547D;&#x4EE4;&#x51FD;&#x6570;<code>cmd_sync</code>&#x672A;&#x6267;&#x884C;&#x5B8C;&#x65F6;&#xFF0C;PCB&#x94FE;&#x8868;&#x672A;&#x5B8C;&#x6210;&#xFF0C;&#x56E0;&#x800C;&#x5E94;&#x8BE5;&#x6267;&#x884C;&#x524D;<code>cli</code>&#x5173;&#x4E2D;&#x65AD;&#xFF0C;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x518D;<code>sti</code>&#x5F00;&#x4E2D;&#x65AD;&#x3002;</li>
+<li>&#x8003;&#x8651;&#x5B8C;&#x6210;PCB&#x94FE;&#x8868;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x65F6;&#x949F;&#x4E2D;&#x65AD;&#xFF0C;&#x4F1A;&#x5C06;&#x5F53;&#x524D;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x503C;&#x5B58;&#x5165;&#x4E00;&#x4E2A;PCB&#x8868;&#x4E2D;&#x7684;<code>pregs</code>&#x91CC;&#xFF0C;&#x800C;&#x8FD9;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x3002;&#x56E0;&#x800C;&#x53EF;&#x4EE5;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C06;<code>cur_pcb</code>&#x7F6E;<code>null</code>&#xFF0C;&#x7136;&#x540E;&#x5728;<code>schedule</code>&#x5185;&#x5BF9;<code>null</code>&#x505A;&#x51FA;&#x54CD;&#x5E94;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#xFF1A;&#x7531;&#x4E8E;&#x6700;&#x5F00;&#x59CB;&#x5DF2;&#x7ECF;&#x5C06;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x5B58;&#x5728;&#x4E86;<code>regs</code>&#x4E2D;&#xFF0C;&#x800C;<code>regs</code>&#x5728;&#x591A;&#x6B21;<code>reg_swap</code>&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x662F;&#x88AB;&#x4FDD;&#x62A4;&#x7684;&#x3002;&#x56E0;&#x800C;&#x53EA;&#x9700;&#x8981;&#x6062;&#x590D;<code>regs</code>&#x56DE;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x5373;&#x53EF;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x8981;&#x6062;&#x590D;<code>regs</code>&#xFF0C;&#x4E14;&#x6CA1;&#x7ED3;&#x675F;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;<code>delete_node</code>&#x6765;&#x5220;&#x6389;&#x8BE5;PCB&#x8868;&#x8282;&#x70B9;&#x3002;&#x800C;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x7684;&#x8FD4;&#x56DE;&#x662F;&#x901A;&#x8FC7;<code>int 20h</code>&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x56E0;&#x800C;&#x53EF;&#x4EE5;&#x8BA9;<code>int 20h</code>&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x591A;&#x8FDB;&#x7A0B;&#x6765;&#x5B9E;&#x73B0;&#x4E0A;&#x8FF0;&#x8981;&#x6C42;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x591A;&#x8FDB;&#x7A0B;&#x4E0D;&#x9700;&#x8981;&#x4E0A;&#x6B21;&#x5B9E;&#x9A8C;&#x5199;&#x7684;PSP&#x8868;&#x4E2D;&#x7684;<code>ss</code>&#x548C;<code>sp</code>&#x6765;&#x6062;&#x590D;&#x6808;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6062;&#x590D;<code>regs</code>&#x5373;&#x53EF;&#x3002;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x9ED8;&#x8BA4;&#x8BBE;&#x4E3A;0&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4F5C;&#x4E3A;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x6807;&#x5FD7;&#x3002;</li>
+<li>&#x53E6;&#x5916;&#x9700;&#x8981;&#x5BF9;<code>_load</code>&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x6765;&#x4FDD;&#x8BC1;<code>_load</code>&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x5C06;PSP&#x8868;&#x4E2D;&#x7684;&#x524D;&#x4E24;&#x4E2A;&#x5B57;&#x8282;&#x8BBE;&#x4E3A;<code>int 20h</code>&#xFF0C;<code>ss</code>&#xFF0C;<code>sp</code>&#x5B57;&#x8282;&#x521D;&#x59CB;&#x5316;&#x4E3A;0&#xFF0C;&#x5C06;PSP&#x8868;&#x4E2D;<code>int 20h</code>&#x7684;&#x5730;&#x5740;&#x653E;&#x5230;&#x6808;&#x4E2D;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;&#x7ED3;&#x675F;&#x8FDB;&#x7A0B;&#x7684;&#x5904;&#x7406;&#x3002;&#x6CE8;&#x610F;<code>_restart</code>&#x4F1A;&#x5C06;<code>regs</code>&#x4E2D;&#x7684;&#x503C;&#x653E;&#x5165;CPU&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x3002;&#x56E0;&#x800C;&#x901A;&#x8FC7;&#x5224;&#x65AD;&#x662F;&#x4E0D;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x7ED3;&#x675F;&#x7684;&#x8FDB;&#x7A0B;&#x6765;&#x9009;&#x62E9;&#x662F;&#x5207;&#x6362;&#x5230;&#x4E0B;&#x4E00;&#x8FDB;&#x7A0B;&#xFF0C;&#x8FD8;&#x662F;&#x5207;&#x6362;&#x56DE;&#x5185;&#x6838;&#x3002;</li>
+</ol>
+<div class="mermaid">graph TD
+A(&quot;&#x8C03;&#x7528;reg_swap&#x5C06;&#x6700;&#x521D;&#x5B58;&#x5165;regs&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x6B65;&#x5BC4;&#x5B58;&#x5668;&#x6062;&#x590D;&#x56DE;regs&#x4E2D;&quot;)
+B(&quot;cur_pcb&#x6362;&#x6210;&#x5176;next&quot;)
+C(&quot;&#x5220;&#x9664;&#x7ED3;&#x675F;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&quot;)
+D(&quot;&#x8C03;&#x7528;reg_swap&#x5C06;cur_pcb&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x548C;regs&#x4EA4;&#x6362;&quot;)
+E(&quot;_cls&quot;)
+F(&quot;_restart&quot;)
+G(&quot;iret&quot;)
+A--&gt;B--&gt;C
+C--&#x5982;&#x679C;pid!=0&#x8868;&#x793A;&#x94FE;&#x8868;&#x975E;&#x7A7A;--&gt;D--&gt;F
+C--&#x5982;&#x679C;pid==0&#x8868;&#x793A;&#x94FE;&#x8868;&#x5934;&#x662F;&#x94FE;&#x8868;&#x5C3E;&#x5373;&#x94FE;&#x8868;&#x7A7A;--&gt;E--&gt;F
+F--&gt;G
+</div><h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-3">&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;</h6>
+
+<ol>
+<li>&#x589E;&#x52A0;&#x4E86;&#x8C03;&#x7528;<code>schedule</code>&#x7684;<code>_clock</code>&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_clock:
+    call dword _save
+    dec dword[_count]         ; &#x9012;&#x51CF;&#x8BA1;&#x6570;&#x53D8;&#x91CF;
+    jnz _clock_end            ; &gt;0&#xFF1A;&#x8DF3;&#x8F6C;
+    call dword clock
+    mov dword[_count], _delay ; &#x91CD;&#x7F6E;&#x8BA1;&#x6570;&#x53D8;&#x91CF;=&#x521D;&#x503C;delay
+_clock_end:
+    call dword schedule
+    mov al, 20h               ; AL = EOI
+    out 20h, al               ; &#x53D1;&#x9001;EOI&#x5230;&#x4E3B;8529A
+    out 0A0h, al              ; &#x53D1;&#x9001;EOI&#x5230;&#x4ECE;8529A
+    call dword _restart
+    iret                      ; &#x4ECE;&#x4E2D;&#x65AD;&#x8FD4;&#x56DE;
+</code></pre><ol start="2">
+<li><code>schedule</code>&#x5B9E;&#x73B0;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">schedule</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cur_pcb <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ol start="3">
+<li>&#x65B0;&#x5199;<code>_cmd_sync</code>&#x5957;&#x5728;<code>cmd_sync</code>&#x5916;&#x9762;&#xFF0C;&#x7528;&#x4E8E;&#x5173;&#x4E2D;&#x65AD;&#x548C;&#x5F00;&#x4E2D;&#x65AD;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_cmd_sync:
+    cli
+    mov eax, dword[esp + 4]
+    push dword eax
+    call dword cmd_sync
+    add esp, 4
+    sti
+    o32 ret
+</code></pre><ol start="4">
+<li><code>schedule</code>&#x5BF9;<code>null</code>&#x7684;&#x54CD;&#x5E94;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">schedule</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cur_pcb <span class="token operator">==</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</pre><ol start="5">
+<li>&#x91CD;&#x6539;&#x7684;<code>_load</code>&#x3002;&#x6CE8;&#x610F;&#x4FEE;&#x6539;PSP&#x8868;&#x548C;&#x6808;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;<code>ds</code>&#xFF0C;<code>ss</code>&#xFF0C;<code>sp</code>&#xFF0C;&#x4FEE;&#x6539;&#x540E;&#x9700;&#x8981;&#x6062;&#x590D;<code>ds</code>&#xFF0C;<code>ss</code>&#xFF0C;<code>sp</code>&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_load:
+    ...
+    int 13H                   ; &#x8C03;&#x7528;&#x8BFB;&#x78C1;&#x76D8;BIOS&#x7684;13h&#x529F;&#x80FD;
+    mov ax, es
+    mov ds, ax
+    mov word [0], 0x20cd
+    mov word [0x2e], 0
+    mov word [0x30], 0
+    mov bx, sp
+    mov sp, 0xffff
+    mov ss, ax
+    push word es
+    push word 0x0
+    mov ax, 0x800
+    mov ds, ax
+    mov ss, ax
+    mov sp, bx
+    pop dword ebx
+    o32 ret
+</code></pre><ol start="6">
+<li>&#x4FEE;&#x6539;&#x7684;<code>_int_20h</code>&#xFF0C;&#x5176;&#x4E2D;<code>ds:0x2e</code>&#x662F;&#x7528;&#x6765;&#x5B58;&#x653E;PSP&#x8868;&#x4E2D;<code>ss</code>&#x548C;<code>sp</code>&#x7684;&#x5730;&#x65B9;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_int_20h:
+    mov eax, 0
+    cmp eax, dword[0x2e]
+    jz _int_20h_sync
+_int_20h_normal:
+    ...
+_int_20h_sync:
+    mov ax, cs
+    mov ds, ax
+    mov ss, ax
+    call dword sync_ret
+    call dword _restart
+    iret
+</code></pre><ol start="7">
+<li><code>sync_ret</code>&#x7528;&#x6765;&#x5904;&#x7406;&#x5355;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x7ED3;&#x675F;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">sync_ret</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cur_pcb <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token function">delete_node</span><span class="token punctuation">(</span>pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>last<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pcbheader<span class="token punctuation">,</span> pcbndsp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">_cls</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="5-%E5%86%85%E6%A0%B8%E5%A2%9E%E5%8A%A0%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E8%BF%87%E7%A8%8B%E6%AF%8F%E6%AC%A1%E8%B0%83%E5%BA%A6%E5%B0%86%E5%BD%93%E5%89%8D%E8%BF%9B%E7%A8%8B%E8%BD%AC%E5%85%A5%E5%B0%B1%E7%BB%AA%E7%8A%B6%E6%80%81%E9%80%89%E6%8B%A9%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%BF%9B%E7%A8%8B%E8%BF%90%E8%A1%8C%E5%A6%82%E6%AD%A4%E5%8F%8D%E5%A4%8D%E8%BD%AE%E6%B5%81%E8%BF%90%E8%A1%8C">(5) &#x5185;&#x6838;&#x589E;&#x52A0;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x8FC7;&#x7A0B;&#xFF1A;&#x6BCF;&#x6B21;&#x8C03;&#x5EA6;&#xFF0C;&#x5C06;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x8F6C;&#x5165;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#xFF0C;&#x9009;&#x62E9;&#x4E0B;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#xFF0C;&#x5982;&#x6B64;&#x53CD;&#x590D;&#x8F6E;&#x6D41;&#x8FD0;&#x884C;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-4">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x5927;&#x90E8;&#x5206;&#x5DE5;&#x4F5C;&#x5728;&#x4E0A;&#x9762;&#x5DF2;&#x7ECF;&#x505A;&#x5B8C;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x5207;&#x6362;&#x8FDB;&#x7A0B;&#x65F6;&#x589E;&#x52A0;&#x5BF9;&#x4E8E;<code>pstate</code>&#x7684;&#x4FEE;&#x6539;&#x3002;</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-4">&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;</h6>
+
+<ol>
+<li><code>schedule</code>&#x7684;&#x4FEE;&#x6539;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">schedule</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cur_pcb <span class="token operator">==</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        cur_pcb <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ol start="2">
+<li><code>sync_ret</code>&#x7684;&#x4FEE;&#x6539;&#x3002;</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">sync_ret</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cur_pcb <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token function">delete_node</span><span class="token punctuation">(</span>pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>last<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pcbheader<span class="token punctuation">,</span> pcbndsp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">_cls</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="6-%E5%AE%9E%E9%AA%8C5%E7%9A%84%E5%86%85%E6%A0%B8%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD%E5%A6%82%E6%9E%9C%E4%B8%8D%E5%BF%85%E8%A6%81%E5%8F%AF%E6%9A%82%E6%97%B6%E5%8F%96%E6%B6%88%E6%9C%8D%E5%8A%A1">(6) &#x5B9E;&#x9A8C;5&#x7684;&#x5185;&#x6838;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5FC5;&#x8981;&#xFF0C;&#x53EF;&#x6682;&#x65F6;&#x53D6;&#x6D88;&#x670D;&#x52A1;&#x3002;</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-5">&#x7406;&#x8BBA;&#x51C6;&#x5907;&#xFF1A;</h6>
+
+<ol>
+<li>&#x76EE;&#x524D;&#x529F;&#x80FD;&#x90FD;&#x53EF;&#x4EE5;&#x5E76;&#x5B58;&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x53D6;&#x6D88;&#x3002;</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%94-%E5%AE%9E%E9%AA%8C%E4%BA%AE%E7%82%B9">&#x4E94;&#x3001;&#x5B9E;&#x9A8C;&#x4EAE;&#x70B9;&#xFF1A;</h3>
+
+<ol>
+<li>&#x4F7F;&#x7528;&#x94FE;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;PCB&#x8868;&#x3002;</li>
+<li>&#x7075;&#x6D3B;&#x8FD0;&#x7528;&#x4E86;<code>_save</code>&#x548C;<code>_restart</code>&#x8FBE;&#x5230;&#x5207;&#x6362;&#x8FDB;&#x7A0B;&#x7684;&#x76EE;&#x7684;&#x3002;</li>
+<li>&#x5BF9;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x4FDD;&#x62A4;&#x8FDB;&#x884C;&#x4E86;&#x6709;&#x610F;&#x4E49;&#x7684;&#x601D;&#x8003;&#xFF0C;&#x4F7F;&#x7528;<code>regs_swap</code>&#x6765;&#x9632;&#x6B62;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x8FDB;&#x7A0B;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x8FDB;&#x884C;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x8986;&#x76D6;&#x6389;<code>regs</code>&#x7684;&#x6F5C;&#x5728;&#x95EE;&#x9898;&#x7684;&#x53D1;&#x751F;&#x3002;</li>
+<li>&#x4E0E;&#x524D;&#x9762;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x517C;&#x5BB9;&#x7684;&#x3002;</li>
+</ol>
+<h3 class="mume-header" id="%E5%85%AD-%E5%AE%9E%E9%AA%8C%E5%8F%8D%E6%80%9D">&#x516D;&#x3001;&#x5B9E;&#x9A8C;&#x53CD;&#x601D;&#xFF1A;</h3>
+
+<p>&#x8FD9;&#x6B21;&#x5B9E;&#x9A8C;&#x51E0;&#x4E4E;&#x662F;&#x5B8C;&#x6210;&#x5F97;&#x6700;&#x5FEB;&#x7684;&#x4E00;&#x6B21;&#xFF0C;&#x6CA1;&#x9047;&#x5230;&#x4EC0;&#x4E48;bug&#x3002;&#x6211;&#x8BA4;&#x4E3A;&#x539F;&#x56E0;&#x53EF;&#x80FD;&#x662F;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x6280;&#x672F;&#x8DEF;&#x7EBF;&#x4E2D;&#x7406;&#x8BBA;&#x51C6;&#x5907;&#x90E8;&#x5206;&#x505A;&#x5F97;&#x5145;&#x5206;&#xFF0C;&#x5728;&#x5199;&#x4EE3;&#x7801;&#x524D;&#x4FBF;&#x8FDB;&#x884C;&#x4E86;&#x6DF1;&#x5165;&#x7684;&#x601D;&#x8003;&#xFF0C;&#x5E76;&#x9488;&#x5BF9;&#x95EE;&#x9898;&#x7ED9;&#x51FA;&#x4E86;&#x5408;&#x7406;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1B;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x51E0;&#x6B21;&#x5B9E;&#x9A8C;&#x4E0B;&#x6765;&#x6211;&#x5BF9;&#x4E8E;&#x6C47;&#x7F16;&#x7684;&#x719F;&#x7EC3;&#x5EA6;&#x4E5F;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x4E86;&#xFF0C;&#x8FD9;&#x6B21;&#x5B9E;&#x9A8C;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x5730;&#x5740;&#x4F4D;&#x6570;&#x52A0;&#x8F7D;&#x6247;&#x533A;&#x6570;&#x8FD8;&#x6709;&#x5BC4;&#x5B58;&#x5668;&#x7684;&#x4FDD;&#x62A4;&#x95EE;&#x9898;&#x3002;<br>
+&#x4F46;&#x662F;&#x4E0D;&#x8DB3;&#x4E4B;&#x5904;&#x662F;&#xFF0C;&#x6211;&#x7684;&#x8FD9;&#x6B21;&#x5B9E;&#x9A8C;&#x6CA1;&#x6709;&#x591A;&#x5C11;&#x5F88;&#x6709;&#x521B;&#x610F;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x9664;&#x4E86;&#x4E00;&#x4E9B;&#x5177;&#x4F53;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x548C;&#x4EE3;&#x7801;&#x8BBE;&#x8BA1;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x6309;&#x7167;&#x8001;&#x5E08;&#x7684;&#x8981;&#x6C42;&#x6765;&#x7684;&#x3002;<br>
+&#x518D;&#x6765;&#x8BF4;&#x8BF4;&#x6211;&#x5BF9;&#x6574;&#x4E2A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5B9E;&#x9A8C;&#x7684;&#x770B;&#x6CD5;&#x3002;&#x8001;&#x5E08;&#x6709;&#x5728;&#x8BFE;&#x4E0A;&#x8BB2;&#x8FC7;&#xFF0C;&#x672C;&#x5B9E;&#x9A8C;&#x8BFE;&#x6700;&#x5927;&#x7684;&#x7279;&#x70B9;&#x548C;&#x4F18;&#x52BF;&#x5728;&#x4E8E;&#xFF0C;&#x548C;&#x7406;&#x8BBA;&#x8BFE;&#x7D27;&#x5BC6;&#x7ED3;&#x5408;&#x3002;&#x4F46;&#x662F;&#x7EFC;&#x5408;&#x4E86;&#x51E0;&#x6B21;&#x5B9E;&#x9A8C;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x5176;&#x76F4;&#x63A5;&#x7528;&#x5230;&#x7406;&#x8BBA;&#x8BFE;&#x7684;&#x77E5;&#x8BC6;&#x4E0D;&#x662F;&#x5F88;&#x591A;&#x3002;&#x4E24;&#x72B6;&#x6001;&#x6A21;&#x578B;&#x548C;PCB&#x8868;&#x53EA;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x7AE0;&#x7684;&#x4E00;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x3002;&#x4E0D;&#x8FC7;&#x6211;&#x4E5F;&#x5207;&#x5207;&#x5B9E;&#x5B9E;&#x5730;&#x4ECE;&#x5B9E;&#x9A8C;&#x8BFE;&#x4E2D;&#x4F53;&#x4F1A;&#x5230;&#x4E86;&#x7406;&#x8BBA;&#x77E5;&#x8BC6;&#x8D2F;&#x7A7F;&#x5176;&#x4E2D;&#x3002;&#x4ECE;FAT&#x8868;&#x7684;&#x5B9E;&#x9A8C;&#x4E2D;&#xFF0C;&#x6211;&#x4E86;&#x89E3;&#x4E86;&#x78C1;&#x76D8;&#x7684;&#x786C;&#x4EF6;&#x57FA;&#x7840;&#xFF0C;&#x5728;&#x7406;&#x89E3;&#x201C;&#x5927;&#x9875;&#x8868;&#x6709;&#x5229;&#x4E8E;&#x78C1;&#x76D8;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x201D;&#x95EE;&#x9898;&#x4E0A;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x5E2E;&#x52A9;&#xFF1B;&#x5728;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x7A0B;&#x5E8F;&#x7684;&#x5B9E;&#x9A8C;&#x4E2D;&#xFF0C;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x771F;&#x5B9E;&#x5730;&#x63A5;&#x89E6;&#x4E86;&#x865A;&#x62DF;&#x5730;&#x5740;&#x548C;&#x7269;&#x7406;&#x5730;&#x5740;&#xFF0C;&#x5728;&#x5F53;&#x65F6;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x63D0;&#x524D;&#x4E86;&#x89E3;&#x4E86;&#x4E00;&#x4E9B;&#x77E5;&#x8BC6;&#xFF1B;&#x5728;&#x4E2D;&#x65AD;&#x8C03;&#x7528;&#x7684;&#x5B9E;&#x9A8C;&#x91CC;&#xFF0C;&#x6211;&#x4E5F;&#x7EC8;&#x4E8E;&#x7406;&#x89E3;&#x4E86;&#x201C;&#x4E2D;&#x65AD;&#x662F;&#x5565;&#x201D;&#x8FD9;&#x4E2A;&#x4ECE;&#x8BA1;&#x7B97;&#x673A;&#x7EC4;&#x6210;&#x539F;&#x7406;&#x8BFE;&#x5F00;&#x59CB;&#x5C31;&#x4E00;&#x76F4;&#x56F0;&#x6270;&#x6211;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x4EC5;&#x5982;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B9E;&#x9A8C;&#x8BFE;&#x78E8;&#x7EC3;&#x4E86;&#x8FD8;&#x6211;&#x7684;&#x610F;&#x5FD7;&#xFF0C;&#x6211;&#x611F;&#x89C9;&#x8FD9;&#x662F;&#x6211;&#x5199;&#x8FC7;&#x7684;&#x6700;&#x96BE;debug&#x7684;&#x4EE3;&#x7801;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x6C47;&#x7F16;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x8BFB;&#x6027;&#x4E0D;&#x9AD8;&#x800C;&#x4E14;bochsdbg&#x7684;tui&#x505A;&#x7684;&#x4E00;&#x8A00;&#x96BE;&#x5C3D;&#xFF08;&#x73B0;&#x5728;&#x60F3;&#x60F3;gdb&#x8FD9;&#x4E9B;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x771F;&#x7684;&#x5F88;&#x4F1F;&#x5927;&#xFF09;&#xFF1B;&#x53E6;&#x5916;&#x4EE3;&#x7801;&#x91CF;&#x5927;&#xFF0C;&#x52A0;&#x4E0A;FAT&#x7684;&#x4EE3;&#x7801;&#x51E0;&#x5343;&#x884C;&#x5E94;&#x8BE5;&#x662F;&#x6709;&#x4E86;&#x3002;&#x4EE5;&#x81F3;&#x4E8E;&#x6BCF;&#x6B21;&#x770B;&#x5230;&#x65B0;&#x7684;&#x5B9E;&#x9A8C;&#x53D1;&#x5E03;&#xFF0C;&#x8111;&#x6D77;&#x91CC;&#x90FD;&#x6709;&#x4E00;&#x53E5;&#x201C;&#x65B0;&#x7684;&#x98CE;&#x66B4;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#xFF0C;&#x600E;&#x4E48;&#x80FD;&#x591F;&#x505C;&#x6EDE;&#x4E0D;&#x524D;&#x201D;&#x5728;&#x56DE;&#x8361;&#x3002;<br>
+&#x6700;&#x540E;&#xFF0C;&#x5E0C;&#x671B;&#x52A9;&#x6559;&#x6279;&#x6539;&#x540E;&#x80FD;&#x591F;&#x65E9;&#x70B9;&#x7ED9;&#x51FA;&#x53CD;&#x9988;&#xFF0C;&#x6307;&#x51FA;&#x6211;&#x7684;&#x4E0D;&#x8DB3;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x4E0B;&#x6B21;&#x5728;&#x5B9E;&#x9A8C;&#x4E2D;&#x8FDB;&#x884C;&#x6539;&#x8FDB;&#x3002;</p>
+
+      </div>
+      
+      
+    
+    
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.getElementsByClassName('mermaid'))
+}
+</script>
+    
+    
+    
+    
+    
+  
+    </body></html>

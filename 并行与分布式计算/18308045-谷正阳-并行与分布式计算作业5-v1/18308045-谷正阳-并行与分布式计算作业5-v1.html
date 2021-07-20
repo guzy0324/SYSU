@@ -1,0 +1,481 @@
+<!DOCTYPE html><html><head>
+      <title>18308045-&#x8C37;&#x6B63;&#x9633;-&#x5E76;&#x884C;&#x4E0E;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x4F5C;&#x4E1A;5-v1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\guzy0\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.12\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	/* padding: 0; */
+
+	padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<center><font size="7">&#x5E76;&#x884C;&#x4E0E;&#x5206;&#x5E03;&#x5F0F;&#x4F5C;&#x4E1A;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">OpenMp&#x548C;MPI</font></center>
+<center><font size="5">&#x7B2C;&#x4E94;&#x6B21;&#x4F5C;&#x4E1A;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#xA0;</font></center>
+<center><font size="5">&#x59D3;&#x540D;&#xFF1A;&#x8C37;&#x6B63;&#x9633;</font></center>
+<center><font size="5">&#x73ED;&#x7EA7;&#xFF1A;&#x884C;&#x653F;&#x4E00;&#x73ED;</font></center>
+<center><font size="5">&#x5B66;&#x53F7;&#xFF1A;18308045</font></center>
+<div style="page-break-after: always;"></div>
+<h3 class="mume-header" id="%E4%B8%80-%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0">&#x4E00;&#x3001;&#x95EE;&#x9898;&#x63CF;&#x8FF0;</h3>
+
+<ol>
+<li>Consider a sparse matrix stored in the compressed row format (you may find<br>
+a description of this format on the web or any suitable text on sparse linear<br>
+algebra). Write an OpenMP program for computing the product of this matrix<br>
+with a vector. Download sample matrices from the Matrix Market<br>
+(<a href="http://math.nist.gov/MatrixMarket/">http://math.nist.gov/MatrixMarket/</a>) and test the performance of your<br>
+implementation as a function of matrix size and number of threads.</li>
+<li>Implement a producer-consumer framework in OpenMP using sections to<br>
+create a single producer task and a single consumer task. Ensure appropriate<br>
+synchronization using locks. Test your program for a varying number of<br>
+producers and consumers.</li>
+<li>&#x5229;&#x7528;MPI&#x901A;&#x4FE1;&#x7A0B;&#x5E8F;&#x6D4B;&#x8BD5;&#x672C;&#x5730;&#x8FDB;&#x7A0B;&#x4EE5;&#x53CA;&#x8FDC;&#x7A0B;&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x65F6;&#x5EF6;&#x548C;&#x5E26;&#x5BBD;&#x3002;</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%8C-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">&#x4E8C;&#x3001;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h3>
+
+<ol>
+<li></li>
+</ol>
+<ul>
+<li>CRS&#x7684;&#x683C;&#x5F0F;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#xFF1A;<a href="https://mc-stan.org/docs/2_22/functions-reference/CSR.html">https://mc-stan.org/docs/2_22/functions-reference/CSR.html</a></li>
+<li>HB&#x7684;&#x683C;&#x5F0F;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#xFF1A;<a href="https://math.nist.gov/MatrixMarket/formats.html#hb">https://math.nist.gov/MatrixMarket/formats.html#hb</a></li>
+<li>&#x53EF;&#x4EE5;&#x770B;&#x51FA;HB&#x521A;&#x597D;&#x662F;CRS&#x7684;&#x8F6C;&#x7F6E;&#xFF0C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x8FD0;&#x7B97;&#x5C06;HB&#x683C;&#x5F0F;&#x770B;&#x4F5C;&#x662F;CRS&#x683C;&#x5F0F;&#xFF0C;&#x95EE;&#x9898;&#x76F8;&#x5F53;&#x4E8E;&#x6C42;Matrix Market&#x4E0A;&#x83B7;&#x5F97;&#x77E9;&#x9635;&#x7684;&#x8F6C;&#x7F6E;&#x53F3;&#x4E58;&#x4E00;&#x4E2A;&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token keyword">struct</span> CRS
+<span class="token punctuation">{</span>
+    <span class="token keyword">float</span> <span class="token operator">*</span>val<span class="token punctuation">;</span>
+    size_t <span class="token operator">*</span>col_ind<span class="token punctuation">;</span>
+    size_t <span class="token operator">*</span>row_ptr<span class="token punctuation">;</span>
+    size_t row<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</pre><p><img src="CRS%E5%A4%B4.png" alt="avatar"></p>
+<ul>
+<li>&#x7B2C;&#x4E09;&#x884C;&#x7B2C;&#x4E00;&#x4E2A;1138&#x662F;&#x77E9;&#x9635;&#x884C;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;1138&#x662F;&#x77E9;&#x9635;&#x5217;&#x6570;&#xFF0C;2596&#x662F;&#x77E9;&#x9635;&#x975E;&#x96F6;&#x5143;&#x7D20;&#x6570;&#x3002;&#x56E0;&#x4E3A;&#x662F;&#x770B;&#x4F5C;&#x8BE5;&#x77E9;&#x9635;&#x7684;&#x8F6C;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E8C;&#x4E2A;1138&#x4F5C;&#x4E3A;&#x77E9;&#x9635;&#x5217;&#x6570;<code>row</code>&#xFF0C;2596&#x4F5C;&#x4E3A;&#x77E9;&#x9635;<code>val</code>&#x548C;<code>col_ind</code>&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x3002;</li>
+<li>&#x53E6;&#x5916;&#x6CE8;&#x610F;&#x5230;&#xFF0C;HB&#x683C;&#x5F0F;&#x4E00;&#x884C;&#x957F;&#x5EA6;80&#xFF0C;&#x52A0;&#x4E0A;&#x5C3E;&#x90E8;&#x7684;<code>&apos;\n&apos;</code>&#x5373;81&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>fseek</code>&#x66F4;&#x6539;&#x5149;&#x6807;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6765;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token function">fseek</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">81</span> <span class="token operator">+</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token constant">SEEK_SET</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+size_t n<span class="token punctuation">;</span>
+CRS crs<span class="token punctuation">;</span>
+<span class="token function">fscanf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">&quot;%zu%zu&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>crs<span class="token punctuation">.</span>row<span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li>&#x540E;&#x9762;&#x4E09;&#x4E2A;&#x5757;&#x5206;&#x522B;&#x5BF9;&#x5E94;<code>row_ptr</code>&#xFF0C;<code>col_ind</code>&#xFF0C;<code>val</code>&#x3002;</li>
+<li>CRS&#x683C;&#x5F0F;&#x7A00;&#x758F;&#x77E9;&#x9635;&#x7684;&#x4E58;&#x6CD5;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x6BCF;&#x884C;&#x53EA;&#x5BF9;&#x975E;&#x96F6;&#x5143;&#x7D20;&#x505A;&#x4E58;&#x6CD5;&#x6C42;&#x548C;&#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token keyword">void</span> <span class="token function">mul</span><span class="token punctuation">(</span>Vec ans<span class="token punctuation">,</span> CRS crs<span class="token punctuation">,</span> Vec vec<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> num_t <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token macro property">#<span class="token directive keyword">pragma</span> omp parallel for num_threads(num_t)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> crs<span class="token punctuation">.</span>row<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//printf(&quot;i = %zu, ThreadId = %d\n&quot;, i, omp_get_thread_num());</span>
+        ans<span class="token punctuation">.</span>val<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>size_t j <span class="token operator">=</span> crs<span class="token punctuation">.</span>row_ptr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> crs<span class="token punctuation">.</span>row_ptr<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            ans<span class="token punctuation">.</span>val<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> vec<span class="token punctuation">.</span>val<span class="token punctuation">[</span>crs<span class="token punctuation">.</span>col_ind<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">*</span> crs<span class="token punctuation">.</span>val<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ol start="2">
+<li></li>
+</ol>
+<ul>
+<li>&#x751F;&#x4EA7;&#x8005;&#x6D88;&#x8D39;&#x8005;&#x6A21;&#x578B;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;&#xFF1A;<a href="https://zh.wikipedia.org/zh-hans/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98">https://zh.wikipedia.org/zh-hans/&#x751F;&#x4EA7;&#x8005;&#x6D88;&#x8D39;&#x8005;&#x95EE;&#x9898;</a></li>
+<li>&#x751F;&#x4EA7;&#x8005;&#x751F;&#x4EA7;&#x540E;&#x82E5;&#x961F;&#x4E0D;&#x6EE1;&#x4EA7;&#x54C1;&#x5165;&#x961F;&#xFF0C;&#x5426;&#x5219;&#x7B49;&#x5F85;&#x961F;&#x7A7A;&#x3002;&#x82E5;&#x961F;&#x975E;&#x7A7A;&#x4EA7;&#x54C1;&#x51FA;&#x961F;&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;&#xFF0C;&#x5426;&#x5219;&#x7B49;&#x5F85;&#x961F;&#x975E;&#x7A7A;&#x3002;</li>
+<li>RC&#x95EE;&#x9898;&#x7684;&#x8003;&#x8651;1&#xFF1A;&#x591A;&#x4E2A;&#x751F;&#x4EA7;&#x8005;&#x4E4B;&#x95F4;&#x90FD;&#x4F1A;&#x8BFB;&#x5199;&#x961F;&#x5C3E;&#x548C;&#x961F;&#x5C3E;&#x6307;&#x9488;&#xFF0C;&#x540C;&#x65F6;&#x8BFB;&#x5199;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;RC&#x95EE;&#x9898;&#x3002;&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x4E4B;&#x95F4;&#x90FD;&#x4F1A;&#x8BFB;&#x5199;&#x961F;&#x9996;&#x548C;&#x961F;&#x9996;&#x6307;&#x9488;&#xFF0C;&#x540C;&#x65F6;&#x8BFB;&#x5199;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;RC&#x95EE;&#x9898;&#x3002;&#x56E0;&#x800C;&#x5206;&#x522B;&#x5404;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x9501;&#x4FDD;&#x8BC1;&#x4E92;&#x65A5;&#x5173;&#x7CFB;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token function">omp_set_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>back_mutex<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>front <span class="token operator">==</span> <span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>back <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> Q_MAX_SIZE<span class="token punctuation">)</span>
+    <span class="token punctuation">;</span>
+bp<span class="token operator">-&gt;</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">omp_unset_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>back_mutex<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token function">omp_set_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>front_mutex<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>front <span class="token operator">==</span> bp<span class="token operator">-&gt;</span>back<span class="token punctuation">)</span>
+    <span class="token punctuation">;</span>
+<span class="token keyword">int</span> item <span class="token operator">=</span> bp<span class="token operator">-&gt;</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">omp_unset_lock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>bp<span class="token operator">-&gt;</span>front_mutex<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li>RC&#x95EE;&#x9898;&#x7684;&#x8003;&#x8651;2&#xFF1A;&#x5F53;&#x961F;&#x7A7A;&#x65F6;&#x8BE5;&#x6B65;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x76F8;&#x7B49;&#x4E0B;&#x4E00;&#x6B65;&#x6307;&#x9488;&#x76F8;&#x90BB;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x3002;&#x8003;&#x8651;&#x6B64;&#x65F6;&#x961F;&#x7A7A;&#xFF0C;&#x82E5;<code>push</code>&#x8FC7;&#x7A0B;&#x5148;&#x4FEE;&#x6539;&#x5C3E;&#x6307;&#x9488;&#x518D;&#x5199;&#x961F;&#x5C3E;&#xFF0C;&#x5219;&#x4FEE;&#x6539;&#x5B8C;&#x5C3E;&#x6307;&#x9488;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x6D88;&#x8D39;&#x8005;&#x6311;&#x51FA;&#x5FAA;&#x73AF;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;<code>pop</code>&#xFF0C;&#x8FD9;&#x65F6;&#x961F;&#x5185;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x51FA;&#x9519;&#x3002;&#x7136;&#x800C;&#x5982;&#x679C;<code>push</code>&#x5148;&#x5199;&#x961F;&#x5C3E;&#x518D;&#x4FEE;&#x6539;&#x5C3E;&#x6307;&#x9488;&#xFF0C;&#x5219;&#x6D88;&#x8D39;&#x8005;&#x4E00;&#x5B9A;&#x4F1A;<code>push</code>&#x540E;&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token keyword">void</span> <span class="token type-opencl-host-c++ keyword">Buffer</span><span class="token operator">::</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> item<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    queue<span class="token punctuation">[</span>back<span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">;</span>
+    back <span class="token operator">=</span> <span class="token punctuation">(</span>back <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> Q_MAX_SIZE<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>&#x7EFC;&#x4E0A;&#xFF0C;&#x4E24;&#x4E2A;&#x9501;&#x5206;&#x522B;&#x4FDD;&#x8BC1;&#x751F;&#x4EA7;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x4E92;&#x65A5;&#x5173;&#x7CFB;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x4E92;&#x65A5;&#x5173;&#x7CFB;&#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp"><span class="token keyword">struct</span> <span class="token type-opencl-host-c++ keyword">Buffer</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> queue<span class="token punctuation">[</span>Q_MAX_SIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    size_t front<span class="token punctuation">;</span>
+    size_t back<span class="token punctuation">;</span>
+    omp_lock_t front_mutex<span class="token punctuation">;</span>
+    omp_lock_t back_mutex<span class="token punctuation">;</span>
+    <span class="token type-opencl-host-c++ keyword">Buffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">~</span><span class="token type-opencl-host-c++ keyword">Buffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</pre><ol start="3">
+<li></li>
+</ol>
+<ul>
+<li>&#x5E26;&#x5BBD;&#x901A;&#x8FC7;&#x7528;&#x5927;&#x6570;&#x7EC4;&#x7684;&#x541E;&#x5410;&#x91CF;&#x8FD1;&#x4F3C;&#x3002;&#x5927;&#x6570;&#x7EC4;&#x4ECE;master&#x53D1;&#x9001;&#x81F3;slave&#x518D;&#x53D1;&#x56DE;master&#x8BB0;&#x5F55;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x6CE8;&#x610F;&#x6709;&#x975E;&#x7EAF;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x901A;&#x8FC7;&#x5C06;<code>count</code>&#x8BBE;&#x4E3A;0&#xFF0C;&#x6D4B;&#x91CF;&#x4E00;&#x6B21;&#x975E;&#x4E32;&#x6570;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x518D;&#x5C06;<code>count</code>&#x8BBE;&#x4E3A;&#x5927;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x6570;&#xFF0C;&#x6D4B;&#x91CF;&#x65F6;&#x95F4;&#xFF0C;&#x505A;&#x5DEE;&#x5373;&#x4E3A;latency&#xFF0C;&#x8FDB;&#x800C;&#x7B97;&#x51FA;&#x541E;&#x5410;&#x91CF;&#x3002;<br>
+&#x6D4B;&#x91CF;&#x975E;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#xFF1A;</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span>size_t i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> TIMES<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        start <span class="token operator">=</span> <span class="token function">MPI_Wtime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">MPI_Send</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">MPI_Recv</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">,</span> <span class="token operator">&amp;</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">MPI_Send</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">MPI_Recv</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">,</span> <span class="token operator">&amp;</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        end <span class="token operator">=</span> <span class="token function">MPI_Wtime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        process <span class="token operator">+=</span> <span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">MPI_Barrier</span><span class="token punctuation">(</span>MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    process <span class="token operator">/=</span> TIMES<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">MPI_Barrier</span><span class="token punctuation">(</span>MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#x6D4B;&#x91CF;&#x603B;&#x65F6;&#x95F4;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    start <span class="token operator">=</span> <span class="token function">MPI_Wtime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">MPI_Send</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> SIZE<span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">MPI_Recv</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> SIZE<span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">,</span> <span class="token operator">&amp;</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">MPI_Send</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> SIZE<span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>rank <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">MPI_Recv</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> SIZE<span class="token punctuation">,</span> MPI_INT<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> MPI_COMM_WORLD<span class="token punctuation">,</span> <span class="token operator">&amp;</span>status<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end <span class="token operator">=</span> <span class="token function">MPI_Wtime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Latency: %lf s\n&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">-</span> process<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Bandwidth: %lf Bps\n&quot;</span><span class="token punctuation">,</span> SIZE <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">-</span> process<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h3 class="mume-header" id="%E4%B8%89-%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">&#x4E09;&#x3001;&#x5B9E;&#x9A8C;&#x7ED3;&#x679C;</h3>
+
+<ol>
+<li>&#x4EE5;1&#x7EBF;&#x7A0B;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E3A;&#x6807;&#x51C6;&#x7B54;&#x6848;&#xFF0C;&#x6838;&#x5BF9;&#x591A;&#x7EBF;&#x7A0B;&#x7B54;&#x6848;&#xFF0C;&#x4EE5;&#x8BF4;&#x660E;&#x65E0;RC&#x95EE;&#x9898;&#x53D1;&#x751F;&#x3002;&#x53D1;&#x73B0;1&#x7EBF;&#x7A0B;&#xFF0C;5&#x7EBF;&#x7A0B;&#xFF0C;8&#x7EBF;&#x7A0B;&#x6548;&#x679C;&#x8F83;&#x597D;&#x3002;&#x591A;&#x7EBF;&#x7A0B;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x4E0D;&#x5927;&#xFF0C;&#x8003;&#x8651;&#x6570;&#x7EC4;&#x592A;&#x5C0F;&#xFF0C;&#x4E14;&#x7A00;&#x758F;&#x6570;&#x7EC4;&#xFF0C;&#x53EA;&#x5BF9;&#x975E;&#x96F6;&#x5143;&#x7D20;&#x505A;&#x8FD0;&#x7B97;&#x3002;<br>
+<img src="1.png" alt="avatar"></li>
+<li>4&#x4E2A;producer&#xFF0C;3&#x4E2A;consumer&#xFF0C;&#x6BCF;&#x4E2A;producer&#x751F;&#x4EA7;3&#x4E2A;item&#x3002;thread&#x8868;&#x660E;&#x8C03;&#x5EA6;&#x60C5;&#x51B5;&#x3002;<br>
+<img src="2.png" alt="avatar"></li>
+<li>&#x4EE5;&#x4E24;&#x53F0;&#x673A;&#x5668;&#x4F5C;&#x4E3A;&#x4E24;&#x8282;&#x70B9;&#x8FD0;&#x884C;&#x3002;<br>
+<img src="hello.png" alt="avatar"></li>
+</ol>
+<h3 class="mume-header" id="%E5%9B%9B-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95">&#x56DB;&#x3001;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x53CA;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;</h3>
+
+<p><strong>&#x95EE;&#x9898;1.</strong> &#x5C06;sections&#x548C;for&#x5D4C;&#x5957;&#xFF0C;sections&#x533A;&#x5206;&#x751F;&#x4EA7;&#x8005;&#x548C;&#x6D88;&#x8D39;&#x8005;&#xFF0C;for&#x533A;&#x5206;&#x4E0D;&#x540C;&#x7684;&#x751F;&#x4EA7;&#x8005;&#x548C;&#x4E0D;&#x540C;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x3002;&#x4F46;&#x662F;&#x5D4C;&#x5957;&#x540E;&#x6574;&#x4F53;&#x53D8;&#x6210;&#x4E32;&#x884C;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;1.</strong> &#x52A0;<code>omp_set_nested(1);</code>&#xFF0C;&#x4EE5;&#x5141;&#x8BB8;&#x5D4C;&#x5957;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;2.</strong> MPI&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;2.</strong> &#x5728;Windows&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x4F7F;&#x7528;WSL&#x642D;&#x5EFA;MPI&#x73AF;&#x5883;&#xFF0C;&#x5728;&#x53E6;&#x4E00;&#x53F0;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x76F4;&#x63A5;&#x642D;&#x5EFA;MPI&#x73AF;&#x5883;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;3.</strong> &#x5728;WSL&#x7684;&#x975E;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x4E0A;&#x4EE3;&#x7801;&#x7F16;&#x8F91;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;3.</strong> &#x5B89;&#x88C5;neovim&#xFF0C;&#x4F7F;&#x7528;&#x5408;&#x9002;&#x7684;&#x63D2;&#x4EF6;&#x548C;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;4.</strong> &#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x6587;&#x4EF6;&#x7684;&#x4F20;&#x9001;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;4.</strong> &#x5728;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x642D;&#x5EFA;SSH&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;Windows&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x4F7F;&#x7528;WinSCP&#x8FDE;&#x63A5;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x7684;SFTP&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;5.</strong> &#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x7684;&#x901A;&#x4FE1;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;5.</strong> &#x5728;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x6DFB;&#x52A0;&#x548C;WSL&#x7528;&#x6237;&#x540D;&#x4E00;&#x6837;&#x7684;&#x7528;&#x6237;&#xFF0C;WSL&#x4E0A;&#x4E5F;&#x642D;&#x5EFA;SSH&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E24;&#x53F0;&#x4E3B;&#x673A;&#x90FD;&#x4F7F;&#x7528;ssh-keygen&#xFF0C;&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;&#xFF0C;&#x5E76;&#x5404;&#x81EA;&#x5C06;&#x516C;&#x94A5;&#x62F7;&#x8D1D;&#x5230;&#x53E6;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#xFF0C;&#x5B9E;&#x73B0;&#x514D;&#x5BC6;&#x767B;&#x5F55;&#x3002;&#x5E76;&#x5C06;&#x5728;WSL&#x4E2D;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x7684;&#x76F8;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#x4E2D;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;6.</strong> &#x666E;&#x901A;&#x7528;&#x6237;&#x6743;&#x9650;&#x3002;<br>
+<strong>&#x89E3;&#x51B3;6.</strong> &#x4F7F;&#x7528;chmod 777&#x4FEE;&#x6539;&#x62F7;&#x8D1D;&#x5230;Ubuntu&#x7CFB;&#x7EDF;&#x4E3B;&#x673A;&#x4E0A;&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x4F7F;&#x65B0;&#x5EFA;&#x7684;&#x666E;&#x901A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

@@ -1,0 +1,59 @@
+Semantic Error--line: 13, routine func: argument number is different with the previous declaration. 
+********************************Symbol Table************************************
+
+          Name Nest-Level  Tree-Node Predefined        Kind      Type      Value     Offset  Dimension     Argnum
+
+  1     myTest          0                            class                                                       
+  2       func          1  proc-tree              function  type-tree                                           2
+  3          m          2                          ref_arg  type-tree                                            
+  4          n          2                          ref_arg  type-tree                                            
+  5       main          1  proc-tree             procedure                                                      0
+************* SYNTAX TREE PRINTOUT ***********
+
+  +-[DUMMYnode]
+R-[ProgramOp]
+  |   +-[STNode,1,"myTest"]
+  | +-[ClassDefOp]
+  | | |           +-[DUMMYnode]
+  | | |         +-[CommaOp]
+  | | |         | +-[NUMNode,1]
+  | | |       +-[RoutineCallOp]
+  | | |       | | +-[DUMMYnode]
+  | | |       | +-[VarOp]
+  | | |       |   +-[STNode,2,"func"]
+  | | |     +-[StmtOp]
+  | | |     | +-[DUMMYnode]
+  | | |   +-[BodyOp]
+  | | |   | +-[DUMMYnode]
+  | | | +-[MethodOp]
+  | | | | |   +-[DUMMYnode]
+  | | | | | +-[SpecOp]
+  | | | | | | +-[DUMMYnode]
+  | | | | +-[HeadOp]
+  | | | |   +-[STNode,5,"main"]
+  | | +-[BodyOp]
+  | |   |       +-[DUMMYnode]
+  | |   |     +-[StmtOp]
+  | |   |     | +-[DUMMYnode]
+  | |   |   +-[BodyOp]
+  | |   |   | +-[DUMMYnode]
+  | |   | +-[MethodOp]
+  | |   | | |     +-[DUMMYnode]
+  | |   | | |   +-[TypeIdOp]
+  | |   | | |   | +-[INTEGERTNode]
+  | |   | | | +-[SpecOp]
+  | |   | | | | |   +-[DUMMYnode]
+  | |   | | | | | +-[RArgTypeOp]
+  | |   | | | | | | | +-[INTEGERTNode]
+  | |   | | | | | | +-[CommaOp]
+  | |   | | | | | |   +-[STNode,4,"n"]
+  | |   | | | | +-[RArgTypeOp]
+  | |   | | | |   | +-[INTEGERTNode]
+  | |   | | | |   +-[CommaOp]
+  | |   | | | |     +-[STNode,3,"m"]
+  | |   | | +-[HeadOp]
+  | |   | |   +-[STNode,2,"func"]
+  | |   +-[BodyOp]
+  | |     +-[DUMMYnode]
+  +-[ClassOp]
+    +-[DUMMYnode]

@@ -1,0 +1,53 @@
+Best Order: ['Disability', 'CTScanResult', 'MRIScanResult', 'StrokeType', 'Mortality']
+Width: 2
+Time consumed: 1587.2341 us
+
+	VariableElimination:
+	Time consumed: 170.9441 us
+
+	BucketElimination:
+	Time consumed: 172.7306 us
+
+Min-Degree Order: ['Disability', 'Mortality', 'CTScanResult', 'StrokeType', 'MRIScanResult']
+Width: 2
+Time consumed: 18.4208 us
+
+	VariableElimination:
+	Time consumed: 139.5542 us
+
+	BucketElimination:
+	Time consumed: 173.6564 us
+
+Min-Fill Order: ['Disability', 'CTScanResult', 'MRIScanResult', 'StrokeType', 'Mortality']
+Width: 2
+Time consumed: 48.3037 us
+
+	VariableElimination:
+	Time consumed: 166.1266 us
+
+	BucketElimination:
+	Time consumed: 172.8365 us
+
+Median Order: ['MRIScanResult', 'Disability', 'StrokeType', 'CTScanResult', 'Mortality']
+Width: 3
+	VariableElimination:
+	Time consumed: 201.1912 us
+
+	BucketElimination:
+	Time consumed: 255.08 us
+
+Worst Order: ['StrokeType', 'Mortality', 'MRIScanResult', 'CTScanResult', 'Disability']
+Width: 5
+	VariableElimination:
+	Time consumed: 546.5631 us
+
+	BucketElimination:
+	Time consumed: 786.0258 us
+
+Average Order:
+	VariableElimination:
+	Time consumed: 254.334525 us
+
+	BucketElimination:
+	Time consumed: 323.230341667 us
+

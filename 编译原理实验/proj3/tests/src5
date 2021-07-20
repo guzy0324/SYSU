@@ -1,0 +1,14 @@
+/* ex5: Simple function call */
+program ex5;
+class c5
+{
+	method int func()
+	{
+	return 55;
+	}
+
+	method void main()
+	{
+	system.println(func()+func());
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX-get</title>
+  <style>
+     p {font-size:20px}
+   </style>
+</head>
+<body>
+  <h1>Ajax-get</h1>
+  <p>id: <input id="t1" type="text"></p>
+  <p id="t2">[无]</p>
+  <script>
+    t1 = document.getElementById("t1");
+    t1.addEventListener("blur", get);
+    t2 = document.getElementById("t2");
+
+    function get()
+    {
+        var xmlhttp = new XMLHttpRequest(); // 创建 http 请求
+        xmlhttp.onreadystatechange = function ()
+        { // 当 http 请求的状态变化时执行
+            if (xmlhttp.readyState == 4)
+            { // 4 已收到 http 响应数据
+                if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304)
+                { // 200~299 OK 304 unmodified
+                    alert(xmlhttp.responseText); // http 响应的正文
+                    t2.innerHTML = xmlhttp.responseText;
+                }
+                else
+                {
+                    alert("error");
+                }
+            }
+        }
+        // 打开 http 请求（ open ）的参数 get|post url ，是否异步发送
+        xmlhttp.open("get", "http://172.18.187.251:8080/jsp/get.jsp?id=" + t1.value, true);
+        xmlhttp.send(null); // 发送 http 请求。 get 只能用 null 作为参数
+    }
+  </script>
+</body>
+</html>

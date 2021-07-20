@@ -1,0 +1,22 @@
+/* ex6: function calls with parameters */
+program ex6;
+
+class c6
+{
+	method int product(int p; val int x, y)
+	{
+	p := x * y;
+	return p*p;	
+	}	
+
+	method void main()
+	declarations
+	int x, p;
+	enddeclarations
+	{
+	p := 0;
+	x := product(p, 3, 4);
+	system.println(p); 
+	system.println(x);
+	}
+}

@@ -1,0 +1,64 @@
+Line	Column	Token           	Index in String table
+7	8	PROGRAMnum      
+7	11	IDnum           	0
+7	12	SEMInum         
+8	6	CLASSnum        
+8	11	IDnum           	3
+8	13	LBRACEnum       
+9	11	METHODnum       
+9	16	VOIDnum         
+9	21	IDnum           	8
+9	22	LPARENnum       
+9	23	RPARENnum       
+10	17	DECLARATIONSnum 
+11	12	INTnum          
+11	14	IDnum           	13
+11	15	SEMInum         
+12	12	INTnum          
+12	14	IDnum           	15
+12	16	EQUALnum        
+12	18	ICONSTnum       	
+12	19	SEMInum         
+13	20	ENDDECLARATIONSnum
+14	6	LBRACEnum       
+15	14	WHILEnum        
+15	16	LPARENnum       
+15	17	IDnum           	15
+15	19	LTnum           
+15	22	ICONSTnum       	
+15	23	RPARENnum       
+15	25	LBRACEnum       
+16	19	IDnum           	17
+16	20	DOTnum          
+16	26	IDnum           	24
+16	27	LPARENnum       
+16	28	IDnum           	13
+16	29	RPARENnum       
+16	30	SEMInum         
+17	19	IDnum           	17
+17	20	DOTnum          
+17	27	IDnum           	31
+17	28	LPARENnum       
+17	29	IDnum           	13
+17	30	RPARENnum       
+17	31	SEMInum         
+18	14	IDnum           	15
+18	17	ASSGNnum        
+18	19	IDnum           	15
+18	21	PLUSnum         
+18	23	ICONSTnum       	
+18	24	SEMInum         
+19	10	RBRACEnum       
+19	11	SEMInum         
+20	15	IDnum           	17
+20	16	DOTnum          
+20	23	IDnum           	31
+20	24	LPARENnum       
+20	40	SCONSTnum       	39
+20	41	RPARENnum       
+20	42	SEMInum         
+21	6	RBRACEnum       
+22	2	RBRACEnum       
+23	1	EOFnum          
+
+String Table : p2 Test main x i System readln println End of Program 

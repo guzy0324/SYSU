@@ -1,0 +1,404 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Oct 23 15:45:46 2019
+# Process ID: 3036
+# Log file: C:/Users/Administrator/Desktop/project/addsub/addsub.runs/impl_1/addsub.vdi
+# Journal file: C:/Users/Administrator/Desktop/project/addsub/addsub.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source addsub.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:30]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AB7' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:31]
+CRITICAL WARNING: [Common 17-69] Command failed: 'AA6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:34]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U6' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:38]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T5' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:42]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T4' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:43]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R4' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:44]
+CRITICAL WARNING: [Common 17-69] Command failed: 'F21' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:46]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G22' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:47]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G21' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:48]
+CRITICAL WARNING: [Common 17-69] Command failed: 'D21' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:49]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E21' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:50]
+CRITICAL WARNING: [Common 17-69] Command failed: 'D22' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:51]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E22' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:52]
+CRITICAL WARNING: [Common 17-69] Command failed: 'A21' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M17' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:54]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M15' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:55]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K16' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:56]
+CRITICAL WARNING: [Common 17-69] Command failed: 'Y9' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M16' is not a valid site or package pin name. [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc:58]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/project/addsub/addsub.srcs/constrs_1/new/add4_pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -936 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.061 . Memory (MB): peak = 444.375 ; gain = 3.008
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e3f6f740
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 886.367 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: e3f6f740
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 886.367 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 6 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1d07a21ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 886.367 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 886.367 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1d07a21ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 886.367 ; gain = 0.000
+Implement Debug Cores | Checksum: e3f6f740
+Logic Optimization | Checksum: e3f6f740
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 1d07a21ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 886.367 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 0 Warnings, 23 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 886.367 ; gain = 445.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 886.367 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Administrator/Desktop/project/addsub/addsub.runs/impl_1/addsub_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -936 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 15bf8fc05
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 886.367 ; gain = 0.000
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 886.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 886.367 ; gain = 0.000
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 679f931b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 886.367 ; gain = 0.000
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus a are not locked:  'a[7]'  'a[6]'  'a[4]'  'a[3]'  'a[2]'  'a[1]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus b are not locked:  'b[7]'  'b[3]'  'b[2]'  'b[1]' 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 679f931b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.527 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 679f931b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.527 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: acf13ed9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.529 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1076f8835
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.530 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+Phase 2.2.1 Place Init Design | Checksum: 11518732e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.536 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 2.2 Build Placer Netlist Model | Checksum: 11518732e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.536 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: 11518732e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.537 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 2.3 Constrain Clocks/Macros | Checksum: 11518732e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.538 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 2 Placer Initialization | Checksum: 11518732e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.538 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 18612c0c9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.633 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 18612c0c9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.634 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 24827b052
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.643 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1932a1cdc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.646 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.689 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.695 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.695 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 4.4 Small Shape Detail Placement | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.697 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.699 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 4 Detail Placement | Checksum: 215bc65b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.699 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.700 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.701 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.701 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.702 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.702 . Memory (MB): peak = 903.621 ; gain = 17.254
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.702 . Memory (MB): peak = 903.621 ; gain = 17.254
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 23d24b9bc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.703 . Memory (MB): peak = 903.621 ; gain = 17.254
+Ending Placer Task | Checksum: 18e45dbca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.705 . Memory (MB): peak = 903.621 ; gain = 17.254
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 2 Warnings, 23 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 903.621 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 903.621 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 903.621 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 903.621 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -936 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PLIO-3) Placement Constraints Check for IO constraints - Partially locked IO Bus is found. Following components of the IO Bus a[7:0] are not locked:  a[7] a[6] a[4] a[3] a[2] a[1]
+WARNING: [DRC 23-20] Rule violation (PLIO-3) Placement Constraints Check for IO constraints - Partially locked IO Bus is found. Following components of the IO Bus b[7:0] are not locked:  b[7] b[3] b[2] b[1]
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e8abdcd0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 996.441 ; gain = 92.820
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: e8abdcd0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1001.105 ; gain = 97.484
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1a7a07fda
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 14c9ec757
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+Phase 4 Rip-up And Reroute | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0426533 %
+  Global Horizontal Routing Utilization  = 0.0096304 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 16.2162%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 25.2252%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 8.82353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 5.88235%, No Congested Regions.
+Phase 7 Route finalize | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1003.340 ; gain = 99.719
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: b8bb9887
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.516 ; gain = 100.895
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c615aa6a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.516 ; gain = 100.895
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.516 ; gain = 100.895
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 4 Warnings, 23 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.516 ; gain = 100.895
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1004.516 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Administrator/Desktop/project/addsub/addsub.runs/impl_1/addsub_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 15:46:22 2019...

@@ -1,0 +1,99 @@
+<!DOCTYPE  html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8"/>
+      <title>This is my title</title>
+      <style>
+         .leaf {
+             width:40px;
+             height:40px;
+             position: absolute;
+             background-image: url(images/leaf.gif);
+             background-size: cover;
+             animation-name: myfirst;
+             animation-timing-function: linear;
+             animation-iteration-count: infinite;
+         }
+         #bk {
+             width:600px;
+             height:600px;
+             position: relative;
+             margin:0 auto;
+             padding:20px;
+             background-image: url(images/leaf_bk.jpg)
+         }
+
+         @keyframes myfirst {
+             0% {transform: translateY(0px) rotateX(0deg) rotateY(0deg)}
+             25% {transform: translateY(360px) rotateX(240deg) rotateY(240deg)}
+             50% {transform: translateY(540px) rotateX(360deg) rotateY(360deg)}
+             75% {transform: translateY(540px) rotateX(360deg) rotateY(360deg); opacity: 100%;}
+             100% {transform: translateY(540px) rotateX(360deg) rotateY(360deg); opacity: 0%;}
+         }
+
+         #d1 {
+             left: 0px;
+             animation-duration: 2s;
+             animation-delay: 0s;
+         }
+
+         #d2 {
+             left: 86px;
+             animation-duration: 4s;
+             animation-delay: 1s;
+         }
+
+         #d3 {
+             left: 171px;
+             animation-duration: 6s;
+             animation-delay: 1.5s;
+         }
+
+         #d4 {
+             left: 257px;
+             animation-duration: 2s;
+             animation-delay: 2s;
+         }
+
+         #d5 {
+             left: 343px;
+             animation-duration: 4s;
+             animation-delay: 2.5s;
+         }
+
+         #d6 {
+             left: 429px;
+             animation-duration: 6s;
+             animation-delay: 1s;
+         }
+
+         #d7 {
+             left: 514px;
+             animation-duration: 2s;
+             animation-delay: 1.5s;
+         }
+
+         #d8 {
+             left: 600px;
+             animation-duration: 4s;
+             animation-delay: 2s;
+         }
+
+      </style>
+   </head>
+   <body>
+    <div id="bk">
+      <div id="d1" class="leaf"></div>
+      <div id="d2" class="leaf"></div>
+      <div id="d3" class="leaf"></div>
+      <div id="d4" class="leaf"></div>
+      <div id="d5" class="leaf"></div>
+      <div id="d6" class="leaf"></div>
+      <div id="d7" class="leaf"></div>
+      <div id="d8" class="leaf"></div>
+    </div>
+    </body>
+</html>
+         
+
+                

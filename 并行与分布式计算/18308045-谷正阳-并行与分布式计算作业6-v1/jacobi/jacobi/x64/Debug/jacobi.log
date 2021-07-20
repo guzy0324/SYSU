@@ -1,0 +1,89 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\guzy0\Desktop\dbg\jacobi\jacobi>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\guzy0\Desktop\dbg\jacobi\jacobi\kernel.cu" 
+  kernel.cu
+C:\Users\guzy0\Desktop\dbg\jacobi\jacobi\systime.h(23): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/system/cuda/detail/reduce.h(945): warning C4244: “初始化”: 从“Size”转换到“thrust::detail::int32_t”，可能丢失数据
+          with
+          [
+              Size=size_type
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/system/cuda/detail/reduce.h(1021): note: 查看对正在编译的函数 模板 实例化“T thrust::cuda_cub::detail::reduce_n_impl<thrust::cuda_cub::tag,InputIt,Size,T,BinaryOp>(thrust::cuda_cub::execution_policy<thrust::cuda_cub::tag> &,InputIt,Size,T,BinaryOp)”的引用
+          with
+          [
+              T=double,
+              InputIt=transformed_iterator_t,
+              Size=size_type,
+              BinaryOp=thrust::plus<double>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/system/cuda/detail/transform_reduce.h(59): note: 查看对正在编译的函数 模板 实例化“T thrust::cuda_cub::reduce_n<thrust::cuda_cub::tag,transformed_iterator_t,size_type,T,ReduceOp>(thrust::cuda_cub::execution_policy<thrust::cuda_cub::tag> &,InputIt,Size,T,BinaryOp)”的引用
+          with
+          [
+              T=double,
+              ReduceOp=thrust::plus<double>,
+              InputIt=transformed_iterator_t,
+              Size=size_type,
+              BinaryOp=thrust::plus<double>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/detail/transform_reduce.inl(47): note: 查看对正在编译的函数 模板 实例化“T thrust::cuda_cub::transform_reduce<thrust::cuda_cub::tag,InputIterator,UnaryFunction,OutputType,BinaryFunction>(thrust::cuda_cub::execution_policy<thrust::cuda_cub::tag> &,InputIt,InputIt,TransformOp,T,ReduceOp)”的引用
+          with
+          [
+              T=double,
+              InputIterator=ZipIterator,
+              UnaryFunction=square_diff_thr<double>,
+              OutputType=double,
+              BinaryFunction=thrust::plus<double>,
+              InputIt=ZipIterator,
+              TransformOp=square_diff_thr<double>,
+              ReduceOp=thrust::plus<double>
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/detail/transform_reduce.inl(67): note: 查看对正在编译的函数 模板 实例化“OutputType thrust::transform_reduce<DerivedPolicy,InputIterator,UnaryFunction,OutputType,BinaryFunction>(const thrust::detail::execution_policy_base<DerivedPolicy> &,InputIterator,InputIterator,UnaryFunction,OutputType,BinaryFunction)”的引用
+          with
+          [
+              OutputType=double,
+              DerivedPolicy=thrust::cuda_cub::tag,
+              InputIterator=ZipIterator,
+              UnaryFunction=square_diff_thr<double>,
+              BinaryFunction=thrust::plus<double>
+          ]
+  C:\Users\guzy0\Desktop\dbg\jacobi\jacobi\jacobi.h(64): note: 查看对正在编译的函数 模板 实例化“OutputType thrust::transform_reduce<ZipIterator,square_diff_thr<double>,T,thrust::plus<T>>(InputIterator,InputIterator,UnaryFunction,OutputType,BinaryFunction)”的引用
+          with
+          [
+              OutputType=double,
+              T=double,
+              InputIterator=ZipIterator,
+              UnaryFunction=square_diff_thr<double>,
+              BinaryFunction=thrust::plus<double>
+          ]
+  C:/Users/guzy0/Desktop/dbg/jacobi/jacobi/kernel.cu(190): note: 查看对正在编译的函数 模板 实例化“T diffGPU<double>(T *,T *,int)”的引用
+          with
+          [
+              T=double
+          ]
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\thrust/system/cuda/detail/reduce.h(973): warning C4244: “初始化”: 从“Size”转换到“thrust::detail::int32_t”，可能丢失数据
+          with
+          [
+              Size=size_type
+          ]
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\cub\agent\../grid/grid_even_share.cuh(133): warning C4244: “=”: 从“OffsetT”转换到“int”，可能丢失数据
+          with
+          [
+              OffsetT=__int64
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\cub\agent\../grid/grid_even_share.cuh(128): note: 在编译 类 模板 成员函数“void cub::GridEvenShare<__int64>::DispatchInit(OffsetT,int,int)”时
+          with
+          [
+              OffsetT=__int64
+          ]
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\cub\device\dispatch/dispatch_reduce.cuh(519): note: 查看对正在编译的函数 模板 实例化“void cub::GridEvenShare<__int64>::DispatchInit(OffsetT,int,int)”的引用
+          with
+          [
+              OffsetT=__int64
+          ]
+  C:\Users\guzy0\AppData\Local\Temp\tmpxft_00004be8_00000000-7_kernel.cudafe1.stub.c(113): note: 查看对正在编译的 类 模板 实例化“cub::GridEvenShare<__int64>”的引用
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include\cub\agent\../grid/grid_even_share.cuh(135): warning C4244: “=”: 从“OffsetT”转换到“int”，可能丢失数据
+          with
+          [
+              OffsetT=__int64
+          ]
+  jacobi.vcxproj -> C:\Users\guzy0\Desktop\dbg\jacobi\x64\Debug\jacobi.exe

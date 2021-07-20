@@ -1,0 +1,45 @@
+ratio: 1 : 99
+DecisionTree: 0.8212197159565581
+NaiveBayes: 0.8259537733221943
+DecisionTree: 0.7715803452855245
+NaiveBayes: 0.7715803452855245
+DecisionTree: 0.8677411102583781
+NaiveBayes: 0.8824507546687133
+
+ratio: 1 : 9
+DecisionTree: 0.8741001684790933
+NaiveBayes: 0.8871190075049777
+DecisionTree: 0.7690058479532164
+NaiveBayes: 0.7733918128654971
+DecisionTree: 0.8764598283382581
+NaiveBayes: 0.8605600112565077
+
+size: 700
+NaiveBayes: 0.8854134879462924
+NaiveBayes: 0.8333333333333334
+NaiveBayes: 0.8570038910505836
+
+total size: 1200
+NaiveBayes: 0.872
+
+total size: 2000
+NaiveBayes: 0.874
+
+total size: 4000
+NaiveBayes: 0.8713333333333333
+
+total size: 1200
+
+total size: 1200
+
+total size: 11137.0
+
+total size: 11137.0
+
+total size: 11137
+
+total size: 11137
+
+total size: 11137
+
+total size: 11137

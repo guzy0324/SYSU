@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slider</title>
+    <style>
+        #slides {
+            white-space: nowrap;
+            position: relative;
+        }
+
+        #slideMain {            
+            width: 770px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-image: url('images/navigator.png');
+            display: inline-block;
+        }
+
+        #dots {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .arrow {
+            width: 32px;
+            height: 80px;
+            background-image: url('images/arrows-30.png');
+            position: absolute;
+            top: 110px;
+        }
+
+        #right {
+            right: 0px;
+            background-position: bottom;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .red {
+            background-position-y: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="slideMain">
+         <div id="slides">
+             <img class="slide red" src="images/img1.jpg", id="a">
+             <img class="slide" src="images/img2.jpg", id="b">
+             <img class="slide" src="images/img3.jpg", id="c">
+         </div>
+         <div id="dots">
+             <div class="dot" id="dot1"></div>
+             <div class="dot" id="dot2"></div>
+             <div class="dot" id="dot3"></div>
+         </div>
+         <div class="arrow hidden" id="left"></div>
+         <div class="arrow hidden" id="right"></div>
+    </div>
+    <script>
+        var state = 0;
+        var speed = 100;
+        var loop = true;
+        function auto()
+        {
+            if (loop)
+            {
+                slide();
+            }
+            window.setTimeout(auto, 1000);
+        }
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var c = document.getElementById("c");
+        function slide()
+        {
+            state = (state + 1) % (3 * speed)
+            a.style.transform = "translate(" + -((state + speed) % (3 * speed) - speed) / speed * 770 + "px,0px)";
+            b.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+            c.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+            if (state % speed != 0)
+            {
+                window.setTimeout(slide, 1);
+            }
+            else
+            {
+                dots[(state / speed + 2) % 3].classList.remove("red");
+                dots[state / speed].classList.add("red");
+            }
+        }
+        function slideMain_hander(event)
+        {
+            switch (event.type)
+            {
+                case "mouseover": loop = false; break;
+                case "mouseout": loop = true;
+            }
+        }
+        slideMain = document.getElementById("slideMain");
+        slideMain.onmouseover = slideMain_hander;
+        slideMain.onmouseout = slideMain_hander;
+        function arrow_hander(event)
+        {
+            switch (event.type)
+            {
+                case "mouseover":
+                for (let arrow of arrows)
+                {
+                    arrow.classList.remove("hidden");
+                    arrow.classList.add("pointer");
+                }
+                break;
+                case "mouseout":
+                for (let arrow of arrows)
+                {
+                    arrow.classList.add("hidden");
+                    arrow.classList.remove("pointer");
+                }
+            }
+        }
+        function arrow_click_wrapper(right)
+        {
+            var dir = right * 2 - 1
+            function arrow_click()
+            {
+                state = (state + dir * speed) % (3 * speed);
+                if (state < 0)
+                {
+                    state += 300;
+                }
+                a.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                b.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                c.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                for (let i = 0; i < 3; ++i)
+                {
+                    if (i == state / speed)
+                    {
+                        dots[i].classList.add("red");
+                    }
+                    else
+                    {
+                        dots[i].classList.remove("red");
+                    }
+                }
+            }
+            return arrow_click;
+        }
+        arrows = document.querySelectorAll(".arrow");
+        for (let i = 0; i < 2; ++i)
+        {
+            arrows[i].onclick = arrow_click_wrapper(i);
+            arrows[i].onmouseover = arrow_hander;
+            arrows[i].onmouseout = arrow_hander;
+        }
+        function dot_hander(event)
+        {
+            switch (event.type)
+            {
+                case "mouseover":
+                for (let dot of dots)
+                {
+                    dot.classList.add("pointer");
+                }
+                break;
+                case "mouseout":
+                for (let dot of dots)
+                {
+                    dot.classList.remove("pointer");
+                }
+            }
+        }
+        function dot_click_wrapper(index)
+        {
+            var dot_state = speed * index;
+            function dot_click()
+            {
+                state = dot_state;
+                a.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                b.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                c.style.transform = "translate(" + -(state % (3 * speed)) / speed * 770 + "px,0px)";
+                for (let i = 0; i < 3; ++i)
+                {
+                    if (i == index)
+                    {
+                        dots[i].classList.add("red");
+                    }
+                    else
+                    {
+                        dots[i].classList.remove("red");
+                    }
+                }
+            }
+            return dot_click;
+        }
+        dots = document.querySelectorAll(".dot");
+        for (let i = 0; i < 3; ++i)
+        {
+            dots[i].onclick = dot_click_wrapper(i);
+            dots[i].onmouseover = dot_hander;
+            dots[i].onmouseout = dot_hander;
+        }
+        auto();
+    </script>
+</body>
+</html>

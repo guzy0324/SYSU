@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Dec 17 21:56:11 2019
+# Process ID: 14140
+# Current directory: C:/Users/guzy0/pipeline/pipeline.runs/DataRam_synth_1
+# Command line: vivado.exe -log DataRAM.vds -mode batch -messageDb vivado.pb -notrace -source DataRAM.tcl
+# Log file: C:/Users/guzy0/pipeline/pipeline.runs/DataRam_synth_1/DataRAM.vds
+# Journal file: C:/Users/guzy0/pipeline/pipeline.runs/DataRam_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DataRAM.tcl -notrace

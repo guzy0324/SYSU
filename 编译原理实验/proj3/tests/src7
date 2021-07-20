@@ -1,0 +1,30 @@
+/* ex7: recursive function call */
+program ex7;
+class c7
+{
+	method int sum(val int i)
+	declarations
+		int s;
+	enddeclarations
+	{
+	if (i <= 0)
+		{
+		return 1;
+		}
+	else if ( i == 1 )
+		{
+		return 1;
+		}
+	else
+		{
+		s := sum(i-1) + sum(i-2);
+		return s;
+		};
+	}
+
+	method void main()
+	{
+	system.println('sum(5)=');
+	system.println(sum(5));
+	}
+}

@@ -1,0 +1,519 @@
+<!DOCTYPE html><html><head>
+      <title>hw4_18308045</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\guzy0\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.15\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	/* padding: 0; */
+
+	padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E4%BD%9C%E4%B8%9A4">&#x4F5C;&#x4E1A;4</h1>
+
+<table>
+<thead>
+<tr>
+<th>&#x5B66;&#x53F7;</th>
+<th>&#x59D3;&#x540D;</th>
+<th>&#x4E13;&#x4E1A;(&#x65B9;&#x5411;)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18308045</td>
+<td>&#x8C37;&#x6B63;&#x9633;</td>
+<td>&#x5927;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="%E5%AE%9E%E7%8E%B0">&#x5B9E;&#x73B0;</h2>
+
+<ol>
+<li>
+<p>&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x7684;&#x4FEE;&#x6539;</p>
+<p>&#x7531;&#x4E8E;&#x5C0F;&#x7403;&#x8FD0;&#x52A8;&#x65F6;&#x9876;&#x70B9;&#x662F;&#x4E0D;&#x53D8;&#x7684;&#xFF0C;&#x53D8;&#x5316;&#x7684;&#x662F;ModelView&#x77E9;&#x9635;&#x3002;&#x56E0;&#x800C;&#x53EF;&#x4EE5;&#x5C06;&#x7B97;&#x597D;&#x7684;&#x9876;&#x70B9;&#x5B58;&#x5728;&#x6570;&#x7EC4;<code>vert</code>&#x4E2D;&#xFF0C;&#x540E;&#x7EED;&#x7ED8;&#x5236;&#x65E0;&#x9700;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token keyword">void</span> <span class="token class-name">MyGLWidget</span><span class="token operator">::</span><span class="token function">spherical_subdivision</span><span class="token punctuation">(</span>size_t depth <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">bool</span> is_calc <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> vector<span class="token operator">&lt;</span>vec<span class="token operator">&gt;</span> vert<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>is_calc<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>triangles<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            vec v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> vert<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> vert<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> vert<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        is_calc <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> vert<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token number">3</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">glBegin</span><span class="token punctuation">(</span>GL_TRIANGLES<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">glVertex3f</span><span class="token punctuation">(</span>vert<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">glVertex3f</span><span class="token punctuation">(</span>vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">glVertex3f</span><span class="token punctuation">(</span>vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span> vert<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">glEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x8FD9;&#x662F;&#x7A7A;&#x95F4;&#x6362;&#x65F6;&#x95F4;&#x7684;&#x601D;&#x60F3;&#x3002;</p>
+</li>
+<li>
+<p>VBO</p>
+<ul>
+<li>
+<p>&#x521D;&#x59CB;&#x5316;&#xFF1A;</p>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>glVertexArribPointer</code>&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x5927;&#x5C0F;&#x3002;</li>
+<li>&#x7B2C;&#x4E94;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6B65;&#x957F;&#xFF08;Stride&#xFF09;&#xFF0C;&#x6307;&#x5B9A;&#x5728;&#x8FDE;&#x7EED;&#x7684;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x3002;</li>
+</ul>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5728;&#x6B64;&#x8BBE;&#x7F6E;&#x9876;&#x70B9;&#x4E3A;3&#x4E2A;float&#xFF0C;&#x6240;&#x4EE5;&#x505A;&#x5982;&#x4E0B;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token function">glGenBuffers</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>VBO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">glBindBuffer</span><span class="token punctuation">(</span>GL_ARRAY_BUFFER<span class="token punctuation">,</span> VBO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">glBufferData</span><span class="token punctuation">(</span>GL_ARRAY_BUFFER<span class="token punctuation">,</span> MAX_SIZE_VBO <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLfloat<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">nullptr</span><span class="token punctuation">,</span> GL_STATIC_DRAW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+v_size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token comment">// set the vertex attributes pointers</span>
+<span class="token function">glVertexAttribPointer</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> GL_FLOAT<span class="token punctuation">,</span> GL_FALSE<span class="token punctuation">,</span> <span class="token number">3</span> <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLfloat<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">glEnableVertexAttribArray</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x7ED8;&#x5236;&#xFF1A;</p>
+<p>&#x53EA;&#x505A;&#x4E86;&#x7403;&#x9762;&#x7EC6;&#x5206;&#x7248;&#x672C;&#x7684;VBO&#x3002;&#x540C;&#x7A7A;&#x95F4;&#x6362;&#x65F6;&#x95F4;&#x4E00;&#x6837;&#x8BA1;&#x7B97;<code>vertices</code>&#x3001;&#x5C06;<code>vertices</code>&#x62F7;&#x8D1D;&#x5230;VBO&#x53EA;&#x8DD1;&#x4E00;&#x6B21;&#xFF1B;&#x533A;&#x522B;&#x5728;&#x4E8E;VBO&#x5C06;&#x9876;&#x70B9;&#x62F7;&#x8D1D;&#x5230;GPU&#x53EA;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x800C;&#x4E0D;&#x7528;VBO&#x5219;&#x6BCF;&#x6B21;&#x7ED8;&#x5236;&#x90FD;&#x4F1A;&#x62F7;&#x8D1D;&#x5230;GPU&#x3002;&#x4E0B;&#x9762;&#x8BB2;&#x89E3;&#x4E0B;&#x4E00;&#x4E9B;&#x7528;&#x5230;&#x7684;&#x53D8;&#x91CF;&#xFF1A;</p>
+<ul>
+<li><code>int v_size</code>&#xFF1A;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x6240;&#x6709;&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x516C;&#x7528;&#x7684;VBO&#x4E2D;&#x6709;&#x6548;&#x6570;&#x636E;&#x90E8;&#x5206;&#x7684;&#x5927;&#x5C0F;&#x3002;</li>
+<li><code>static int v_begin</code>&#xFF1A;&#x8868;&#x793A;&#x67D0;&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x6240;&#x5360;VBO&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>static int v_end</code>&#xFF1A;&#x8868;&#x793A;&#x67D0;&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x6240;&#x5360;VBO&#x7684;&#x7EC8;&#x6B62;&#x4F4D;&#x7F6E;&#x3002;</li>
+</ul>
+<p>&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x548C;&#x4E0D;&#x7528;VBO&#x7684;&#x5B9E;&#x73B0;&#x5F88;&#x76F8;&#x4F3C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token keyword">void</span> <span class="token class-name">MyGLWidget</span><span class="token operator">::</span><span class="token function">spherical_subdivision_VBO</span><span class="token punctuation">(</span>size_t depth <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">bool</span> is_calc <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> v_begin<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> v_end<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>is_calc<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        v_begin <span class="token operator">=</span> v_size<span class="token punctuation">;</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        vector<span class="token operator">&lt;</span>GLfloat<span class="token operator">&gt;</span> vertices<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>triangles<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            vec v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            v <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        v_size <span class="token operator">=</span> v_begin <span class="token operator">+</span> vertices<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        v_end <span class="token operator">=</span> v_size<span class="token punctuation">;</span>
+        <span class="token comment">// copy our vertices array in a vertex buffer for OpenGL to use</span>
+        <span class="token function">glBufferSubData</span><span class="token punctuation">(</span>GL_ARRAY_BUFFER<span class="token punctuation">,</span> v_begin <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLfloat<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>v_end <span class="token operator">-</span> v_begin<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLfloat<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>vertices<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        is_calc <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">glDrawArrays</span><span class="token punctuation">(</span>GL_TRIANGLES<span class="token punctuation">,</span> v_begin <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>v_end <span class="token operator">-</span> v_begin<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x6700;&#x540E;&#x7ED8;&#x5236;&#x4F7F;&#x7528;<code>glDrawArrays</code>&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5B83;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x7684;&#x54EA;&#x4E00;&#x4F4D;&#x5F00;&#x59CB;&#x7ED8;&#x5236;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5B9A;&#x4E49;&#x7ED8;&#x5236;&#x7684;&#x9876;&#x70B9;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+<p>&#x800C;&#x9876;&#x70B9;&#x957F;&#x5EA6;&#x5DF2;&#x7ECF;&#x9884;&#x5148;&#x8BBE;&#x7F6E;&#x597D;&#x662F;3&#x4E2A;float&#x3002;</p>
+</li>
+</ul>
+</li>
+<li>
+<p>EBO</p>
+<ul>
+<li>
+<p>&#x521D;&#x59CB;&#x5316;&#xFF1A;</p>
+<p>&#x7C7B;&#x4F3C;VBO&#x521D;&#x59CB;&#x5316;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token function">glGenBuffers</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>EBO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">glBindBuffer</span><span class="token punctuation">(</span>GL_ELEMENT_ARRAY_BUFFER<span class="token punctuation">,</span> EBO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">glBufferData</span><span class="token punctuation">(</span>GL_ELEMENT_ARRAY_BUFFER<span class="token punctuation">,</span> MAX_I_SIZE <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLuint<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">nullptr</span><span class="token punctuation">,</span> GL_STATIC_DRAW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+i_size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x7ED8;&#x5236;&#xFF1A;</p>
+<p>&#x53EA;&#x505A;&#x4E86;&#x7403;&#x9762;&#x7EC6;&#x5206;&#x7248;&#x672C;&#x7684;EBO&#x3002;&#x9664;&#x4E86;VBO&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x53D8;&#x91CF;&#x5916;&#xFF0C;&#x8FD8;&#x5F15;&#x5165;&#x4E86;&#x4E0B;&#x6807;&#xFF1A;</p>
+<ul>
+<li><code>int i_size</code>&#xFF1A;&#x8868;&#x793A;&#x6574;&#x4E2A;&#x6240;&#x6709;&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x516C;&#x7528;&#x7684;EBO&#x4E2D;&#x6709;&#x6548;&#x6570;&#x636E;&#x90E8;&#x5206;&#x7684;&#x5927;&#x5C0F;&#x3002;</li>
+<li><code>static int i_begin</code>&#xFF1A;&#x8868;&#x793A;&#x67D0;EBO&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x6240;&#x5360;EBO&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>static int i_end</code>&#xFF1A;&#x8868;&#x793A;&#x67D0;EBO&#x7ED8;&#x5236;&#x51FD;&#x6570;&#x6240;&#x5360;EBO&#x7684;&#x7EC8;&#x6B62;&#x4F4D;&#x7F6E;&#x3002;</li>
+</ul>
+<p>&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x4E0E;&#x666E;&#x901A;&#x7684;&#x7403;&#x9762;&#x7EC6;&#x5206;&#x548C;&#x4F7F;&#x7528;VBO&#x7684;&#x7403;&#x9762;&#x7EC6;&#x5206;&#x76F8;&#x6BD4;&#x4E0D;&#x592A;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x7684;<code>triangles</code>&#x961F;&#x5217;&#x5B58;&#x50A8;&#x7684;&#x4E0D;&#x662F;<code>vec3</code>&#x800C;&#x662F;&#x9876;&#x70B9;&#x7684;&#x4E0B;&#x6807;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp">queue<span class="token operator">&lt;</span>GLuint<span class="token operator">&gt;</span> triangles<span class="token punctuation">;</span>
+triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> triangles<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#x5B83;&#x7684;&#x9876;&#x70B9;&#x4E5F;&#x5E76;&#x975E;&#x5148;&#x5B58;&#x5165;<code>triangles</code>&#x961F;&#x5217;&#x540E;&#x62F7;&#x8D1D;&#x5230;<code>vertices</code>&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x5B58;&#x50A8;&#x5230;<code>vertices</code>&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp">vector<span class="token operator">&lt;</span>GLfloat<span class="token operator">&gt;</span> vertices<span class="token punctuation">;</span>
+vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> vertices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#x6700;&#x540E;&#x628A;<code>triangles</code>&#x5185;&#x7684;&#x9876;&#x70B9;&#x62F7;&#x8D1D;&#x5230;<code>indices</code>&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp">v_begin <span class="token operator">/=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+vector<span class="token operator">&lt;</span>GLuint<span class="token operator">&gt;</span> indices<span class="token punctuation">;</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>triangles<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	GLuint i <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	indices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v_begin <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	i <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	indices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v_begin <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	i <span class="token operator">=</span> triangles<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> triangles<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	indices<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>v_begin <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+i_end <span class="token operator">=</span> indices<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// copy our index array in a element buffer for OpenGL to use</span>
+<span class="token function">glBufferSubData</span><span class="token punctuation">(</span>GL_ELEMENT_ARRAY_BUFFER<span class="token punctuation">,</span> i_begin <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLuint<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>i_end <span class="token operator">-</span> i_begin<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLuint<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>indices<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>&#x7ED8;&#x5236;&#x4F7F;&#x7528;&#x51FD;&#x6570;<code>glDrawElements</code>&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5B83;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8981;&#x7ED8;&#x5236;&#x7684;&#x9876;&#x70B9;&#x4E2A;&#x6570;&#x3002;</li>
+<li>&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;EBO&#x4E2D;&#x504F;&#x79FB;&#x91CF;&#x8BBE;&#x5B9A;&#x3002;</li>
+</ul>
+<p>&#x56E0;&#x800C;&#x7ED8;&#x5236;&#x5199;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token function">glDrawElements</span><span class="token punctuation">(</span>GL_TRIANGLES<span class="token punctuation">,</span> i_end <span class="token operator">-</span> i_begin<span class="token punctuation">,</span> GL_UNSIGNED_INT<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i_begin <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GLuint<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
+</li>
+</ol>
+<h2 class="mume-header" id="%E5%AE%9E%E9%AA%8C">&#x5B9E;&#x9A8C;</h2>
+
+<ol>
+<li>
+<p>&#x5B9E;&#x9A8C;&#x8BBE;&#x7F6E;</p>
+<p>&#x573A;&#x666F;&#x548C;&#x4E0A;&#x6B21;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x53EA;&#x753B;&#x4E86;&#x7403;&#x9762;&#x7EC6;&#x5206;&#x7684;&#x7403;&#xFF0C;&#x5B83;&#x56F4;&#x7ED5;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mo>&#x2212;</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,0,-50)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">&#x2212;</span><span class="mord">5</span><span class="mord">0</span><span class="mclose">)</span></span></span></span>&#x70B9;&#x516C;&#x8F6C;&#xFF08;&#x516C;&#x8F6C;&#x65B9;&#x5F0F;&#x548C;&#x4E0A;&#x6B21;&#x4E00;&#x6837;&#xFF09;&#xFF0C;&#x5E76;&#x5728;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mo>&#x2212;</mo><mn>50</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0,0,-50)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">&#x2212;</span><span class="mord">5</span><span class="mord">0</span><span class="mclose">)</span></span></span></span>&#x5904;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5149;&#x6E90;&#x3002;</p>
+<p>&#x516C;&#x8F6C;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4EA4;&#x66FF;&#x4F7F;&#x7528;3&#x79CD;&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x7403;&#xFF0C;&#x4F7F;&#x7528;<code>method</code>&#x53D8;&#x91CF;&#x6765;&#x51B3;&#x5B9A;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token keyword">switch</span> <span class="token punctuation">(</span>method<span class="token operator">++</span> <span class="token operator">%</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
+        start <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">spherical_subdivision</span><span class="token punctuation">(</span>Depth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        end <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sum0 <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> CLOCKS_PER_SEC<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+        start <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">spherical_subdivision_VBO</span><span class="token punctuation">(</span>Depth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        end <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sum1 <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> CLOCKS_PER_SEC<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+        start <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">spherical_subdivision_EBO</span><span class="token punctuation">(</span>Depth<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        end <span class="token operator">=</span> <span class="token function">clock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        sum2 <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">/</span> CLOCKS_PER_SEC<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x540C;&#x65F6;<code>method</code>&#x53D8;&#x91CF;&#x6765;&#x51B3;&#x5B9A;&#x8BA1;&#x7B97;&#x5E76;&#x663E;&#x793A;&#x5E73;&#x5747;&#x65F6;&#x95F4;&#x7684;&#x9891;&#x7387;&#xFF0C;&#x800C;&#x4E14;<code>method</code>&#x672C;&#x8EAB;&#x662F;&#x603B;&#x5171;&#x8FD0;&#x884C;&#x51FD;&#x6570;&#x7684;&#x6B21;&#x6570;&#x53EF;&#x7528;&#x4E8E;&#x7B97;&#x5E73;&#x5747;&#x65F6;&#x95F4;&#x3002;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token keyword">if</span> <span class="token punctuation">(</span>method <span class="token operator">%</span> freq <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">&quot;cls&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;origin\t&quot;</span> <span class="token operator">&lt;&lt;</span> sum0 <span class="token operator">/</span> method <span class="token operator">*</span> <span class="token number">3e6</span> <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;\tus&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;VBO\t&quot;</span> <span class="token operator">&lt;&lt;</span> sum1 <span class="token operator">/</span> method <span class="token operator">*</span> <span class="token number">3e6</span> <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;\tus&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;EBO\t&quot;</span> <span class="token operator">&lt;&lt;</span> sum2 <span class="token operator">/</span> method <span class="token operator">*</span> <span class="token number">3e6</span> <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;\tus&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token comment">//Shading shading = Phong;</span>
+<span class="token comment">//Shading shading = Gouraud;</span>
+Shading shading <span class="token operator">=</span> Flat<span class="token punctuation">;</span>
+size_t Depth <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token comment">//size_t Depth = 4;</span>
+<span class="token comment">//size_t Depth = 2;</span>
+<span class="token keyword">unsigned</span> freq <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x7ED3;&#x679C;</p>
+ <center>
+ <video id="video" controls preload="metadata" width="800">
+     <source id="webm" src="vids/result.webm" type="video/webm">
+ </video>
+ </center>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x4E09;&#x8005;&#x5E73;&#x5747;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x90FD;&#x4E0B;&#x964D;&#xFF0C;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x5E73;&#x5747;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x8FDC;&#x4F4E;&#x4E8E;&#x5176;&#x4ED6;&#x4E24;&#x79CD;&#xFF0C;EBO&#x7684;&#x5E73;&#x5747;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x5F00;&#x59CB;&#x6BD4;VBO&#x7528;&#x65F6;&#x5C11;&#xFF0C;&#x6700;&#x540E;VBO&#x7528;&#x65F6;&#x9010;&#x6E10;&#x6BD4;EBO&#x5C11;&#x3002;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li>&#x4E09;&#x8005;&#x90FD;&#x662F;&#x53EA;&#x8BA1;&#x7B97;&#x4E00;&#x6B21;&#xFF0C;&#x56E0;&#x800C;&#x540E;&#x7EED;&#x8017;&#x65F6;&#x6BD4;&#x7B2C;&#x4E00;&#x6B21;&#x5C11;&#xFF0C;&#x5E73;&#x5747;&#x65F6;&#x95F4;&#x964D;&#x4F4E;&#x3002;</li>
+<li>&#x7A7A;&#x95F4;&#x6362;&#x65F6;&#x95F4;&#x7684;&#x539F;&#x59CB;&#x5B9E;&#x73B0;&#x6BCF;&#x6B21;&#x7ED8;&#x5236;&#x90FD;&#x4F1A;&#x91CD;&#x65B0;&#x4F20;&#x9012;&#x4E00;&#x904D;&#x9876;&#x70B9;&#x7ED9;GPU&#x56E0;&#x800C;&#x6162;&#x3002;</li>
+<li>EBO&#x8BA1;&#x7B97;&#x65F6;&#x64CD;&#x4F5C;&#x7684;&#x662F;&#x5360;&#x7528;&#x5185;&#x5B58;&#x66F4;&#x5C11;&#x7684;&#x9876;&#x70B9;&#x4E0B;&#x6807;&#xFF0C;&#x8BA1;&#x7B97;&#x5FEB;&#xFF0C;&#x4E14;&#x4E0D;&#x4F20;&#x9012;&#x7ED9;GPU&#x91CD;&#x590D;&#x7684;&#x9876;&#x70B9;&#x800C;&#x662F;&#x4F20;&#x9012;&#x66F4;&#x5C0F;&#x7684;&#x9876;&#x70B9;&#x4E0B;&#x6807;&#xFF0C;&#x4F20;&#x9012;&#x91CF;&#x5C11;&#xFF0C;&#x56E0;&#x800C;&#x4E00;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x5FEB;&#x4E8E;VBO&#x3002;</li>
+<li>&#x4F46;&#x662F;EBO&#x7ED8;&#x5236;&#x65F6;&#x6BD4;VBO&#x591A;&#x4E00;&#x6B65;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x6765;&#x7D22;&#x5F15;&#x9876;&#x70B9;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x56E0;&#x800C;&#x540E;&#x9762;&#x6548;&#x7387;&#x88AB;VBO&#x8D76;&#x8D85;&#x3002;</li>
+</ul>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

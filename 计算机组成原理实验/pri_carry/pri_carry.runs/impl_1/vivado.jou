@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 05 21:36:24 2019
+# Process ID: 10840
+# Current directory: G:/project/pri_carry/pri_carry.runs/impl_1
+# Command line: vivado.exe -log chaoadder.vdi -applog -messageDb vivado.pb -mode batch -source chaoadder.tcl -notrace
+# Log file: G:/project/pri_carry/pri_carry.runs/impl_1/chaoadder.vdi
+# Journal file: G:/project/pri_carry/pri_carry.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source chaoadder.tcl -notrace

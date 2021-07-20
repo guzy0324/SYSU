@@ -1,0 +1,19 @@
+/* Ex0: Some printlns */
+program ex1;
+class c1
+{
+    declarations
+        int x=-1;
+    enddeclarations
+    method void main()
+    declarations
+        int y=4;
+    enddeclarations
+    {
+        system.println('x = ');
+        system.println(x);
+        system.println('y = ');
+        system.println(y);
+    }
+}
+

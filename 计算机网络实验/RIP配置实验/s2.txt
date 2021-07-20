@@ -1,0 +1,404 @@
+R0：
+Router#sh ip ro
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     192.168.1.0/26 is subnetted, 4 subnets
+R       192.168.1.0 [120/2] via 192.168.1.129, 00:00:06, FastEthernet0/0
+R       192.168.1.64 [120/1] via 192.168.1.129, 00:00:06, FastEthernet0/0
+C       192.168.1.128 is directly connected, FastEthernet0/0
+R       192.168.1.192 [120/1] via 192.168.1.129, 00:00:06, FastEthernet0/0
+C    192.168.2.0/24 is directly connected, FastEthernet0/1
+R    192.168.3.0/24 [120/1] via 192.168.2.2, 00:00:05, FastEthernet0/1
+R    192.168.4.0/24 [120/1] via 192.168.2.2, 00:00:05, FastEthernet0/1
+Router#sh r
+Building configuration...
+
+Current configuration : 585 bytes
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 192.168.1.130 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 192.168.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+ version 2
+ network 192.168.1.0
+ network 192.168.2.0
+!
+ip classless
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+R1：
+Router#sh r
+Building configuration...
+
+Current configuration : 662 bytes
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+interface Loopback0
+ ip address 192.168.4.1 255.255.255.0
+!
+interface FastEthernet0/0
+ ip address 192.168.2.2 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 192.168.3.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+ version 2
+ network 192.168.2.0
+ network 192.168.3.0
+ network 192.168.4.0
+!
+ip classless
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+S0：
+Switch#sh r
+Building configuration...
+
+Current configuration : 1301 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+interface FastEthernet0/1
+ no switchport
+ ip address 192.168.1.1 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/2
+ no switchport
+ ip address 192.168.1.65 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+ version 2
+ network 192.168.1.0
+!
+ip classless
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+S1：
+Switch#sh r
+Building configuration...
+
+Current configuration : 1385 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+!
+!
+!
+!
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+interface FastEthernet0/1
+ no switchport
+ ip address 192.168.1.66 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/2
+ no switchport
+ ip address 192.168.1.129 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/3
+ no switchport
+ ip address 192.168.1.193 255.255.255.192
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+ version 2
+ network 192.168.1.0
+!
+ip classless
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end

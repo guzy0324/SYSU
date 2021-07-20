@@ -1,0 +1,7 @@
+Running: xsim.dir/chaoadder_behav/xsimk.exe -simmode gui -wdb chaoadder_behav.wdb -simrunnum 0 -socket 64936
+Design successfully loaded
+Design Loading Memory Usage: 22720 KB (Peak: 22720 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 23096 KB (Peak: 23096 KB)
+Simulation CPU Usage: 171 ms

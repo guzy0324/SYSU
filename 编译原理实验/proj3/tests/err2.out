@@ -1,0 +1,60 @@
+Semantic Error--line: 12, symbol z: undeclared.
+********************************Symbol Table************************************
+
+          Name Nest-Level  Tree-Node Predefined        Kind      Type      Value     Offset  Dimension     Argnum
+
+  1     myTest          0                            class                                                       
+  2          y          1                         variable  type-tree                                            
+  3          x          1                         variable  type-tree                                            
+  4       main          1  proc-tree             procedure                                                      0
+************* SYNTAX TREE PRINTOUT ***********
+
+  +-[DUMMYnode]
+R-[ProgramOp]
+  |   +-[STNode,1,"myTest"]
+  | +-[ClassDefOp]
+  | | |             +-[DUMMYnode]
+  | | |           +-[VarOp]
+  | | |           | +-[STNode,2,"y"]
+  | | |         +-[AddOp]
+  | | |         | | +-[DUMMYnode]
+  | | |         | +-[VarOp]
+  | | |         |   +-[STNode,3,"x"]
+  | | |       +-[AssignOp]
+  | | |       | |   +-[DUMMYnode]
+  | | |       | | +-[VarOp]
+  | | |       | | | +-[IDNode,21,"z"]
+  | | |       | +-[AssignOp]
+  | | |       |   +-[DUMMYnode]
+  | | |     +-[StmtOp]
+  | | |     | +-[DUMMYnode]
+  | | |   +-[BodyOp]
+  | | |   | +-[DUMMYnode]
+  | | | +-[MethodOp]
+  | | | | |   +-[DUMMYnode]
+  | | | | | +-[SpecOp]
+  | | | | | | +-[DUMMYnode]
+  | | | | +-[HeadOp]
+  | | | |   +-[STNode,4,"main"]
+  | | +-[BodyOp]
+  | |   |       +-[DUMMYnode]
+  | |   |     +-[CommaOp]
+  | |   |     | | +-[DUMMYnode]
+  | |   |     | +-[TypeIdOp]
+  | |   |     |   +-[INTEGERTNode]
+  | |   |   +-[CommaOp]
+  | |   |   | +-[STNode,2,"y"]
+  | |   | +-[DeclOp]
+  | |   | | |     +-[DUMMYnode]
+  | |   | | |   +-[CommaOp]
+  | |   | | |   | | +-[DUMMYnode]
+  | |   | | |   | +-[TypeIdOp]
+  | |   | | |   |   +-[INTEGERTNode]
+  | |   | | | +-[CommaOp]
+  | |   | | | | +-[STNode,3,"x"]
+  | |   | | +-[DeclOp]
+  | |   | |   +-[DUMMYnode]
+  | |   +-[BodyOp]
+  | |     +-[DUMMYnode]
+  +-[ClassOp]
+    +-[DUMMYnode]

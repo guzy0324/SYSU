@@ -1,0 +1,115 @@
+Executing tests from 1/domain-puzzle.ptest.json.
+Planning service: http://solver.planning.domains/solve
+Domain: puzzle, Problem: prob
+ --- OK.
+ Match tree built with 192 nodes.
+
+PDDL problem description loaded: 
+	Domain: PUZZLE
+	Problem: PROB
+	#Actions: 192
+	#Fluents: 81
+Landmarks found: 9
+Starting search with IW (time budget is 60 secs)...
+rel_plan size: 11
+#RP_fluents 17
+Caption
+{#goals, #UNnachieved,  #Achieved} -> IW(max_w)
+
+{9/9/0}:IW(1) -> rel_plan size: 11
+#RP_fluents 17
+{9/6/3}:IW(1) -> [2][3][4]rel_plan size: 9
+#RP_fluents 14
+{9/5/4}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18];; NOT I-REACHABLE ;;
+Total time: 4.47035e-10
+Nodes generated during search: 272
+Nodes expanded during search: 263
+IW search completed
+Starting search with BFS(novel,land,h_add)...
+--[4294967295 / 22]--
+--[5 / 22]--
+--[5 / 20]--
+--[5 / 19]--
+--[5 / 18]--
+--[5 / 16]--
+--[5 / 15]--
+--[5 / 14]--
+--[5 / 11]--
+--[5 / 10]--
+--[5 / 8]--
+--[4 / 8]--
+--[3 / 8]--
+--[3 / 5]--
+--[3 / 2]--
+--[2 / 2]--
+--[2 / 0]--
+--[0 / 0]--
+Total time: 0.056
+Nodes generated during search: 1484
+Nodes expanded during search: 525
+Plan found with cost: 61
+BFS search completed
+0.00100: (slide n5 l33 l23)
+0.00200: (slide n4 l32 l33)
+0.00300: (slide n8 l22 l32)
+0.00400: (slide n5 l23 l22)
+0.00500: (slide n4 l33 l23)
+0.00600: (slide n8 l32 l33)
+0.00700: (slide n6 l31 l32)
+0.00800: (slide n7 l21 l31)
+0.00900: (slide n5 l22 l21)
+0.01000: (slide n6 l32 l22)
+0.01100: (slide n8 l33 l32)
+0.01200: (slide n4 l23 l33)
+0.01300: (slide n6 l22 l23)
+0.01400: (slide n2 l12 l22)
+0.01500: (slide n3 l13 l12)
+0.01600: (slide n6 l23 l13)
+0.01700: (slide n4 l33 l23)
+0.01800: (slide n8 l32 l33)
+0.01900: (slide n2 l22 l32)
+0.02000: (slide n4 l23 l22)
+0.02100: (slide n6 l13 l23)
+0.02200: (slide n3 l12 l13)
+0.02300: (slide n4 l22 l12)
+0.02400: (slide n5 l21 l22)
+0.02500: (slide n1 l11 l21)
+0.02600: (slide n4 l12 l11)
+0.02700: (slide n5 l22 l12)
+0.02800: (slide n2 l32 l22)
+0.02900: (slide n7 l31 l32)
+0.03000: (slide n1 l21 l31)
+0.03100: (slide n4 l11 l21)
+0.03200: (slide n5 l12 l11)
+0.03300: (slide n2 l22 l12)
+0.03400: (slide n4 l21 l22)
+0.03500: (slide n1 l31 l21)
+0.03600: (slide n7 l32 l31)
+0.03700: (slide n4 l22 l32)
+0.03800: (slide n1 l21 l22)
+0.03900: (slide n5 l11 l21)
+0.04000: (slide n2 l12 l11)
+0.04100: (slide n1 l22 l12)
+0.04200: (slide n5 l21 l22)
+0.04300: (slide n2 l11 l21)
+0.04400: (slide n1 l12 l11)
+0.04500: (slide n5 l22 l12)
+0.04600: (slide n4 l32 l22)
+0.04700: (slide n7 l31 l32)
+0.04800: (slide n2 l21 l31)
+0.04900: (slide n4 l22 l21)
+0.05000: (slide n5 l12 l22)
+0.05100: (slide n1 l11 l12)
+0.05200: (slide n4 l21 l11)
+0.05300: (slide n2 l31 l21)
+0.05400: (slide n7 l32 l31)
+0.05500: (slide n5 l22 l32)
+0.05600: (slide n2 l21 l22)
+0.05700: (slide n4 l11 l21)
+0.05800: (slide n1 l12 l11)
+0.05900: (slide n2 l22 l12)
+0.06000: (slide n5 l32 l22)
+0.06100: (slide n8 l33 l32)
+☑ puzzle.pddl (1.367 sec)
+Planner found 1 plan(s) in 1.367secs.
+Finished executing tests from 1/domain-puzzle.ptest.json.

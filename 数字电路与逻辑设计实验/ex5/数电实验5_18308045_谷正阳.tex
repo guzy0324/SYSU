@@ -1,0 +1,137 @@
+\documentclass[UTF8, a4paper, 11pt]{article}
+\usepackage{diagbox}
+\usepackage{subfigure}
+\usepackage[UTF8, scheme=plain]{ctex}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{amsmath}
+\newtheorem{myDef}{Definition}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage[linesnumbered,boxed]{algorithm2e}    
+\usepackage{xeCJK}
+\usepackage{indentfirst} 
+\graphicspath{{Pics/}} 	% 在于.tex同级的目录下创建名为pic的文件夹，存放图片
+
+
+\setlength{\parindent}{2em}
+
+\lstset{
+    language={C},
+    frame=shadowbox,
+    breaklines=true,
+    numbers=left,
+    backgroundcolor=\color[RGB]{245,245,244},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberstyle={\color[RGB]{0,192,192}\tiny},
+    basicstyle=\footnotesize \fontspec{Source Code Pro}
+}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge 数电实验5\\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{18308045 谷正阳}
+\date{\normalsize\today}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{仿真实验}
+\subsection{四十六译码器}
+\subsubsection{电路图}
+将最高位接使能端，实现对两个三八译码器的选择。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.1电路图.jpg}
+\end{figure}
+\subsubsection{波形图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.1波形图.png}
+\end{figure}
+\subsection{门电路实现半加半减器}
+\subsubsection{卡诺图}
+\begin{table}[H]
+    \center
+\begin{tabular}{|l|l|l|}
+\hline
+\diagbox{AB}{S} & 0 & 1 \\ \hline
+00              & 0 & 0 \\ \hline
+01              & 1 & 1 \\ \hline
+11              & 0 & 0 \\ \hline
+10              & 1 & 1 \\ \hline
+\end{tabular}
+\end{table}
+$$Y=\bar AB+A\bar B=A\oplus B$$
+\begin{table}[H]
+    \center
+\begin{tabular}{|l|l|l|}
+\hline
+\diagbox{AB}{S} & 0 & 1 \\ \hline
+00              & 0 & 0 \\ \hline
+01              & 0 & 1 \\ \hline
+11              & 1 & 0 \\ \hline
+10              & 0 & 0 \\ \hline
+\end{tabular}
+\end{table}
+$$C=AB\bar S+A\bar BS=B(A\oplus S)$$
+\subsubsection{电路图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.2电路图.jpg}
+\end{figure}
+\subsubsection{波形图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.2波形图.png}
+\end{figure}
+\subsection{三八译码器实现半加半减器}
+\subsubsection{电路图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.3电路图.jpg}
+\end{figure}
+\subsubsection{波形图}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ex5.3波形图.png}
+\end{figure}
+\section{实验箱实验}
+\subsection{门电路实现半加半减器}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{门.png}
+\end{figure}
+\subsection{三八译码器实现半加半减器}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{三八.png}
+\end{figure}
+\section{实验总结}
+学会使用三八译码器搭建一些电路。
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

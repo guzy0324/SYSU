@@ -1,0 +1,221 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 05 21:12:17 2019
+# Process ID: 14744
+# Current directory: G:/project/pri_carry
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4368 G:\project\pri_carry\pri_carry.xpr
+# Log file: G:/project/pri_carry/vivado.log
+# Journal file: G:/project/pri_carry\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/project/pri_carry/pri_carry.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 837.488 ; gain = 172.375
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'chaoadder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+"xvlog -m64 --relax -prj chaoadder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sources_1/new/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chaoadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 18ddd10449034cc68c9facc388c7f631 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot chaoadder_behav xil_defaultlib.chaoadder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chaoadder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot chaoadder_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/project/pri_carry/pri_carry.sim/sim_1/behav/xsim.dir/chaoadder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 05 21:14:25 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 843.695 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "chaoadder_behav -key {Behavioral:sim_1:Functional:chaoadder} -tclbatch {chaoadder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source chaoadder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'chaoadder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 843.695 ; gain = 0.000
+file mkdir G:/project/pri_carry/pri_carry.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v w ]
+add_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+update_compile_order -fileset sim_1
+remove_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+file delete -force G:/project/pri_carry/pri_carry.srcs/sim_1/new/simulator.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v w ]
+add_files -fileset sim_1 G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v
+update_compile_order -fileset sim_1
+reset_run impl_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 884.641 ; gain = 0.000
+launch_runs impl_1
+[Tue Nov 05 21:33:36 2019] Launched impl_1...
+Run output will be captured here: G:/project/pri_carry/pri_carry.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'chaoadder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+"xvlog -m64 --relax -prj chaoadder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sources_1/new/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chaoadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 18ddd10449034cc68c9facc388c7f631 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot chaoadder_behav xil_defaultlib.chaoadder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chaoadder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot chaoadder_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/project/pri_carry/pri_carry.sim/sim_1/behav/xsim.dir/chaoadder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 05 21:35:20 2019...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "chaoadder_behav -key {Behavioral:sim_1:Functional:chaoadder} -tclbatch {chaoadder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source chaoadder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'chaoadder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 884.641 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1
+[Tue Nov 05 21:36:18 2019] Launched impl_1...
+Run output will be captured here: G:/project/pri_carry/pri_carry.runs/impl_1/runme.log
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:G:/project/pri_carry/pri_carry.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:G:/project/pri_carry/pri_carry.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:G:/project/pri_carry/pri_carry.sim/sim_1/behav/chaoadder_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'simadder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+"xvlog -m64 --relax -prj simadder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sources_1/new/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chaoadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 18ddd10449034cc68c9facc388c7f631 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot simadder_behav xil_defaultlib.simadder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chaoadder
+Compiling module xil_defaultlib.simadder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simadder_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/project/pri_carry/pri_carry.sim/sim_1/behav/xsim.dir/simadder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 05 21:38:08 2019...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/project/pri_carry/pri_carry.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "simadder_behav -key {Behavioral:sim_1:Functional:simadder} -tclbatch {simadder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source simadder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'simadder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 885.281 ; gain = 0.641
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 05 21:45:39 2019...

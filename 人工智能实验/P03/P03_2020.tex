@@ -1,0 +1,202 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+
+
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge  P03 Planning and Uncertainty\\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{}
+\date{Due: 11:59pm, Saturday, Nov. 28, 2020}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{STRIPS planner}
+In this part, you will implement a simple STRIPS planner. The input of your planner is a PDDL domain file and a problem file in the STRIPS restriction, that is, preconditions of actions and the goal are conjunctions of atoms, and effects of actions are conjunctions of literals. The output of your planner is a sequence of actions to achieve the goal.
+
+\begin{enumerate}
+
+\item Describe with sentences the main ideas behind computing the heuristic for a state using reachability analysis from lecture notes. (10 points)
+    
+
+\item Implement a STRIPS planner by using A$^*$ search and the heuristic function you implemented.(20 points)
+
+\item Explain any ideas you use to speed up the implementation. (10 points)
+
+\item Run you planner on the 5 test cases, and report the returned plans and the running times. Analyse the experimental results. (10 points)
+
+\end{enumerate}
+
+
+\section{Diagnosing by Bayesian Networks}
+\textbf{2.1 Variables and their domais}
+\begin{lstlisting}{language=Python}
+(1)PatientAge:['0-30','31-65','65+']
+(2)CTScanResult:['Ischemic Stroke','Hemmorraghic Stroke']
+(3)MRIScanResult: ['Ischemic Stroke','Hemmorraghic Stroke']
+(4)StrokeType: ['Ischemic Stroke','Hemmorraghic Stroke', 'Stroke Mimic']
+(5)Anticoagulants: ['Used','Not used']
+(6)Mortality:['True', 'False']
+(7)Disability: ['Negligible', 'Moderate', 'Severe']
+\end{lstlisting}
+\textbf{2.2 CPTs}
+
+\textbf{Note:} [CTScanResult, MRIScanResult,StrokeType] means:
+
+P(StrokeType='...' $|$ CTScanResult='...' $\land$  MRIScanResult='...')
+\begin{lstlisting}{language=Python}
+(1)
+[PatientAge]
+
+['0-30', 0.10],
+['31-65', 0.30],
+['65+', 0.60]
+
+(2)
+[CTScanResult]
+
+['Ischemic Stroke',0.7],
+[ 'Hemmorraghic Stroke',0.3]
+
+(3)
+[MRIScanResult]
+
+['Ischemic Stroke',0.7],
+[ 'Hemmorraghic Stroke',0.3]
+
+(4)
+[Anticoagulants]
+
+[Used',0.5],
+['Not used',0.5]
+
+(5)
+[CTScanResult, MRIScanResult,StrokeType])
+
+['Ischemic Stroke','Ischemic Stroke','Ischemic Stroke',0.8],
+['Ischemic Stroke','Hemmorraghic Stroke','Ischemic Stroke',0.5],
+[ 'Hemmorraghic Stroke','Ischemic Stroke','Ischemic Stroke',0.5],
+[ 'Hemmorraghic Stroke','Hemmorraghic Stroke','Ischemic Stroke',0],
+
+['Ischemic Stroke','Ischemic Stroke','Hemmorraghic Stroke',0],
+['Ischemic Stroke','Hemmorraghic Stroke','Hemmorraghic Stroke',0.4],
+[ 'Hemmorraghic Stroke','Ischemic Stroke','Hemmorraghic Stroke',0.4],
+[ 'Hemmorraghic Stroke','Hemmorraghic Stroke','Hemmorraghic Stroke',0.9],
+
+['Ischemic Stroke','Ischemic Stroke','Stroke Mimic',0.2],
+['Ischemic Stroke','Hemmorraghic Stroke','Stroke Mimic',0.1],
+[ 'Hemmorraghic Stroke','Ischemic Stroke','Stroke Mimic',0.1],
+[ 'Hemmorraghic Stroke','Hemmorraghic Stroke','Stroke Mimic',0.1],
+
+(6)
+[StrokeType, Anticoagulants, Mortality]
+
+['Ischemic Stroke', 'Used', 'False',0.28],
+['Hemmorraghic Stroke', 'Used', 'False',0.99],
+['Stroke Mimic', 'Used', 'False',0.1],
+['Ischemic Stroke','Not used', 'False',0.56],
+['Hemmorraghic Stroke', 'Not used', 'False',0.58],
+['Stroke Mimic', 'Not used', 'False',0.05],
+
+['Ischemic Stroke',  'Used' ,'True',0.72],
+['Hemmorraghic Stroke', 'Used', 'True',0.01],
+['Stroke Mimic', 'Used', 'True',0.9],
+['Ischemic Stroke',  'Not used' ,'True',0.44],
+['Hemmorraghic Stroke', 'Not used', 'True',0.42 ],
+['Stroke Mimic', 'Not used', 'True',0.95]
+
+(7)
+[StrokeType, PatientAge, Disability]
+
+['Ischemic Stroke',   '0-30','Negligible', 0.80],
+['Hemmorraghic Stroke', '0-30','Negligible', 0.70],
+['Stroke Mimic',        '0-30', 'Negligible',0.9],
+['Ischemic Stroke',     '31-65','Negligible', 0.60],
+['Hemmorraghic Stroke', '31-65','Negligible', 0.50],
+['Stroke Mimic',        '31-65', 'Negligible',0.4],
+['Ischemic Stroke',     '65+'  , 'Negligible',0.30],
+['Hemmorraghic Stroke', '65+'  , 'Negligible',0.20],
+['Stroke Mimic',        '65+'  , 'Negligible',0.1],
+
+['Ischemic Stroke',     '0-30' ,'Moderate',0.1],
+['Hemmorraghic Stroke', '0-30' ,'Moderate',0.2],
+['Stroke Mimic',        '0-30' ,'Moderate',0.05],
+['Ischemic Stroke',     '31-65','Moderate',0.3],
+['Hemmorraghic Stroke', '31-65','Moderate',0.4],
+['Stroke Mimic',        '31-65','Moderate',0.3],
+['Ischemic Stroke',     '65+'  ,'Moderate',0.4],
+['Hemmorraghic Stroke', '65+'  ,'Moderate',0.2],
+['Stroke Mimic',        '65+'  ,'Moderate',0.1],
+
+['Ischemic Stroke',     '0-30' ,'Severe',0.1],
+['Hemmorraghic Stroke', '0-30' ,'Severe',0.1],
+['Stroke Mimic',        '0-30' ,'Severe',0.05],
+['Ischemic Stroke',     '31-65','Severe',0.1],
+['Hemmorraghic Stroke', '31-65','Severe',0.1],
+['Stroke Mimic',        '31-65','Severe',0.3],
+['Ischemic Stroke',     '65+'  ,'Severe',0.3],
+['Hemmorraghic Stroke', '65+'  ,'Severe',0.6],
+['Stroke Mimic',        '65+'  ,'Severe',0.8]
+\end{lstlisting}
+
+\textbf{2.3 Tasks}
+
+\begin{enumerate}
+\item Briefly describe with sentences the main ideas of  the VE algorithm. (10 points)
+
+\item Implement the VE algorithm (C++ or Python) to calculate the following probability values: (10 points)
+    
+\begin{enumerate}
+\item p1 = P(Mortality='True' $\land$ CTScanResult='Ischemic Stroke' $|$ PatientAge='31-65' )
+
+\item p2 = P(Disability='Moderate' $\land$ CTScanResult='Hemmorraghic Stroke' $|$ PatientAge='65+' $\land$  MRIScanResult='Hemmorraghic Stroke')
+
+\item p3 = P(StrokeType='Hemmorraghic Stroke' $|$ PatientAge='65+' $\land$ CTScanResult='Hemmorraghic Stroke' $\land$ MRIScanResult='Ischemic Stroke')
+
+\item p4 = P(Anticoagulants='Used' $|$ PatientAge='31-65')
+
+\item p5 = P(Disability='Negligible')
+\end{enumerate}
+
+
+\item Implement an algorithm to select a good order of variable elimination. (10 points)
+
+
+\item Compare the running times of the VE algorithm for different orders of variable elimination, and fill out the following table: For test cases p4 and p5, for each of the order selected by your algorithm and 5 other orders, report the elimination with, and the total running time of the VE algorithm. For each case, the first order of elimination should be the one chosen by your algorithm. Analyze the results. (20 points)
+    
+
+    \begin{tabular}{|c|c|c|c|}
+\hline
+Test case                                                                                             & Elimination order & Elimination width  & Total time \\ \hline
+p4  & &  &            \\ \hline
+p4  & &  &            \\ \hline
+p4  & &  &            \\ \hline
+p4  & &  &            \\ \hline
+p4  & &  &            \\ \hline
+p4  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+p5  & &  &            \\ \hline
+\end{tabular} 
+\section{Due: 11:59pm, Saturday, Nov. 28, 2020}
+
+ Please hand in a file named \textsf{P03\_YourNumber.pdf}, and send it to \textsf{ai\_2020@foxmail.com}
+\end{enumerate}
+\end{document}
+
+\section{Due: 11:59pm, Saturday, Nov. 28, 2020}

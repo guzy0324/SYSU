@@ -1,0 +1,101 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+<head>
+<title>计时器</title>
+  <style> 
+     .time {display:inline-block;width:3.6em;text-align:right;margin-right:4px}
+     #container,h1 {width:20em;margin:10px auto;text-align:center}
+     .timer {margin-top:20px}
+     .pressed {background:yellow};     
+  </style>
+</head>
+<body>
+  <h1>计时器</h1>
+
+  <div id="container">
+     <input type="button" class="add" value="增加计时器(秒表)" onclick="addTimer()">
+     <div class="timer s0" style="display:none"><span class="time">0.00</span>
+          <input type="button" class="start pressed" value="启动">
+          <input type="button" class="stop" value="停止">
+          <input type="button" class="pause" value="暂停">
+     </div>
+  </div>
+  <script>
+var start = 0, stop = 1, pause = 2;
+s0 = document.querySelector(".s0");
+function Timer()
+{
+    this.s = s0.cloneNode(true);
+    document.body.appendChild(this.s);
+    this.s.style.display = "block";
+    this.s.childNodes[0].innerText = (0).toFixed(2);
+    
+    console.log(this.s.childNodes);
+    this.s.childNodes[2].addEventListener("click", start_wrap(this));
+    this.s.childNodes[4].addEventListener("click", stop_wrap(this));
+    this.s.childNodes[6].addEventListener("click", pause_wrap(this));
+    start_wrap(this)();
+}
+start_wrap = function (obj)
+{
+    return function()
+    {
+        if (obj.state == start)
+        {
+            return;
+        }
+        if (obj.state == stop)
+        {
+            obj.s.childNodes[0].innerText = 0.00;
+        }
+        obj.state = start;
+        obj.s.childNodes[2].classList.add("pressed");
+        obj.s.childNodes[4].classList.remove("pressed");
+        obj.s.childNodes[6].classList.remove("pressed");
+        setTimeout(count, 10, obj);
+    }
+}
+stop_wrap = function (obj)
+{
+    return function()
+    {
+        if (obj.state != start)
+        {
+            return;
+        }
+        obj.state = stop;
+        obj.s.childNodes[2].classList.remove("pressed");
+        obj.s.childNodes[4].classList.add("pressed");
+        obj.s.childNodes[6].classList.remove("pressed");
+    }
+}
+pause_wrap = function (obj)
+{
+    return function()
+    {
+        if (obj.state != start)
+        {
+            return;
+        }
+        obj.state = pause;
+        obj.s.childNodes[2].classList.remove("pressed");
+        obj.s.childNodes[4].classList.remove("pressed");
+        obj.s.childNodes[6].classList.add("pressed");
+    }
+}
+count = function (obj)
+{
+    if (obj.state == start)
+    {
+        var cnt = parseFloat(obj.s.childNodes[0].innerText);
+        obj.s.childNodes[0].innerText = (cnt + 0.01).toFixed(2);
+    }
+    setTimeout(count, 10, obj);
+}
+function addTimer()
+{
+    new_timer = new Timer();
+}
+  </script>
+</body>
+</html>

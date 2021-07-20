@@ -1,0 +1,43 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto da0cd20755a542b386f73f7c9d73f50c --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_9 -L xil_defaultlib -L blk_mem_gen_v8_3_1 -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module xil_defaultlib.adder_if
+Compiling architecture behavioral of entity dist_mem_gen_v8_0_9.dist_mem_gen_v8_0_9 [\dist_mem_gen_v8_0_9("artix7",8,...]
+Compiling architecture instructionrom_arch of entity xil_defaultlib.InstructionROM [instructionrom_default]
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.flipflop(WIDTH=32)
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.RegisterFiles
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.flipflop
+Compiling module xil_defaultlib.flipflop(WIDTH=3)
+Compiling module xil_defaultlib.flipflop(WIDTH=5)
+Compiling module xil_defaultlib.adder_32bits
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture dataram_arch of entity xil_defaultlib.DataRAM [dataram_default]
+Compiling module xil_defaultlib.and_1bit
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MipsPipelineCPU
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav

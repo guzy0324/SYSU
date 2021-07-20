@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/add_8/add_8.srcs/sources_1/new/add_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/add_8/add_8.srcs/sim_1/new/simu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simu
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/add_8/add_8.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

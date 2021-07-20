@@ -1,0 +1,106 @@
+﻿<!DOCTYPE  html>
+<html  lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>play chess</title>
+<style>
+  table {border-collapse:collapse;text-align:center;margin:20px auto}
+  table,td  {border:solid 1px black;}
+  h1 {text-align:center;}
+  img{height:70px;width:40px;margin:0px 20px}
+  td {height:80px;width:80px;}
+  tr:nth-of-type(odd) td:nth-of-type(odd),tr:nth-of-type(even) td:nth-of-type(even) {background-color:rgb(200,200,200);}
+  tr:nth-of-type(odd) td:nth-of-type(even),tr:nth-of-type(even) td:nth-of-type(odd) {background-color:rgb(100,100,100);}
+  tr:nth-of-type(odd) td:nth-of-type(odd):hover,tr:nth-of-type(even) td:nth-of-type(even):hover {background-color:rgb(200,200,400);}
+  tr:nth-of-type(odd) td:nth-of-type(even):hover,tr:nth-of-type(even) td:nth-of-type(odd):hover {background-color:rgb(100,100,160);}
+  tr:nth-of-type(n+7):nth-of-type(-n+8) td:hover img {border:dashed 1px yellow;}
+  tr:nth-of-type(-n+2) td:hover img {border:dashed 1px red;}
+  img {margin:0;}
+</style>
+</head>
+<body>
+    <h1>chess</h1>
+    <table>
+        <tr>
+            <td><img src="images/rook.gif"></td>
+            <td><img src="images/knight.gif"></td>
+            <td><img src="images/bishop.gif"></td>
+            <td><img src="images/queen.gif"></td>
+            <td><img src="images/king.gif"></td>
+            <td><img src="images/bishop.gif"></td>
+            <td><img src="images/knight.gif"></td>
+            <td><img src="images/rook.gif"></td>
+        </tr>
+        <tr>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+            <td><img src="images/pawn.gif"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+            <td><img src="images/pawn2.gif"></td>
+        </tr>
+        <tr>
+            <td><img src="images/rook2.gif"></td>
+            <td><img src="images/knight2.gif"></td>
+            <td><img src="images/bishop2.gif"></td>
+            <td><img src="images/queen2.gif"></td>
+            <td><img src="images/king2.gif"></td>
+            <td><img src="images/bishop2.gif"></td>
+            <td><img src="images/knight2.gif"></td>
+            <td><img src="images/rook2.gif"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Optional test case 6: illegal operand types for . and [] operators */
+program erropt6;
+class rect
+{
+	declarations
+		int width=3, length=7;
+	enddeclarations
+}
+
+class myTest
+{
+	declarations
+		int[] x=int[10];
+		rect r;
+	enddeclarations
+	method void main()
+	{
+        x.width := 5;
+        r[1] := 5;
+	}
+}

@@ -1,0 +1,45 @@
+     1                                  org 100h                         ; 程序加载到100h，可用于生成COM
+     2                                                                   ; 设置时钟中断向量（08h），初始化段寄存器
+     3 00000000 FB                          sti
+     4 00000001 31C0                        xor ax,ax                    ; AX = 0
+     5 00000003 8EC0                        mov es,ax                    ; ES = 0
+     6 00000005 26C7062000[3000]            mov word [es:20h],Timer      ; 设置时钟中断向量的偏移地址
+     7 0000000C 8CC8                        mov ax,cs
+     8 0000000E 26A32200                    mov word [es:22h],ax         ; 设置时钟中断向量的段地址=CS
+     9 00000012 8ED8                        mov ds,ax                    ; ds = cs
+    10 00000014 8EC0                        mov es,ax                    ; es = cs
+    11                                                                   ; 在屏幕右下角显示字符‘!’
+    12 00000016 B800B8                      mov	ax,0B800h                ; 文本窗口显存起始地址
+    13 00000019 8EE8                        mov	gs,ax                    ; GS = B800h
+    14 0000001B B40F                        mov ah,0Fh                   ; 0000：黑底、1111：亮白字（默认值为07h）
+    15 0000001D 668B1E[6D00]                mov ebx, dword[_HW_cur]
+    16 00000022 678A83[69000000]            mov al, byte[_HW_arr+ebx]                  ; AL = 显示字符值（默认值为20h=空格符）
+    17 00000029 65A3CE07                    mov [gs:((80*12+39)*2)],ax   ; 屏幕第 24 行, 第 79 列
+    18 0000002D EBFE                        jmp $                        ; 死循环
+    19                                                                   ; 时钟中断处理程序
+    20                                      delay equ 4                  ; 计时器延迟计数
+    21 0000002F 04                          count db delay               ; 计时器计数变量，初值=delay
+    22                                  Timer:
+    23 00000030 FE0E[2F00]                  dec byte [count]             ; 递减计数变量
+    24 00000034 752C                        jnz end                      ; >0：跳转
+    25 00000036 B40F                        mov ah,0Fh                   ; 0000：黑底、1111：亮白字（默认值为07h）
+    26 00000038 66FF06[6D00]                inc dword[_HW_cur]
+    27 0000003D 668B1E[6D00]                mov ebx, dword[_HW_cur]
+    28 00000042 678A83[69000000]            mov al, byte[_HW_arr+ebx]                  ; AL = 显示字符值（默认值为20h=空格符）
+    29 00000049 3C00                        cmp al, 0
+    30 0000004B 750C                        jnz _HW_print
+    31 0000004D 66C706[6D00]000000-         mov dword[_HW_cur], 0
+    31 00000055 00                 
+    32 00000056 A0[6900]                    mov al, byte[_HW_arr]
+    33                                  _HW_print:
+    34 00000059 65A3CE07                    mov [gs:((80*12+39)*2)],ax   ; 屏幕第 24 行, 第 79 列
+    35 0000005D C606[2F00]04                mov byte[count],delay        ; 重置计数变量=初值delay
+    36                                  end:
+    37 00000062 B020                        mov al,20h                   ; AL = EOI
+    38 00000064 E620                        out 20h,al                   ; 发送EOI到主8529A
+    39 00000066 E6A0                        out 0A0h,al                  ; 发送EOI到从8529A
+    40 00000068 CF                          iret                         ; 从中断返回
+    41                                  _HW_arr:
+    42 00000069 7C2F5C00                    db '|/\', 0
+    43                                  _HW_cur:
+    44 0000006D 00000000                    dd 0

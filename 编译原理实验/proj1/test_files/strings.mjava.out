@@ -1,0 +1,24 @@
+Line	Column	Token           	Index in String table
+1	2	ICONSTnum       	
+1	7	ASSGNnum        
+1	9	LTnum           
+2	13	IDnum           	0
+2	18	IDnum           	13
+Error: Malformed identifier '55alf', at line 3 column 1
+Error: Unmatched string constant, at line 3 column 6
+4	15	SCONSTnum       	18
+Error: Unmatched string constant, at line 4 column 15
+6	3	SCONSTnum       	27
+7	4	IDnum           	28
+7	10	CLASSnum        
+8	4	IDnum           	32
+9	5	IDnum           	36
+9	12	IDnum           	41
+9	19	IDnum           	48
+Error: Undefined symbol '|', at line 10 column 1
+11	5	IDnum           	54
+11	13	METHODnum       
+12	1	EOFnum          
+
+String Table : dEclarations myid ab
+	\'cd  abd AbD klse reTurn claSs voiD 

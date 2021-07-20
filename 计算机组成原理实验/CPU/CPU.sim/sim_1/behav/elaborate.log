@@ -1,0 +1,40 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto b825ecf65d0a46bf8113eb1a07b15aa0 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port sm_wei [C:/Users/guzy0/CPU/CPU.srcs/sources_1/new/top.v:236]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 7 for port sm_duan [C:/Users/guzy0/CPU/CPU.srcs/sources_1/new/top.v:237]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module xil_defaultlib.dram
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture irom_arch of entity xil_defaultlib.irom [irom_default]
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.MUX5_2_1
+Compiling module xil_defaultlib.MUX32_4_1
+Compiling module xil_defaultlib.MUX32_2_1
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav

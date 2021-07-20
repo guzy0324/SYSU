@@ -1,0 +1,4 @@
+Language File-Name    IP         Library         File-Path                                                         
+Verilog, display.v,   display_0, xil_defaultlib, ../../../../calculator.srcs/sources_1/ip/display_0/display.v      
+Verilog, display_0.v, display_0, xil_defaultlib, ../../../../calculator.srcs/sources_1/ip/display_0/sim/display_0.v
+Verilog, glbl.v,      *,         xil_defaultlib, glbl.v                                                            

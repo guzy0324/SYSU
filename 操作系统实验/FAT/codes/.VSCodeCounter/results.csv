@@ -1,0 +1,11 @@
+filename, language, C++, C, comment, blank, total
+f:\谷正阳\代码\操作系统实验\FAT\codes\RootEntry(not used).h, C++, 10, 0, 0, 0, 10
+f:\谷正阳\代码\操作系统实验\FAT\codes\command.h, C++, 518, 0, 0, 0, 518
+f:\谷正阳\代码\操作系统实验\FAT\codes\cpy.c, C, 0, 17, 0, 0, 17
+f:\谷正阳\代码\操作系统实验\FAT\codes\fat12Header.h, C++, 74, 0, 0, 0, 74
+f:\谷正阳\代码\操作系统实验\FAT\codes\fatItem.h, C++, 67, 0, 0, 0, 67
+f:\谷正阳\代码\操作系统实验\FAT\codes\file.h, C++, 300, 0, 34, 0, 334
+f:\谷正阳\代码\操作系统实验\FAT\codes\main.c, C, 0, 30, 2, 0, 32
+f:\谷正阳\代码\操作系统实验\FAT\codes\ramFDD.h, C++, 15, 0, 16, 0, 31
+f:\谷正阳\代码\操作系统实验\FAT\codes\rootEntry.h, C++, 543, 0, 50, 0, 593
+Total, -, 1527, 47, 102, 0, 1676

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 05 21:45:36 2019
+# Process ID: 17848
+# Current directory: G:/project/pri_carry/pri_carry.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source G:/project/pri_carry/pri_carry.sim/sim_1/behav/xsim.dir/chaoadder_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: G:/project/pri_carry/pri_carry.sim/sim_1/behav/webtalk.log
+# Journal file: G:/project/pri_carry/pri_carry.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source G:/project/pri_carry/pri_carry.sim/sim_1/behav/xsim.dir/chaoadder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 05 21:45:36 2019...

@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul  2 09:20:08 2021
+# Process ID: 22020
+# Current directory: C:/Users/guzy0/Desktop/dbg/dc/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11824 C:\Users\guzy0\Desktop\dbg\dc\project_1\project_1.xpr
+# Log file: C:/Users/guzy0/Desktop/dbg/dc/project_1/vivado.log
+# Journal file: C:/Users/guzy0/Desktop/dbg/dc/project_1\vivado.jou
+#-----------------------------------------------------------start_gui
+oopen_project C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.xpruupdate_compile_order -fileset sources_1
+open_bd_design {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+open_bd_design {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+undo
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+undo
+delete_bd_objs [get_bd_nets CLK_1] [get_bd_nets sysu_74LS197_0_Q0] [get_bd_cells sysu_74LS197_0]
+copy_bd_objs /  [get_bd_ports {M}]
+set_property location {470 752} [get_bd_ports M1]
+delete_bd_objs [get_bd_ports CLK]
+set_property location {341 94} [get_bd_ports M1]
+set_property name I0 [get_bd_ports M1]
+copy_bd_objs /  [get_bd_ports {I0}]
+set_property location {532 37} [get_bd_ports I1]
+copy_bd_objs /  [get_bd_ports {I1}]
+set_property location {592 -108} [get_bd_ports I2]
+copy_bd_objs /  [get_bd_ports {I2}]
+set_property location {649 37} [get_bd_ports I3]
+connect_bd_net [get_bd_ports I0] [get_bd_pins sysu_74LS283_0/A0]
+connect_bd_net [get_bd_ports I1] [get_bd_pins sysu_74LS283_0/A1]
+connect_bd_net [get_bd_ports I2] [get_bd_pins sysu_74LS283_0/A2]
+connect_bd_net [get_bd_ports I3] [get_bd_pins sysu_74LS283_0/A3]
+regenerate_bd_layout
+generate_target all [get_files  C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+startgroup
+set_property package_pin "" [get_ports [list  O3]]
+place_ports F U18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O2]]
+place_ports O3 N18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O1]]
+place_ports O2 P18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  O0]]
+place_ports O1 T18
+endgroup
+place_ports O0 P15
+save_constraints
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/guzy0/Desktop/dbg/dc/project_1/project_1.runs/impl_1/design_1.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]

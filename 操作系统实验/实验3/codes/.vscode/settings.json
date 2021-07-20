@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "*.m": "matlab",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "condition_variable": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "chrono": "c",
+        "random": "c",
+        "limits": "c"
+    }
+}

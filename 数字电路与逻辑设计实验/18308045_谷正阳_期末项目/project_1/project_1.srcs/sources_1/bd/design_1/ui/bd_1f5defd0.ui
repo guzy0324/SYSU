@@ -1,0 +1,48 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port I0 -pg 1 -lvl 3:-60 -defaultsOSRD -top
+preplace port O0 -pg 1 -y 650 -defaultsOSRD
+preplace port I1 -pg 1 -lvl 3:-20 -defaultsOSRD -top
+preplace port O1 -pg 1 -y 630 -defaultsOSRD
+preplace port I2 -pg 1 -lvl 3:0 -defaultsOSRD -top
+preplace port O2 -pg 1 -y 610 -defaultsOSRD
+preplace port I3 -pg 1 -lvl 3:-40 -defaultsOSRD -top
+preplace port F -pg 1 -y 480 -defaultsOSRD
+preplace port O3 -pg 1 -y 590 -defaultsOSRD
+preplace port M -pg 1 -lvl 2:-60 -defaultsOSRD -top
+preplace inst sysu_low_level_0 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace inst sysu_high_level_0 -pg 1 -lvl 1 -y 680 -defaultsOSRD
+preplace inst sysu_74LS86_0 -pg 1 -lvl 2 -y 660 -defaultsOSRD
+preplace inst sysu_74LS04_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace inst sysu_74LS08_0 -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst sysu_74LS32_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst sysu_74LS283_0 -pg 1 -lvl 3 -y 630 -defaultsOSRD
+preplace netloc I0_1 1 2 1 420
+preplace netloc sysu_low_level_0_low 1 1 1 210
+preplace netloc sysu_74LS32_0_Y1 1 2 3 450 340 NJ 340 940
+preplace netloc sysu_74LS04_0_Y1 1 2 1 NJ
+preplace netloc sysu_74LS08_0_Y1 1 2 2 440 100 680
+preplace netloc sysu_74LS32_0_Y2 1 2 3 460 350 NJ 350 930
+preplace netloc A1_0_1 1 2 2 480 420 700
+preplace netloc sysu_74LS32_0_Y3 1 4 1 NJ
+preplace netloc sysu_74LS08_0_Y2 1 2 2 480 370 680
+preplace netloc sysu_high_level_0_high 1 1 1 220
+preplace netloc sysu_74LS08_0_Y3 1 3 1 730
+preplace netloc sysu_74LS08_0_Y4 1 3 1 720
+preplace netloc sysu_74LS283_0_S0 1 3 2 NJ 650 NJ
+preplace netloc sysu_74LS86_0_Y1 1 2 1 N
+preplace netloc A3_0_1 1 2 1 430
+preplace netloc sysu_74LS283_0_S1 1 3 2 740 630 NJ
+preplace netloc sysu_74LS86_0_Y2 1 2 1 N
+preplace netloc sysu_74LS283_0_S2 1 3 2 750 610 NJ
+preplace netloc sysu_74LS86_0_Y3 1 2 1 N
+preplace netloc Net 1 1 2 230 400 410
+preplace netloc sysu_74LS283_0_S3 1 2 3 470 360 690 590 NJ
+preplace netloc sysu_74LS86_0_Y4 1 2 1 N
+preplace netloc A2_0_1 1 2 2 470 400 710
+levelinfo -pg 1 0 110 320 580 840 960 -top 0 -bot 780
+",
+}
+0

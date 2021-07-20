@@ -1,0 +1,17 @@
+/* Optional test case 1: array dimension misuse */
+program erropt1;
+class myTest
+{
+	declarations
+		int[] x=int[10], y;
+		int[][] z=int[3][4];
+	enddeclarations
+
+	method void main()
+	{
+	x[1][2]:=3;
+	y[3]:=4;
+	z[5]:=1;
+	}
+
+}

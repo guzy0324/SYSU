@@ -1,0 +1,32 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+<head>
+  <title>closure</title>
+  <script>
+    function reg(user,regtime){
+        return function(logtime){ console.log("user:" + user + "; regtime:" + regtime.toLocaleString() + "; logtime:" + logtime.toLocaleString()) } ;
+    }
+    function delay(duration){
+        var start = Date.parse(new Date());
+        while (Date.parse(new Date()) - start < duration);
+    }
+    var login1=reg("log1",new Date());  
+    delay(2000);  
+    var login2=reg("log2",new Date());
+    delay(2000);  
+    login1(new Date());   
+    delay(2000);  
+    login1(new Date());   
+    delay(2000); 
+    login2(new Date());
+    delay(2000);  
+    login1(new Date());   
+    delay(2000); 
+    login2(new Date());
+  </script>
+</head>
+<body>
+</body>
+</html>
+
+

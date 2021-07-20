@@ -1,0 +1,13 @@
+/* Optional test case 2: function call argument mismatch */
+program erropt2;
+class myTest
+{
+	method int func(int m, n)
+	{
+	/* nothing */	
+	}
+	method void main()
+	{
+        func(1);
+	}
+}

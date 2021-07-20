@@ -1,0 +1,11 @@
+************* SYNTAX TREE PRINTOUT ***********
+
+  +-[IDNode,0,"xyz"]
+R-[ProgramOp]
+  |   +-[IDNode,4,"test"]
+  | +-[ClassDefOp]
+  | | | +-[DUMMYnode]
+  | | +-[BodyOp]
+  | |   +-[DUMMYnode]
+  +-[ClassOp]
+    +-[DUMMYnode]

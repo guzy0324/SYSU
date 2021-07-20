@@ -1,0 +1,515 @@
+<!DOCTYPE html><html><head>
+      <title>18308045-&#x8C37;&#x6B63;&#x9633;-&#x4F5C;&#x4E1A;2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\guzy0\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.12\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	/* padding: 0; */
+
+	padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="center0618%E6%B3%95%E5%92%8C0666%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83center"><center>0.618&#x6CD5;&#x548C;0.666&#x6CD5;&#x7684;&#x6BD4;&#x8F83;</center></h1>
+
+<h4 class="mume-header" id="%E4%B8%80-%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82">&#x4E00;&#x3001;&#x5B9E;&#x9A8C;&#x8981;&#x6C42;</h4>
+
+<p><img src="%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82.png" alt="avatar"></p>
+<h4 class="mume-header" id="%E4%BA%8C-%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86">&#x4E8C;&#x3001;&#x5B9E;&#x9A8C;&#x539F;&#x7406;</h4>
+
+<ol>
+<li>0.618&#x6CD5;
+<img src="%E5%AE%9E%E9%AA%8C%E5%8E%9F%E7%90%86.png" alt="avatar"></li>
+<li>0.666&#x6CD5;<br>
+&#x5728;0.618&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5C06;&#x6BCF;&#x6B21;&#x53D6;&#x7684;&#x70B9;&#x7528;&#x7684;&#x5E38;&#x6570;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{\sqrt{5}+1}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3829999999999998em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0379999999999998em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.3990085em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.912845em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mtight">5</span></span></span><span style="top:-2.872845em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.12715500000000002em;"><span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>&#x6539;&#x6210;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{2}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>&#x3002;&#x7531;&#x4E8E;&#x533A;&#x95F4;&#x6BCF;&#x6B21;&#x8FED;&#x4EE3;&#x533A;&#x95F4;&#x53D8;&#x4E3A;&#x539F;&#x6765;&#x7684;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{2}{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>&#x500D;&#xFF0C;&#x56E0;&#x6B64;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x5E94;&#x7EA6;&#x4E3A;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.666</mn><msup><mo stretchy="false">)</mo><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">(0.666)^k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.099108em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">6</span><span class="mord">6</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span>&#x4E24;&#x8005;&#x76F8;&#x5DEE;&#x4E0D;&#x5927;&#x3002;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x9EC4;&#x91D1;&#x5206;&#x5272;&#x7684;&#x6027;&#x8D28;&#xFF0C;&#x6BCF;&#x6B21;&#x8FED;&#x4EE3;&#x9700;&#x8981;&#x91C7;&#x6837;&#x4E24;&#x6B21;&#xFF0C;&#x56E0;&#x800C;&#x4ECE;&#x91C7;&#x6837;&#x7684;&#x89D2;&#x5EA6;&#x4E0A;&#x8003;&#x5BDF;0.666&#x6CD5;&#x662F;&#x975E;&#x5E38;&#x6162;&#x7684;&#x3002;</li>
+</ol>
+<h6 class="mume-header" id="3-matlab%E5%8F%AF%E4%BB%A5%E5%BE%88%E6%96%B9%E4%BE%BF%E5%9C%B0%E7%94%A8%E4%BA%8E%E5%81%9A%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E5%92%8C%E7%BB%98%E5%9B%BE">3. matlab&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x7528;&#x4E8E;&#x505A;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#x548C;&#x7ED8;&#x56FE;</h6>
+
+<h4 class="mume-header" id="%E4%B8%89-%E5%AE%9E%E9%AA%8C%E9%97%AE%E9%A2%98">&#x4E09;&#x3001;&#x5B9E;&#x9A8C;&#x95EE;&#x9898;</h4>
+
+<ol>
+<li>&#x7528;&#x6298;&#x7EBF;&#x56FE;&#x4F1A;&#x663E;&#x5F97;&#x5F88;&#x4E71;&#x3002;&#x5206;&#x6790;&#x539F;&#x56E0;&#xFF1A;&#x867D;&#x7136;&#x533A;&#x95F4;&#x786E;&#x5B9E;&#x51CF;&#x5C0F;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x533A;&#x95F4;&#x4EC5;&#x4EC5;&#x662F;error&#x7684;&#x4E00;&#x4E2A;&#x4E0A;&#x754C;&#xFF08;&#x56E0;&#x4E3A;&#x533A;&#x95F4;&#x5185;&#x4E24;&#x70B9;&#x8DDD;&#x79BB;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x533A;&#x95F4;&#x5927;&#x5C0F;&#xFF09;&#x3002;&#x5982;0.618&#x6CD5;&#x524D;&#x4E24;&#x6B21;&#x8FED;&#x4EE3;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x4E00;&#x6837;&#x3002;&#x56E0;&#x800C;error&#x7684;&#x56FE;&#x50CF;&#x662F;&#x4E0D;&#x4E00;&#x5B9A;&#x5E73;&#x6ED1;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x8003;&#x8651;&#x5C06;&#x5176;&#x6539;&#x6210;&#x70B9;&#x56FE;&#x3002;
+<img src="%E6%8A%98%E7%BA%BF.png" alt="avatar"></li>
+<li>&#x753B;&#x6210;&#x70B9;&#x56FE;&#x5219;&#x7531;&#x4E8E;&#x7406;&#x8BBA;&#x4E0A;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x90FD;&#x662F;&#x6307;&#x6570;&#xFF0C;&#x6307;&#x6570;&#x7684;&#x53D8;&#x5316;&#x7387;&#x53D8;&#x5316;&#x5F88;&#x5FEB;&#x800C;&#x70B9;&#x95F4;&#x8DDD;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x5BFC;&#x81F4;&#x4E86;&#x770B;&#x4E0A;&#x53BB;&#x5F88;&#x7A00;&#x758F;&#x3002;&#x800C;&#x4E14;&#x6307;&#x6570;&#x51FD;&#x6570;&#x4E5F;&#x4E0D;&#x597D;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x6307;&#x6570;&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;error&#x53D6;log&#xFF0C;&#x8FD9;&#x6837;&#x5982;&#x679C;&#x753B;&#x51FA;&#x662F;&#x5747;&#x5300;&#x7684;&#x7EBF;&#x6027;&#x5219;&#x9A8C;&#x8BC1;&#x4E86;&#x7406;&#x8BBA;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;
+<img src="%E7%82%B9.png" alt="avatar"></li>
+<li>&#x5F97;&#x5230;&#x56FE;&#x50CF;&#x76F8;&#x5BF9;&#x7F8E;&#x89C2;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x76F4;&#x89C2;&#x7684;&#x770B;&#x51FA;&#x662F;&#x7EBF;&#x6027;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x7EBF;&#x6027;&#x51FD;&#x6570;&#x62DF;&#x5408;&#x4ECE;&#x800C;&#x9A8C;&#x8BC1;&#x7406;&#x8BBA;&#x6B63;&#x786E;&#x6027;&#x3002;&#x53E6;&#x5916;&#x5BF9;&#x4E8E;&#x91C7;&#x6837;&#x6570;&#xFF0C;0.618&#x6CD5;&#x5E73;&#x5747;&#x6BCF;&#x8FED;&#x4EE3;&#x4E00;&#x6B21;&#x7EA6;&#x91C7;&#x6837;&#x4E00;&#x6B21;&#xFF0C;0.666&#x6CD5;&#x5E73;&#x5747;&#x6BCF;&#x8FED;&#x4EE3;&#x4E00;&#x6B21;&#x91C7;&#x6837;&#x4E24;&#x6B21;&#xFF0C;&#x56E0;&#x800C;&#x7406;&#x8BBA;&#x4E0A;&#x8BBE;&#x91C7;&#x6837;&#x6570;s&#xFF0C;&#x5219;0.618&#x6CD5;&#x5173;&#x4E8E;&#x91C7;&#x6837;&#x6570;&#x7684;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x7EA6;&#x4E3A;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.618</mn><msup><mo stretchy="false">)</mo><mi>s</mi></msup></mrow><annotation encoding="application/x-tex">(0.618)^s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">6</span><span class="mord">1</span><span class="mord">8</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span></span></span></span></span></span></span></span>&#xFF0C;0.666&#x6CD5;&#x5173;&#x4E8E;&#x91C7;&#x6837;&#x6570;&#x7684;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x7EA6;&#x4E3A;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0.666</mn><msup><mo stretchy="false">)</mo><mrow><mi>s</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo>&#x2248;</mo><mo stretchy="false">(</mo><mn>0.816</mn><msup><mo stretchy="false">)</mo><mi>s</mi></msup></mrow><annotation encoding="application/x-tex">(0.666)^{s/2}\approx(0.816)^s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">6</span><span class="mord">6</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2248;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mord">.</span><span class="mord">8</span><span class="mord">1</span><span class="mord">6</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span></span></span></span></span></span></span></span>&#x3002;&#x4E24;&#x8005;&#x540C;&#x6837;&#x662F;&#x6307;&#x6570;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x9A8C;&#x8BC1;&#x7406;&#x8BBA;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;
+<img src="%E7%BA%BF%E6%80%A7%E7%82%B9.png" alt="avatar"></li>
+<li>&#x524D;&#x9762;&#x7684;&#x6BCF;&#x4E2A;&#x56FE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x70B9;&#x90FD;&#x4F1A;&#x548C;&#x7406;&#x8BBA;&#x504F;&#x5DEE;&#x5F88;&#x5927;&#xFF0C;&#x5BFC;&#x81F4;&#x6700;&#x540E;&#x62DF;&#x5408;&#x51FD;&#x6570;&#x4E5F;&#x504F;&#x4E0B;&#x3002;&#x539F;&#x56E0;&#x662F;&#x4EE3;&#x7801;&#x91CC;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;bug&#xFF0C;&#x5C06;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x503C;&#x8BB0;&#x4F5C;&#x4E86;&#x89E3;&#x3002;
+<img src="%E5%81%8F%E4%B8%8B.png" alt="avatar"></li>
+</ol>
+<h4 class="mume-header" id="%E5%9B%9B-%E5%AE%9E%E9%AA%8C%E4%BB%A3%E7%A0%81">&#x56DB;&#x3001;&#x5B9E;&#x9A8C;&#x4EE3;&#x7801;</h4>
+
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token comment">%hw2.m</span>
+km <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>x_opt<span class="token punctuation">,</span> sampling_opt<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">optimization_method</span><span class="token punctuation">(</span><span class="token operator">@</span>f<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">[</span>x_frac23<span class="token punctuation">,</span> sampling_frac23<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">frac23_method</span><span class="token punctuation">(</span><span class="token operator">@</span>f<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+error_opt <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>x_opt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+error_frac23 <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>x_frac23<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+log_error_opt <span class="token operator">=</span> <span class="token function">log</span><span class="token punctuation">(</span>error_opt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+log_error_frac23 <span class="token operator">=</span> <span class="token function">log</span><span class="token punctuation">(</span>error_frac23<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+k <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">:</span>km<span class="token punctuation">;</span>
+P_log_error_opt_k <span class="token operator">=</span> <span class="token function">polyfit</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> log_error_opt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+P_log_error_frac23_k <span class="token operator">=</span> <span class="token function">polyfit</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> log_error_frac23<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+P_log_error_opt_sampling <span class="token operator">=</span> <span class="token function">polyfit</span><span class="token punctuation">(</span>sampling_opt<span class="token punctuation">,</span> log_error_opt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+P_log_error_frac23_sampling <span class="token operator">=</span> <span class="token function">polyfit</span><span class="token punctuation">(</span>sampling_frac23<span class="token punctuation">,</span> log_error_frac23<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+X1 <span class="token operator">=</span> <span class="token punctuation">[</span>k<span class="token punctuation">;</span> <span class="token function">ones</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+X2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">2</span> <span class="token operator">*</span> km<span class="token punctuation">;</span> <span class="token function">ones</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> km<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+figure<span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>log_error_opt<span class="token punctuation">,</span> <span class="token string">&apos;.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold on<span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>log_error_frac23<span class="token punctuation">,</span> <span class="token string">&apos;.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>P_log_error_opt_k <span class="token operator">*</span> X1<span class="token punctuation">,</span> <span class="token string">&apos;Linewidth&apos;</span><span class="token punctuation">,</span> <span class="token number">1.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>P_log_error_frac23_k <span class="token operator">*</span> X1<span class="token punctuation">,</span> <span class="token string">&apos;Linewidth&apos;</span><span class="token punctuation">,</span> <span class="token number">1.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold off<span class="token punctuation">;</span>
+<span class="token function">legend</span><span class="token punctuation">(</span><span class="token string">&apos;0.618&#x6CD5;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.666&#x6CD5;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.618&#x6CD5;&#x62DF;&#x5408;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.666&#x6CD5;&#x62DF;&#x5408;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">xlabel</span><span class="token punctuation">(</span><span class="token string">&apos;k&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ylabel</span><span class="token punctuation">(</span><span class="token string">&apos;log(error)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">title</span><span class="token punctuation">(</span><span class="token string">&apos;log(error)-k&#x56FE;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+figure<span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>sampling_opt<span class="token punctuation">,</span> log_error_opt<span class="token punctuation">,</span> <span class="token string">&apos;.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold on<span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>sampling_frac23<span class="token punctuation">,</span> log_error_frac23<span class="token punctuation">,</span> <span class="token string">&apos;.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>P_log_error_opt_sampling <span class="token operator">*</span> X2<span class="token punctuation">,</span> <span class="token string">&apos;Linewidth&apos;</span><span class="token punctuation">,</span> <span class="token number">1.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">plot</span><span class="token punctuation">(</span>P_log_error_frac23_sampling <span class="token operator">*</span> X2<span class="token punctuation">,</span> <span class="token string">&apos;Linewidth&apos;</span><span class="token punctuation">,</span> <span class="token number">1.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hold off<span class="token punctuation">;</span>
+<span class="token function">legend</span><span class="token punctuation">(</span><span class="token string">&apos;0.618&#x6CD5;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.666&#x6CD5;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.618&#x6CD5;&#x62DF;&#x5408;&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0.666&#x6CD5;&#x62DF;&#x5408;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">xlabel</span><span class="token punctuation">(</span><span class="token string">&apos;sampling&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">ylabel</span><span class="token punctuation">(</span><span class="token string">&apos;log(error)&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">title</span><span class="token punctuation">(</span><span class="token string">&apos;log(error)-sampling&#x56FE;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token comment">%f.m</span>
+<span class="token keyword">function</span> <span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    y <span class="token operator">=</span> x<span class="token operator">^</span><span class="token number">2</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">end</span>
+</pre><pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token comment">%optimization_method.m</span>
+<span class="token keyword">function</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> sampling<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">optimization_method</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> x0<span class="token punctuation">,</span> x3<span class="token punctuation">,</span> km<span class="token punctuation">)</span>
+    <span class="token comment">%f &#x76EE;&#x6807;&#x51FD;&#x6570;</span>
+    <span class="token comment">%x0 &#x533A;&#x95F4;&#x5DE6;&#x8FB9;&#x754C;</span>
+    <span class="token comment">%x3 &#x533A;&#x95F4;&#x53F3;&#x8FB9;&#x754C;</span>
+    <span class="token comment">%km &#x6700;&#x5927;&#x8FED;&#x4EE3;&#x6B21;&#x6570;</span>
+    c <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment">%&#x5E38;&#x6570;0.618</span>
+    k <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>                  <span class="token comment">%&#x7B2C;k&#x6B21;&#x8FED;&#x4EE3;</span>
+    x <span class="token operator">=</span> <span class="token function">zeros</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">%&#x8BB0;&#x5F55;&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x6B65;&#x957F;&#x968F;&#x8FED;&#x4EE3;&#x6B21;&#x6570;&#x53D8;&#x5316;&#x7684;&#x6240;&#x6709;&#x53D6;&#x503C;</span>
+    sampling <span class="token operator">=</span> <span class="token function">zeros</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">%&#x8BB0;&#x5F55;&#x91C7;&#x6837;&#x6570;&#x968F;&#x8FED;&#x4EE3;&#x6B21;&#x6570;&#x53D8;&#x5316;&#x7684;&#x6240;&#x6709;&#x53D6;&#x503C;</span>
+    x1 <span class="token operator">=</span> x3 <span class="token operator">-</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">%&#x5F85;&#x6BD4;&#x8F83;&#x70B9;&#x8F83;&#x5C0F;&#x503C;</span>
+    x2 <span class="token operator">=</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span> <span class="token operator">+</span> x0<span class="token punctuation">;</span><span class="token comment">%&#x5F85;&#x6BD4;&#x8F83;&#x70B9;&#x8F83;&#x5927;&#x503C;</span>
+    f1 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    f2 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> k <span class="token operator">&lt;=</span> km <span class="token operator">-</span> <span class="token number">1</span>
+        <span class="token keyword">if</span> f1 <span class="token operator">&gt;=</span> f2
+            <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+            k <span class="token operator">=</span> k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            x0 <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+            x1 <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+            x2 <span class="token operator">=</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span> <span class="token operator">+</span> x0<span class="token punctuation">;</span>
+            f1 <span class="token operator">=</span> f2<span class="token punctuation">;</span>
+            f2 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+            <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+            k <span class="token operator">=</span> k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            x3 <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+            x2 <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+            x1 <span class="token operator">=</span> x3 <span class="token operator">-</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            f2 <span class="token operator">=</span> f1<span class="token punctuation">;</span>
+            f1 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">if</span> f1 <span class="token operator">&gt;=</span> f2
+        <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+        <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+</pre><pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token comment">%frac23_method.m</span>
+<span class="token keyword">function</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> sampling<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">frac23_method</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> x0<span class="token punctuation">,</span> x3<span class="token punctuation">,</span> km<span class="token punctuation">)</span>
+    <span class="token comment">%f &#x76EE;&#x6807;&#x51FD;&#x6570;</span>
+    <span class="token comment">%x0 &#x533A;&#x95F4;&#x5DE6;&#x8FB9;&#x754C;</span>
+    <span class="token comment">%x3 &#x533A;&#x95F4;&#x53F3;&#x8FB9;&#x754C;</span>
+    <span class="token comment">%km &#x6700;&#x5927;&#x8FED;&#x4EE3;&#x6B21;&#x6570;</span>
+    c <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">;</span>                <span class="token comment">%&#x5E38;&#x6570;0.666</span>
+    k <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>                  <span class="token comment">%&#x7B2C;k&#x6B21;&#x8FED;&#x4EE3;</span>
+    x <span class="token operator">=</span> <span class="token function">zeros</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">%&#x8BB0;&#x5F55;&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x6B65;&#x957F;&#x968F;&#x8FED;&#x4EE3;&#x6B21;&#x6570;&#x53D8;&#x5316;&#x7684;&#x6240;&#x6709;&#x53D6;&#x503C;</span>
+    sampling <span class="token operator">=</span> <span class="token function">zeros</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> km<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">%&#x8BB0;&#x5F55;&#x91C7;&#x6837;&#x6570;&#x968F;&#x8FED;&#x4EE3;&#x6B21;&#x6570;&#x53D8;&#x5316;&#x7684;&#x6240;&#x6709;&#x53D6;&#x503C;</span>
+    x1 <span class="token operator">=</span> x3 <span class="token operator">-</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">%&#x5F85;&#x6BD4;&#x8F83;&#x70B9;&#x8F83;&#x5C0F;&#x503C;</span>
+    x2 <span class="token operator">=</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span> <span class="token operator">+</span> x0<span class="token punctuation">;</span><span class="token comment">%&#x5F85;&#x6BD4;&#x8F83;&#x70B9;&#x8F83;&#x5927;&#x503C;</span>
+    f1 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    f2 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> k <span class="token operator">&lt;=</span> km <span class="token operator">-</span> <span class="token number">1</span>
+        <span class="token keyword">if</span> f1 <span class="token operator">&gt;=</span> f2
+            <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+            k <span class="token operator">=</span> k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            x0 <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+            x1 <span class="token operator">=</span> x3 <span class="token operator">-</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            x2 <span class="token operator">=</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span> <span class="token operator">+</span> x0<span class="token punctuation">;</span>
+            f1 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            f2 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+            <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+            k <span class="token operator">=</span> k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            x3 <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+            x2 <span class="token operator">=</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span> <span class="token operator">+</span> x0<span class="token punctuation">;</span>
+            x1 <span class="token operator">=</span> x3 <span class="token operator">-</span> c <span class="token operator">*</span> <span class="token punctuation">(</span>x3 <span class="token operator">-</span> x0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            f2 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            f1 <span class="token operator">=</span> <span class="token function">f</span><span class="token punctuation">(</span>x1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">sampling</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">if</span> f1 <span class="token operator">&gt;=</span> f2
+        <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x2<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>
+        <span class="token function">x</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> k<span class="token punctuation">)</span> <span class="token operator">=</span> x1<span class="token punctuation">;</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+</pre><h4 class="mume-header" id="%E5%9B%9B-%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">&#x56DB;&#x3001;&#x5B9E;&#x9A8C;&#x7ED3;&#x679C;</h4>
+
+<h6 class="mume-header" id="1-error-k%E5%9B%BE">1. error-k&#x56FE;</h6>
+
+<p><img src="log_error-k.png" alt="avatar">
+&#x62DF;&#x5408;&#x5F97;&#x4E0D;&#x9519;&#x3002;</p>
+<h6 class="mume-header" id="2-error-sampling%E5%9B%BE">2. error-sampling&#x56FE;</h6>
+
+<p><img src="log_error-sampling.png" alt="avatar">
+&#x62DF;&#x5408;&#x5F97;&#x4E0D;&#x9519;&#x3002;</p>
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token operator">&gt;</span><span class="token operator">&gt;</span> hw2
+
+P_log_error_opt_k <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.4894</span>   <span class="token operator">-</span><span class="token number">0.7346</span>
+
+
+P_log_error_frac23_k <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.4063</span>   <span class="token operator">-</span><span class="token number">1.7419</span>
+
+
+P_log_error_opt_sampling <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.4894</span>   <span class="token operator">-</span><span class="token number">0.2452</span>
+
+
+P_log_error_frac23_sampling <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.2031</span>   <span class="token operator">-</span><span class="token number">1.7419</span>
+</pre><p>&#x5176;&#x4E2D;&#xFF0C;0.618&#x6CD5;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>e</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">log(error)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span>&#x5BF9;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>&#x53CA;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">sampling</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>&#x7684;&#x5B9E;&#x9A8C;&#x503C;&#x659C;&#x7387;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2212;</mo><mn>0.4894</mn></mrow><annotation encoding="application/x-tex">-0.4894</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">&#x2212;</span><span class="mord">0</span><span class="mord">.</span><span class="mord">4</span><span class="mord">8</span><span class="mord">9</span><span class="mord">4</span></span></span></span>&#x7EA6;&#x7B49;&#x4E8E;&#x7406;&#x8BBA;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.4812</span>
+</pre><p>0.666&#x6CD5;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>e</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">log(error)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span>&#x5BF9;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span>&#x5B9E;&#x9A8C;&#x503C;&#x659C;&#x7387;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2212;</mo><mn>0.4063</mn></mrow><annotation encoding="application/x-tex">-0.4063</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">&#x2212;</span><span class="mord">0</span><span class="mord">.</span><span class="mord">4</span><span class="mord">0</span><span class="mord">6</span><span class="mord">3</span></span></span></span>&#x7EA6;&#x7B49;&#x4E8E;&#x7406;&#x8BBA;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.4055</span>
+</pre><p>0.666&#x6CD5;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>e</mi><mi>r</mi><mi>r</mi><mi>o</mi><mi>r</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">log(error)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span>&#x5BF9;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>a</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">sampling</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">a</span><span class="mord mathdefault">m</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span>&#x5B9E;&#x9A8C;&#x503C;&#x659C;&#x7387;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2212;</mo><mn>0.2031</mn></mrow><annotation encoding="application/x-tex">-0.2031</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">&#x2212;</span><span class="mord">0</span><span class="mord">.</span><span class="mord">2</span><span class="mord">0</span><span class="mord">3</span><span class="mord">1</span></span></span></span>&#x7EA6;&#x7B49;&#x4E8E;&#x7406;&#x8BBA;&#x503C;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="matlab" class="language-matlab"><span class="token operator">&gt;</span><span class="token operator">&gt;</span> <span class="token function">log</span><span class="token punctuation">(</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ans <span class="token operator">=</span>
+
+   <span class="token operator">-</span><span class="token number">0.2027</span>
+</pre><h4 class="mume-header" id="%E4%BA%94-%E5%AE%9E%E9%AA%8C%E5%8F%8D%E6%80%9D">&#x4E94;&#x3001;&#x5B9E;&#x9A8C;&#x53CD;&#x601D;</h4>
+
+<ol>
+<li>&#x5B9E;&#x9A8C;&#x9700;&#x8981;&#x4ED4;&#x7EC6;&#x68C0;&#x67E5;&#xFF0C;&#x627E;&#x5230;&#x4E0D;&#x5408;&#x7406;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x53EF;&#x80FD;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x5B9E;&#x9A8C;&#x8981;&#x4E0E;&#x7406;&#x8BBA;&#x7ED3;&#x5408;&#x3002;</li>
+<li>&#x56FE;&#x50CF;&#x76F4;&#x89C2;&#x5F88;&#x91CD;&#x8981;&#x3002;</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

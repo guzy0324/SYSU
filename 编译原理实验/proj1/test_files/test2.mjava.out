@@ -1,0 +1,32 @@
+Line	Column	Token           	Index in String table
+13	14	WHILEnum        
+13	16	LPARENnum       
+13	17	IDnum           	0
+13	19	LTnum           
+13	22	ICONSTnum       	
+13	23	RPARENnum       
+13	25	LBRACEnum       
+14	19	IDnum           	2
+14	20	DOTnum          
+14	26	IDnum           	9
+14	27	LPARENnum       
+14	28	IDnum           	16
+14	29	RPARENnum       
+14	30	SEMInum         
+15	19	IDnum           	2
+15	20	DOTnum          
+15	27	IDnum           	18
+15	28	LPARENnum       
+Error: Unmatched string constant, at line 15 column 28
+Error: Malformed identifier '2i', at line 16 column 13
+16	18	ASSGNnum        
+16	20	IDnum           	0
+16	22	PLUSnum         
+16	24	ICONSTnum       	
+16	25	SEMInum         
+17	10	RBRACEnum       
+17	11	SEMInum         
+Error: EOF found in comment, at line 21 column 1
+21	1	EOFnum          
+
+String Table : i System readln x println 

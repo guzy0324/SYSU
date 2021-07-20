@@ -1,0 +1,6 @@
+﻿gcc -o client2 client2.c
+gcc -o server2 server2.c
+./server2&                  &表示在后台运行
+./client2
+ps                          查看后台进程的pid
+kill  pid                   删除进程（一定要删除以前的server程序）

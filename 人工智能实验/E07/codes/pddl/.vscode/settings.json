@@ -1,0 +1,11 @@
+{
+    "pddl.planners": [
+        {
+            "kind": "SERVICE_SYNC",
+            "url": "http://solver.planning.domains/solve",
+            "title": "http://solver.planning.domains/solve #4",
+            "canConfigure": true
+        }
+    ],
+    "pddl.selectedPlanner": "http://solver.planning.domains/solve #4"
+}

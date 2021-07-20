@@ -1,0 +1,53 @@
+Best Order: ['Anticoagulants', 'Disability', 'MRIScanResult', 'StrokeType']
+Width: 2
+Time consumed: 248.4632 us
+
+	VariableElimination:
+	Time consumed: 124.0368 us
+
+	BucketElimination:
+	Time consumed: 197.7347 us
+
+Min-Degree Order: ['Anticoagulants', 'Disability', 'StrokeType', 'MRIScanResult']
+Width: 3
+Time consumed: 15.7843 us
+
+	VariableElimination:
+	Time consumed: 182.6678 us
+
+	BucketElimination:
+	Time consumed: 271.0868 us
+
+Min-Fill Order: ['Anticoagulants', 'Disability', 'StrokeType', 'MRIScanResult']
+Width: 3
+Time consumed: 25.7402 us
+
+	VariableElimination:
+	Time consumed: 164.9451 us
+
+	BucketElimination:
+	Time consumed: 221.3502 us
+
+Median Order: ['Anticoagulants', 'StrokeType', 'Disability', 'MRIScanResult']
+Width: 4
+	VariableElimination:
+	Time consumed: 445.4441 us
+
+	BucketElimination:
+	Time consumed: 322.4969 us
+
+Worst Order: ['StrokeType', 'MRIScanResult', 'Disability', 'Anticoagulants']
+Width: 5
+	VariableElimination:
+	Time consumed: 565.377 us
+
+	BucketElimination:
+	Time consumed: 632.4158 us
+
+Average Order:
+	VariableElimination:
+	Time consumed: 351.580916667 us
+
+	BucketElimination:
+	Time consumed: 422.264708333 us
+

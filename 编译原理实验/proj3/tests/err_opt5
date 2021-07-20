@@ -1,0 +1,12 @@
+/* Optional test case 5: string constant used to initialize int var*/
+program erropt5;
+class myTest
+{
+	declarations
+		int x='Hello';
+	enddeclarations
+	method void main()
+	{
+        system.println('World'); 
+	}
+}

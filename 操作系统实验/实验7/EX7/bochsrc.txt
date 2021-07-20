@@ -1,0 +1,6 @@
+megs: 32
+romimage: file=$BXSHARE/BIOS-bochs-latest, options=fastboot
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+floppya: 1_44=EX7.img, status=inserted
+boot: floppy
+log: bochsout.txt

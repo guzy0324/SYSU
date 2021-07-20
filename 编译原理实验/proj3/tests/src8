@@ -1,0 +1,23 @@
+/* EXAMPLE 4: Two classes this time */
+program x4;
+class Point {
+	     declarations
+        		int x, y;
+	     enddeclarations
+}
+
+class Test {
+	declarations
+            	Point p0;
+	enddeclarations
+        method void main()
+	     declarations
+                	Point p;
+		        int xxx;
+	     enddeclarations
+	{
+	        p.y := 1;
+	        p.x := 1;
+        }
+}
+

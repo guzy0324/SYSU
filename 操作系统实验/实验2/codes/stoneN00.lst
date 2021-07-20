@@ -1,0 +1,126 @@
+     1                                      ; 程序源代码（stoneN00.asm）
+     2                                      ; 本程序在文本方式显示器上从左边射出学号姓名,以45度向右下运动，撞到边框后反射,如此类推.
+     3                                      ; 谷正阳 2020/4
+     4                                      ; NASM汇编格式
+     5                                      Lt equ 0                ; direction: left
+     6                                      Rt equ 1                ; direction: right
+     7                                      Up equ 0                ; direction: Up
+     8                                      Dn equ 1                ; direction: Down
+     9                                      delay equ 50000         ; 计时器延迟计数,用于控制画框的速度
+    10                                      ddelay equ 580          ; 计时器延迟计数,用于控制画框的速度
+    11                                      cmax equ 100            ; 输出最大字符数
+    12                                                              ; .386
+    13                                      left equ -1             ; 左边界
+    14                                      right equ 40            ; 右边界
+    15                                      top equ -1              ; 上边界
+    16                                      bottom equ 13           ; 下边界
+    17                                                              ; org 07c00h           ; 程序加载到100h，可用于生成COM/7c00H引导扇区程序
+    18                                                              ; ASSUME cs:code,ds:code
+    19                                                              ; code SEGMENT
+    20                                      org 100h
+    21                                  
+    22                                  Cls:
+    23 00000000 B406                        mov ah,6
+    24 00000002 B000                        mov al,0
+    25 00000004 B90000                      mov cx,0
+    26 00000007 BAFFFF                      mov dx,0xffff
+    27 0000000A CD10                        int 10h                 ; cls
+    28                                  
+    29                                  start:
+    30                                      ; xor ax,ax		       ; AX = 0   程序加载到0000：100h才能正确执行
+    31 0000000C B100                        mov cl,0
+    32 0000000E BA[ED00]                    mov dx,string
+    33 00000011 8CC8                        mov ax,cs
+    34 00000013 8EC0                        mov es,ax               ; ES = 0
+    35 00000015 8ED8                        mov ds,ax               ; DS = CS
+    36 00000017 8EC0                        mov es,ax               ; ES = CS
+    37 00000019 B800B8                      mov ax,0B800h           ; 文本窗口显存起始地址
+    38 0000001C 8EC0                        mov es,ax               ; GS = B800h
+    39                                  loop1:
+    40 0000001E FF0E[E300]                  dec word[count]         ; 递减计数变量
+    41 00000022 75FA                        jnz loop1               ; >0：跳转;
+    42 00000024 C706[E300]50C3              mov word[count],delay
+    43 0000002A FF0E[E500]                  dec word[dcount]        ; 递减计数变量
+    44 0000002E 75EE                        jnz loop1
+    45 00000030 C706[E300]50C3              mov word[count],delay
+    46 00000036 C706[E500]4402              mov word[dcount],ddelay
+    47 0000003C 803E[FB00]00                cmp byte[ccount], 0
+    48 00000041 0F849D00                    jz end
+    49 00000045 FE0E[FB00]                  dec byte[ccount]
+    50                                  drx:
+    51 00000049 803E[E700]01                cmp byte[dirx],Rt
+    52 0000004E 7417                        jz  rt                  ; if dirx == Rt goto rt
+    53                                  lt:
+    54 00000050 FF0E[E900]                  dec word[x]             ; else x--
+    55 00000054 833E[E900]FF                cmp word[x],left
+    56 00000059 7521                        jnz dry                 ; if x != left goto dry
+    57 0000005B 8306[E900]02                add word[x],2           ; else x += 2
+    58 00000060 C606[E700]01                mov byte[dirx],Rt       ; dirx = Rt
+    59 00000065 EB15                        jmp dry                 ; goto dry
+    60                                  rt:
+    61 00000067 FF06[E900]                  inc word[x]             ; x++
+    62 0000006B 833E[E900]28                cmp word[x],right
+    63 00000070 750A                        jnz dry                 ; if x != right goto dry
+    64 00000072 832E[E900]02                sub word[x],2           ; else x -= 2
+    65 00000077 C606[E700]00                mov byte[dirx],Lt       ; dirx = Lt
+    66                                  dry:
+    67 0000007C 803E[E800]01                cmp byte[diry],Dn
+    68 00000081 7417                        jz  dn                  ; if diry == Dn goto dn
+    69                                  up:
+    70 00000083 FF0E[EB00]                  dec word[y]             ; else y--
+    71 00000087 833E[EB00]FF                cmp word[y],top
+    72 0000008C 7521                        jnz show                ; if y != top goto show
+    73 0000008E 8306[EB00]02                add word[y],2           ; else y += 2
+    74 00000093 C606[E800]01                mov byte[diry],Dn       ; diry = Dn
+    75 00000098 EB15                        jmp show                ; goto show
+    76                                  dn:
+    77 0000009A FF06[EB00]                  inc word[y]             ; y++
+    78 0000009E 833E[EB00]0D                cmp word[y],bottom
+    79 000000A3 750A                        jnz show                ; if y != bottom goto show
+    80 000000A5 C606[E800]00                mov byte[diry],Up       ; diry = Up
+    81 000000AA 832E[EB00]02                sub word[y],2           ; else y -= 2
+    82                                  
+    83                                  show:
+    84 000000AF 31C0                        xor ax,ax               ; 计算显存地址
+    85 000000B1 A1[EB00]                    mov ax,word[y]
+    86 000000B4 BB5000                      mov bx,80
+    87 000000B7 F7E3                        mul bx                  ; ax = 80 * y
+    88 000000B9 0306[E900]                  add ax,word[x]          ; ax = 80 * y + x
+    89 000000BD BB0200                      mov bx,2
+    90 000000C0 F7E3                        mul bx                  ; ax = 2 * (80 * y + x)
+    91 000000C2 89C3                        mov bx,ax               ; bx = 2 * (80 * y + x)
+    92 000000C4 88CC                        mov ah,cl               ; 0000：黑底、1111：亮白字（默认值为07h）
+    93 000000C6 89DA                        mov dx,bx               ; dx = bx
+    94 000000C8 89CB                        mov bx,cx               ; bx = cl
+    95 000000CA 8A87[ED00]                  mov al,[string+bx]      ; AL = 显示字符值（默认值为20h=空格符）
+    96 000000CE 89D3                        mov bx,dx               ; bx = dx
+    97 000000D0 80C101                      add cl,1                ; cl += 1
+    98 000000D3 80F90D                      cmp cl, 13
+    99 000000D6 7406                        je a                    ; if cl == 13: cl = 0
+   100                                  
+   101                                  nxt:
+   102 000000D8 268907                      mov [es:bx],ax          ; 显示字符的ASCII码值
+   103 000000DB E940FF                      jmp loop1
+   104                                  
+   105                                  a:
+   106 000000DE B100                        mov cl,0
+   107 000000E0 EBF6                        jmp nxt
+   108                                  
+   109                                  end:
+   110                                      ; jmp $                ; 停止画框，无限循环
+   111 000000E2 CB                          retf
+   112                                  
+   113                                  datadef:
+   114 000000E3 50C3                        count dw delay
+   115 000000E5 4402                        dcount dw ddelay
+   116 000000E7 01                          dirx db Rt
+   117 000000E8 01                          diry db Dn              ; 向右下运动
+   118 000000E9 FFFF                        x    dw 0 + left
+   119 000000EB FFFF                        y    dw 0 + top         ; 初始位置
+   120 000000ED 203138333038303435-         string db ' 18308045_gzy',0
+   120 000000F6 5F677A7900         
+   121 000000FB 64                          ccount db cmax
+   122                                      ; code ENDS
+   123                                      ; END start
+   124 000000FC 00<rept>                times 510-($-$$) db 0
+   125 000001FE 55AA                    db 0x55,0xaa

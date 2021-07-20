@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!-- saved from url=(0167)file:///F:/%E8%B0%B7%E6%AD%A3%E9%98%B3/Dropbox/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%AA%8C/%E5%AE%9E%E9%AA%8C7/18308045_%E8%B0%B7%E6%AD%A3%E9%98%B3_EX7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>18308045_谷正阳_EX7</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./18308045_谷正阳_EX7_files/katex.min.css">
+      
+      
+      
+      <script type="text/javascript" src="./18308045_谷正阳_EX7_files/mermaid.min.js.下载" charset="UTF-8"></script>
+      
+      
+      
+      
+      
+      <style>
+      /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+abap+actionscript+ada+apacheconf+apl+applescript+asciidoc+aspnet+autoit+autohotkey+bash+basic+batch+c+brainfuck+bro+bison+csharp+cpp+coffeescript+ruby+css-extras+d+dart+django+diff+docker+eiffel+elixir+erlang+fsharp+fortran+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+http+icon+inform7+ini+j+jade+java+jolie+json+julia+keyman+kotlin+latex+less+livescript+lolcode+lua+makefile+markdown+matlab+mel+mizar+monkey+nasm+nginx+nim+nix+nsis+objectivec+ocaml+oz+parigp+parser+pascal+perl+php+php-extras+powershell+processing+prolog+properties+protobuf+puppet+pure+python+q+qore+r+jsx+reason+rest+rip+roboconf+crystal+rust+sas+sass+scss+scala+scheme+smalltalk+smarty+sql+stylus+swift+tcl+textile+twig+typescript+vbnet+verilog+vhdl+vim+wiki+xojo+yaml */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	/* padding: 0; */
+
+	padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="center%E5%AE%9E%E9%AA%8C%E4%B8%83%E5%AE%9E%E7%8E%B0%E4%BA%94%E6%80%81%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%BA%94%E7%94%A8center"><center>实验七：实现五态进程模型及多进程应用</center></h1>
+
+<h3 class="mume-header" id="%E4%B8%80-%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84">一、实验目的：</h3>
+
+<ol>
+<li>理解5状态的进程模型</li>
+<li>掌握操作系统内核线程模型设计与实现方法</li>
+<li>掌握实现5状态的进程模型方法</li>
+<li>实现C库封装多线程服务的相关系统调用。</li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%8C-%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82">二、实验要求：</h3>
+
+<ol>
+<li>学习内核级线程模型理论，设计总体实现方案</li>
+<li>理解类unix的内核线程做法，明确全局数据、代码、局部变量的映像内容哪些共享。</li>
+<li>扩展实验6的的内核程序，增加阻塞进程状态和阻塞过程、唤醒过程两个进程控制过程。</li>
+<li>修改内核，提供创建线程、撤销线程和等待线程结束，实现你的线程方案。</li>
+<li>增加创建线程、撤销线程和等待线程结束等系统调用。修改扩展C库，封装创建线程、撤销线程和等待线程结束等系统调用操作。</li>
+<li>设计一个多线程应用的用户程序，展示你的多线程模型的应用效果。</li>
+<li>编写实验报告，描述实验工作的过程和必要的细节，如截屏或录屏，以证实实验工作的真实性</li>
+</ol>
+<h3 class="mume-header" id="%E4%B8%89-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF">三、技术路线：</h3>
+
+<div class="mermaid" data-processed="true"><svg id="mermaid-1595081563393" width="311" xmlns="http://www.w3.org/2000/svg" height="746" viewBox="0 0 311 746"><style>#mermaid-1595081563393 .label{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);color:#333}#mermaid-1595081563393 .label text{fill:#333}#mermaid-1595081563393 .node rect,#mermaid-1595081563393 .node circle,#mermaid-1595081563393 .node ellipse,#mermaid-1595081563393 .node polygon,#mermaid-1595081563393 .node path{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563393 .node .label{text-align:center}#mermaid-1595081563393 .node.clickable{cursor:pointer}#mermaid-1595081563393 .arrowheadPath{fill:#333}#mermaid-1595081563393 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1595081563393 .edgeLabel{background-color:#e8e8e8;text-align:center}#mermaid-1595081563393 .edgeLabel rect{opacity:0.5}#mermaid-1595081563393 .cluster rect{fill:#ffffde;stroke:#aa3;stroke-width:1px}#mermaid-1595081563393 .cluster text{fill:#333}#mermaid-1595081563393 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1595081563393 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563393 text.actor{fill:#000;stroke:none}#mermaid-1595081563393 .actor-line{stroke:grey}#mermaid-1595081563393 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563393 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563393 #arrowhead{fill:#333}#mermaid-1595081563393 .sequenceNumber{fill:#fff}#mermaid-1595081563393 #sequencenumber{fill:#333}#mermaid-1595081563393 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1595081563393 .messageText{fill:#333;stroke:none}#mermaid-1595081563393 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563393 .labelText{fill:#000;stroke:none}#mermaid-1595081563393 .loopText{fill:#000;stroke:none}#mermaid-1595081563393 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1595081563393 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563393 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:14px}#mermaid-1595081563393 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1595081563393 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1595081563393 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1595081563393 .mermaid-main-font{font-family:"trebuchet ms", verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .section{stroke:none;opacity:0.2}#mermaid-1595081563393 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1595081563393 .section2{fill:#fff400}#mermaid-1595081563393 .section1,#mermaid-1595081563393 .section3{fill:#fff;opacity:0.2}#mermaid-1595081563393 .sectionTitle0{fill:#333}#mermaid-1595081563393 .sectionTitle1{fill:#333}#mermaid-1595081563393 .sectionTitle2{fill:#333}#mermaid-1595081563393 .sectionTitle3{fill:#333}#mermaid-1595081563393 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .grid .tick{stroke:#d3d3d3;opacity:0.8;shape-rendering:crispEdges}#mermaid-1595081563393 .grid .tick text{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .grid path{stroke-width:0}#mermaid-1595081563393 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1595081563393 .task{stroke-width:2}#mermaid-1595081563393 .taskText{text-anchor:middle;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .taskText:not([font-size]){font-size:11px}#mermaid-1595081563393 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1595081563393 .task.clickable{cursor:pointer}#mermaid-1595081563393 .taskText.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563393 .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563393 .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563393 .taskText0,#mermaid-1595081563393 .taskText1,#mermaid-1595081563393 .taskText2,#mermaid-1595081563393 .taskText3{fill:#fff}#mermaid-1595081563393 .task0,#mermaid-1595081563393 .task1,#mermaid-1595081563393 .task2,#mermaid-1595081563393 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1595081563393 .taskTextOutside0,#mermaid-1595081563393 .taskTextOutside2{fill:#000}#mermaid-1595081563393 .taskTextOutside1,#mermaid-1595081563393 .taskTextOutside3{fill:#000}#mermaid-1595081563393 .active0,#mermaid-1595081563393 .active1,#mermaid-1595081563393 .active2,#mermaid-1595081563393 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1595081563393 .activeText0,#mermaid-1595081563393 .activeText1,#mermaid-1595081563393 .activeText2,#mermaid-1595081563393 .activeText3{fill:#000 !important}#mermaid-1595081563393 .done0,#mermaid-1595081563393 .done1,#mermaid-1595081563393 .done2,#mermaid-1595081563393 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1595081563393 .doneText0,#mermaid-1595081563393 .doneText1,#mermaid-1595081563393 .doneText2,#mermaid-1595081563393 .doneText3{fill:#000 !important}#mermaid-1595081563393 .crit0,#mermaid-1595081563393 .crit1,#mermaid-1595081563393 .crit2,#mermaid-1595081563393 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1595081563393 .activeCrit0,#mermaid-1595081563393 .activeCrit1,#mermaid-1595081563393 .activeCrit2,#mermaid-1595081563393 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1595081563393 .doneCrit0,#mermaid-1595081563393 .doneCrit1,#mermaid-1595081563393 .doneCrit2,#mermaid-1595081563393 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1595081563393 .milestone{transform:rotate(45deg) scale(0.8, 0.8)}#mermaid-1595081563393 .milestoneText{font-style:italic}#mermaid-1595081563393 .doneCritText0,#mermaid-1595081563393 .doneCritText1,#mermaid-1595081563393 .doneCritText2,#mermaid-1595081563393 .doneCritText3{fill:#000 !important}#mermaid-1595081563393 .activeCritText0,#mermaid-1595081563393 .activeCritText1,#mermaid-1595081563393 .activeCritText2,#mermaid-1595081563393 .activeCritText3{fill:#000 !important}#mermaid-1595081563393 .titleText{text-anchor:middle;font-size:18px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:10px}#mermaid-1595081563393 g.classGroup text .title{font-weight:bolder}#mermaid-1595081563393 g.clickable{cursor:pointer}#mermaid-1595081563393 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563393 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563393 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563393 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1595081563393 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563393 .dashed-line{stroke-dasharray:3}#mermaid-1595081563393 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563393 .commit-id,#mermaid-1595081563393 .commit-msg,#mermaid-1595081563393 .branch-label{fill:lightgrey;color:lightgrey;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .pieTitleText{text-anchor:middle;font-size:25px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .slice{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px}#mermaid-1595081563393 g.stateGroup .state-title{font-weight:bolder;fill:#000}#mermaid-1595081563393 g.stateGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563393 g.stateGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563393 .transition{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563393 .stateGroup .composit{fill:white;border-bottom:1px}#mermaid-1595081563393 .stateGroup .alt-composit{fill:#e0e0e0;border-bottom:1px}#mermaid-1595081563393 .state-note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563393 .state-note text{fill:black;stroke:none;font-size:10px}#mermaid-1595081563393 .stateLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563393 .stateLabel text{fill:#000;font-size:10px;font-weight:bold;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563393 .node circle.state-start{fill:black;stroke:black}#mermaid-1595081563393 .node circle.state-end{fill:black;stroke:white;stroke-width:1.5}#mermaid-1595081563393 #statediagram-barbEnd{fill:#9370db}#mermaid-1595081563393 .statediagram-cluster rect{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563393 .statediagram-cluster rect.outer{rx:5px;ry:5px}#mermaid-1595081563393 .statediagram-state .divider{stroke:#9370db}#mermaid-1595081563393 .statediagram-state .title-state{rx:5px;ry:5px}#mermaid-1595081563393 .statediagram-cluster.statediagram-cluster .inner{fill:white}#mermaid-1595081563393 .statediagram-cluster.statediagram-cluster-alt .inner{fill:#e0e0e0}#mermaid-1595081563393 .statediagram-cluster .inner{rx:0;ry:0}#mermaid-1595081563393 .statediagram-state rect.basic{rx:5px;ry:5px}#mermaid-1595081563393 .statediagram-state rect.divider{stroke-dasharray:10,10;fill:#efefef}#mermaid-1595081563393 .note-edge{stroke-dasharray:5}#mermaid-1595081563393 .statediagram-note rect{fill:#fff5ad;stroke:#aa3;stroke-width:1px;rx:0;ry:0}:root{--mermaid-font-family: '"trebuchet ms", verdana, arial';--mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive}
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1595081563393 {
+    color: rgb(51, 51, 51);
+    font: 16px / 25.6px "trebuchet ms", verdana, arial;
+  }</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M113.22727272727272,68L78,93L78,118" marker-end="url(#arrowhead41)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead41" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M78,178L78,203L78,228" marker-end="url(#arrowhead42)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead42" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M70,288L58,333L70,378" marker-end="url(#arrowhead43)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead43" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M101,378L135.5,333L101,288" marker-end="url(#arrowhead44)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead44" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M78,438L78,483L124.5,528" marker-end="url(#arrowhead45)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead45" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M186.5,528L233,483L233,408L233,333L233,258L233,203L233,148L233,93L197.77272727272728,68" marker-end="url(#arrowhead46)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead46" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M155.5,588L155.5,633L155.5,678" marker-end="url(#arrowhead47)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead47" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(135.5,333)" style="opacity: 1;"><g transform="translate(-20,-20)" class="label"><rect rx="0" ry="0" width="40" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="40" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">出错</span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(78,483)" style="opacity: 1;"><g transform="translate(-20,-20)" class="label"><rect rx="0" ry="0" width="40" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="40" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">无错</span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(233,258)" style="opacity: 1;"><g transform="translate(-70,-20)" class="label"><rect rx="0" ry="0" width="140" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="140" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">若还有剩余要求</span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(155.5,633)" style="opacity: 1;"><g transform="translate(-60,-20)" class="label"><rect rx="0" ry="0" width="120" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">若无剩余要求</span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="A" transform="translate(155.5,38)" style="opacity: 1;"><rect rx="5" ry="5" x="-70" y="-30" width="140" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60,-20)"><foreignobject width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">查看实验要求</div></foreignobject></g></g></g><g class="node default" id="B" transform="translate(78,148)" style="opacity: 1;"><rect rx="5" ry="5" x="-70" y="-30" width="140" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60,-20)"><foreignobject width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">进行理论准备</div></foreignobject></g></g></g><g class="node default" id="C" transform="translate(78,258)" style="opacity: 1;"><rect rx="5" ry="5" x="-50" y="-30" width="100" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40,-20)"><foreignobject width="80" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">编写代码</div></foreignobject></g></g></g><g class="node default" id="D" transform="translate(78,408)" style="opacity: 1;"><rect rx="5" ry="5" x="-50" y="-30" width="100" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40,-20)"><foreignobject width="80" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">调试代码</div></foreignobject></g></g></g><g class="node default" id="E" transform="translate(155.5,558)" style="opacity: 1;"><rect rx="5" ry="5" x="-70" y="-30" width="140" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60,-20)"><foreignobject width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">编写实验内容</div></foreignobject></g></g></g><g class="node default" id="F" transform="translate(155.5,708)" style="opacity: 1;"><rect rx="5" ry="5" x="-70" y="-30" width="140" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60,-20)"><foreignobject width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">编写实验反思</div></foreignobject></g></g></g></g></g></g></svg></div><h3 class="mume-header" id="%E5%9B%9B-%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9">四、实验内容：</h3>
+
+<h5 class="mume-header" id="1-%E4%BF%AE%E6%94%B9%E5%86%85%E6%A0%B8%E4%BB%A3%E7%A0%81%E5%A2%9E%E5%8A%A0%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B05%E7%8A%B6%E6%80%81%E8%BF%9B%E7%A8%8B%E6%A8%A1%E5%9E%8B">1. 修改内核代码，增加阻塞队列，实现5状态进程模型。</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87">理论准备：</h6>
+
+<ol>
+<li>总体设计：<code>block</code>可以将当前当前线程阻塞，<code>wakeup</code>可以唤醒指定<code>pid</code>的线程。</li>
+<li>因为<code>wakeup</code>需要可以唤醒指定<code>pid</code>的线程，即访问队列中间的PCB，阻塞队列实际上不是一个队列，而是一个阻塞链表。</li>
+<li>阻塞链表的实现：由于实验6中已经实现PCB表之间连接的逻辑，因而只需要加一个头<code>blockheader</code>即可。</li>
+<li>注意ready-running链表和blocked链表设计的区别，ready-running链表会一直保留一个pid=0的不会访问的尾节点便于代码的编写（如不用考虑next是null的情况）。而为了不做太大改动blocked链表没有这个尾节点。</li>
+<li><code>block</code>的实现：将<code>cur_pcb</code>指向的PCB表移出ready-running（即原先的）的PCB链表，移入blocked（即新的）的PCB链表的头部。另外由于<code>schedule</code>的正确运行需要保证<code>cur_pcb</code>在ready-running的PCB链表中，因而<code>block</code>也需要能够按照<code>schedule</code>的流程正确地将<code>cur_pcb</code>改为其<code>next</code>。</li>
+</ol>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1595081563725" width="810.8515625" xmlns="http://www.w3.org/2000/svg" height="926" viewBox="0 0 810.8515625 926"><style>#mermaid-1595081563725 .label{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);color:#333}#mermaid-1595081563725 .label text{fill:#333}#mermaid-1595081563725 .node rect,#mermaid-1595081563725 .node circle,#mermaid-1595081563725 .node ellipse,#mermaid-1595081563725 .node polygon,#mermaid-1595081563725 .node path{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563725 .node .label{text-align:center}#mermaid-1595081563725 .node.clickable{cursor:pointer}#mermaid-1595081563725 .arrowheadPath{fill:#333}#mermaid-1595081563725 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1595081563725 .edgeLabel{background-color:#e8e8e8;text-align:center}#mermaid-1595081563725 .edgeLabel rect{opacity:0.5}#mermaid-1595081563725 .cluster rect{fill:#ffffde;stroke:#aa3;stroke-width:1px}#mermaid-1595081563725 .cluster text{fill:#333}#mermaid-1595081563725 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1595081563725 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563725 text.actor{fill:#000;stroke:none}#mermaid-1595081563725 .actor-line{stroke:grey}#mermaid-1595081563725 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563725 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563725 #arrowhead{fill:#333}#mermaid-1595081563725 .sequenceNumber{fill:#fff}#mermaid-1595081563725 #sequencenumber{fill:#333}#mermaid-1595081563725 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1595081563725 .messageText{fill:#333;stroke:none}#mermaid-1595081563725 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563725 .labelText{fill:#000;stroke:none}#mermaid-1595081563725 .loopText{fill:#000;stroke:none}#mermaid-1595081563725 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1595081563725 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563725 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:14px}#mermaid-1595081563725 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1595081563725 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1595081563725 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1595081563725 .mermaid-main-font{font-family:"trebuchet ms", verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .section{stroke:none;opacity:0.2}#mermaid-1595081563725 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1595081563725 .section2{fill:#fff400}#mermaid-1595081563725 .section1,#mermaid-1595081563725 .section3{fill:#fff;opacity:0.2}#mermaid-1595081563725 .sectionTitle0{fill:#333}#mermaid-1595081563725 .sectionTitle1{fill:#333}#mermaid-1595081563725 .sectionTitle2{fill:#333}#mermaid-1595081563725 .sectionTitle3{fill:#333}#mermaid-1595081563725 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .grid .tick{stroke:#d3d3d3;opacity:0.8;shape-rendering:crispEdges}#mermaid-1595081563725 .grid .tick text{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .grid path{stroke-width:0}#mermaid-1595081563725 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1595081563725 .task{stroke-width:2}#mermaid-1595081563725 .taskText{text-anchor:middle;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .taskText:not([font-size]){font-size:11px}#mermaid-1595081563725 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1595081563725 .task.clickable{cursor:pointer}#mermaid-1595081563725 .taskText.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563725 .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563725 .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563725 .taskText0,#mermaid-1595081563725 .taskText1,#mermaid-1595081563725 .taskText2,#mermaid-1595081563725 .taskText3{fill:#fff}#mermaid-1595081563725 .task0,#mermaid-1595081563725 .task1,#mermaid-1595081563725 .task2,#mermaid-1595081563725 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1595081563725 .taskTextOutside0,#mermaid-1595081563725 .taskTextOutside2{fill:#000}#mermaid-1595081563725 .taskTextOutside1,#mermaid-1595081563725 .taskTextOutside3{fill:#000}#mermaid-1595081563725 .active0,#mermaid-1595081563725 .active1,#mermaid-1595081563725 .active2,#mermaid-1595081563725 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1595081563725 .activeText0,#mermaid-1595081563725 .activeText1,#mermaid-1595081563725 .activeText2,#mermaid-1595081563725 .activeText3{fill:#000 !important}#mermaid-1595081563725 .done0,#mermaid-1595081563725 .done1,#mermaid-1595081563725 .done2,#mermaid-1595081563725 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1595081563725 .doneText0,#mermaid-1595081563725 .doneText1,#mermaid-1595081563725 .doneText2,#mermaid-1595081563725 .doneText3{fill:#000 !important}#mermaid-1595081563725 .crit0,#mermaid-1595081563725 .crit1,#mermaid-1595081563725 .crit2,#mermaid-1595081563725 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1595081563725 .activeCrit0,#mermaid-1595081563725 .activeCrit1,#mermaid-1595081563725 .activeCrit2,#mermaid-1595081563725 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1595081563725 .doneCrit0,#mermaid-1595081563725 .doneCrit1,#mermaid-1595081563725 .doneCrit2,#mermaid-1595081563725 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1595081563725 .milestone{transform:rotate(45deg) scale(0.8, 0.8)}#mermaid-1595081563725 .milestoneText{font-style:italic}#mermaid-1595081563725 .doneCritText0,#mermaid-1595081563725 .doneCritText1,#mermaid-1595081563725 .doneCritText2,#mermaid-1595081563725 .doneCritText3{fill:#000 !important}#mermaid-1595081563725 .activeCritText0,#mermaid-1595081563725 .activeCritText1,#mermaid-1595081563725 .activeCritText2,#mermaid-1595081563725 .activeCritText3{fill:#000 !important}#mermaid-1595081563725 .titleText{text-anchor:middle;font-size:18px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:10px}#mermaid-1595081563725 g.classGroup text .title{font-weight:bolder}#mermaid-1595081563725 g.clickable{cursor:pointer}#mermaid-1595081563725 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563725 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563725 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563725 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1595081563725 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563725 .dashed-line{stroke-dasharray:3}#mermaid-1595081563725 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563725 .commit-id,#mermaid-1595081563725 .commit-msg,#mermaid-1595081563725 .branch-label{fill:lightgrey;color:lightgrey;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .pieTitleText{text-anchor:middle;font-size:25px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .slice{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px}#mermaid-1595081563725 g.stateGroup .state-title{font-weight:bolder;fill:#000}#mermaid-1595081563725 g.stateGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563725 g.stateGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563725 .transition{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563725 .stateGroup .composit{fill:white;border-bottom:1px}#mermaid-1595081563725 .stateGroup .alt-composit{fill:#e0e0e0;border-bottom:1px}#mermaid-1595081563725 .state-note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563725 .state-note text{fill:black;stroke:none;font-size:10px}#mermaid-1595081563725 .stateLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563725 .stateLabel text{fill:#000;font-size:10px;font-weight:bold;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563725 .node circle.state-start{fill:black;stroke:black}#mermaid-1595081563725 .node circle.state-end{fill:black;stroke:white;stroke-width:1.5}#mermaid-1595081563725 #statediagram-barbEnd{fill:#9370db}#mermaid-1595081563725 .statediagram-cluster rect{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563725 .statediagram-cluster rect.outer{rx:5px;ry:5px}#mermaid-1595081563725 .statediagram-state .divider{stroke:#9370db}#mermaid-1595081563725 .statediagram-state .title-state{rx:5px;ry:5px}#mermaid-1595081563725 .statediagram-cluster.statediagram-cluster .inner{fill:white}#mermaid-1595081563725 .statediagram-cluster.statediagram-cluster-alt .inner{fill:#e0e0e0}#mermaid-1595081563725 .statediagram-cluster .inner{rx:0;ry:0}#mermaid-1595081563725 .statediagram-state rect.basic{rx:5px;ry:5px}#mermaid-1595081563725 .statediagram-state rect.divider{stroke-dasharray:10,10;fill:#efefef}#mermaid-1595081563725 .note-edge{stroke-dasharray:5}#mermaid-1595081563725 .statediagram-note rect{fill:#fff5ad;stroke:#aa3;stroke-width:1px;rx:0;ry:0}:root{--mermaid-font-family: '"trebuchet ms", verdana, arial';--mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive}
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1595081563725 {
+    color: rgb(51, 51, 51);
+    font: 16px / 25.6px "trebuchet ms", verdana, arial;
+  }</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M412.765625,68L412.765625,93L412.765625,118" marker-end="url(#arrowhead89)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead89" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M412.765625,178L412.765625,203L412.765625,228" marker-end="url(#arrowhead90)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead90" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M329.440625,288L204.453125,333L204.453125,378" marker-end="url(#arrowhead91)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead91" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M204.453125,438L204.453125,463L299.140625,488" marker-end="url(#arrowhead92)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead92" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M496.090625,288L621.078125,333L621.078125,378" marker-end="url(#arrowhead93)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead93" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M621.078125,438L621.078125,463L526.390625,488" marker-end="url(#arrowhead94)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead94" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M412.765625,548L412.765625,573L412.765625,598" marker-end="url(#arrowhead95)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead95" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M412.765625,658L412.765625,703L412.765625,748" marker-end="url(#arrowhead96)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead96" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M412.765625,808L412.765625,833L412.765625,858" marker-end="url(#arrowhead97)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead97" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(204.453125,333)" style="opacity: 1;"><g transform="translate(-128.0234375,-20)" class="label"><rect rx="0" ry="0" width="256.046875" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="256.0546875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">cur_pcb是ready-running的头</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(621.078125,333)" style="opacity: 1;"><g transform="translate(-138.0234375,-20)" class="label"><rect rx="0" ry="0" width="276.046875" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="276.0546875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">cur_pcb不是ready-running的头</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(412.765625,703)" style="opacity: 1;"><g transform="translate(-111.734375,-20)" class="label"><rect rx="0" ry="0" width="223.46875" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="223.4765625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">如果blocked的头不是null</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="A" transform="translate(412.765625,38)" style="opacity: 1;"><rect rx="0" ry="0" x="-33.8828125" y="-30" width="67.765625" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-23.8828125,-20)"><foreignobject width="47.7734375" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">block</div></foreignobject></g></g></g><g class="node default" id="B" transform="translate(412.765625,148)" style="opacity: 1;"><rect rx="5" ry="5" x="-159.8125" y="-30" width="319.625" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-149.8125,-20)"><foreignobject width="299.62890625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">暂存当前cur_pcb于cur_pcb_temp</div></foreignobject></g></g></g><g class="node default" id="C" transform="translate(412.765625,258)" style="opacity: 1;"><rect rx="5" ry="5" x="-390.0859375" y="-30" width="780.171875" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-380.0859375,-20)"><foreignobject width="760.17578125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">将cur_pcb修改为next,流程和schedule类似,区别是将pstate改为BLOCKED而不是READY</div></foreignobject></g></g></g><g class="node default" id="D" transform="translate(204.453125,408)" style="opacity: 1;"><rect rx="5" ry="5" x="-196.453125" y="-30" width="392.90625" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-186.453125,-20)"><foreignobject width="372.91015625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">ready-running头改为cur_pcb_temp的next</div></foreignobject></g></g></g><g class="node default" id="E" transform="translate(621.078125,408)" style="opacity: 1;"><rect rx="5" ry="5" x="-170.171875" y="-30" width="340.34375" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-160.171875,-20)"><foreignobject width="320.3515625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">last的next改为cur_pcb_temp的next</div></foreignobject></g></g></g><g class="node default" id="F" transform="translate(412.765625,518)" style="opacity: 1;"><rect rx="5" ry="5" x="-198.96875" y="-30" width="397.9375" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-188.96875,-20)"><foreignobject width="377.94921875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">cur_pcb_temp的next改为blocked链表的头</div></foreignobject></g></g></g><g class="node default" id="G" transform="translate(412.765625,628)" style="opacity: 1;"><rect rx="5" ry="5" x="-310.671875" y="-30" width="621.34375" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-300.671875,-20)"><foreignobject width="601.34765625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">next的last改为cur_pcb_temp,不需要额外判断因为next不可能是null</div></foreignobject></g></g></g><g class="node default" id="H" transform="translate(412.765625,778)" style="opacity: 1;"><rect rx="5" ry="5" x="-175.296875" y="-30" width="350.59375" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-165.296875,-20)"><foreignobject width="330.60546875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">blocked的头的last改为cur_pcb_temp</div></foreignobject></g></g></g><g class="node default" id="I" transform="translate(412.765625,888)" style="opacity: 1;"><rect rx="5" ry="5" x="-149.078125" y="-30" width="298.15625" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-139.078125,-20)"><foreignobject width="278.1640625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">blocked的头改为cur_pcb_temp</div></foreignobject></g></g></g></g></g></g></svg></div><ol start="6">
+<li><code>wakeup</code>的实现：将指定pid的节点移出blocked链表，并移入ready-running链表cur_pcb的后面，这样只要运行一个schedule，就可以轮转到唤醒的进程中。</li>
+</ol>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1595081563900" width="641.546875" xmlns="http://www.w3.org/2000/svg" height="816" viewBox="0 0 641.546875 816"><style>#mermaid-1595081563900 .label{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);color:#333}#mermaid-1595081563900 .label text{fill:#333}#mermaid-1595081563900 .node rect,#mermaid-1595081563900 .node circle,#mermaid-1595081563900 .node ellipse,#mermaid-1595081563900 .node polygon,#mermaid-1595081563900 .node path{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563900 .node .label{text-align:center}#mermaid-1595081563900 .node.clickable{cursor:pointer}#mermaid-1595081563900 .arrowheadPath{fill:#333}#mermaid-1595081563900 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1595081563900 .edgeLabel{background-color:#e8e8e8;text-align:center}#mermaid-1595081563900 .edgeLabel rect{opacity:0.5}#mermaid-1595081563900 .cluster rect{fill:#ffffde;stroke:#aa3;stroke-width:1px}#mermaid-1595081563900 .cluster text{fill:#333}#mermaid-1595081563900 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1595081563900 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563900 text.actor{fill:#000;stroke:none}#mermaid-1595081563900 .actor-line{stroke:grey}#mermaid-1595081563900 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563900 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1595081563900 #arrowhead{fill:#333}#mermaid-1595081563900 .sequenceNumber{fill:#fff}#mermaid-1595081563900 #sequencenumber{fill:#333}#mermaid-1595081563900 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1595081563900 .messageText{fill:#333;stroke:none}#mermaid-1595081563900 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1595081563900 .labelText{fill:#000;stroke:none}#mermaid-1595081563900 .loopText{fill:#000;stroke:none}#mermaid-1595081563900 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1595081563900 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563900 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:14px}#mermaid-1595081563900 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1595081563900 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1595081563900 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1595081563900 .mermaid-main-font{font-family:"trebuchet ms", verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .section{stroke:none;opacity:0.2}#mermaid-1595081563900 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1595081563900 .section2{fill:#fff400}#mermaid-1595081563900 .section1,#mermaid-1595081563900 .section3{fill:#fff;opacity:0.2}#mermaid-1595081563900 .sectionTitle0{fill:#333}#mermaid-1595081563900 .sectionTitle1{fill:#333}#mermaid-1595081563900 .sectionTitle2{fill:#333}#mermaid-1595081563900 .sectionTitle3{fill:#333}#mermaid-1595081563900 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .grid .tick{stroke:#d3d3d3;opacity:0.8;shape-rendering:crispEdges}#mermaid-1595081563900 .grid .tick text{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .grid path{stroke-width:0}#mermaid-1595081563900 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1595081563900 .task{stroke-width:2}#mermaid-1595081563900 .taskText{text-anchor:middle;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .taskText:not([font-size]){font-size:11px}#mermaid-1595081563900 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1595081563900 .task.clickable{cursor:pointer}#mermaid-1595081563900 .taskText.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563900 .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563900 .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1595081563900 .taskText0,#mermaid-1595081563900 .taskText1,#mermaid-1595081563900 .taskText2,#mermaid-1595081563900 .taskText3{fill:#fff}#mermaid-1595081563900 .task0,#mermaid-1595081563900 .task1,#mermaid-1595081563900 .task2,#mermaid-1595081563900 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1595081563900 .taskTextOutside0,#mermaid-1595081563900 .taskTextOutside2{fill:#000}#mermaid-1595081563900 .taskTextOutside1,#mermaid-1595081563900 .taskTextOutside3{fill:#000}#mermaid-1595081563900 .active0,#mermaid-1595081563900 .active1,#mermaid-1595081563900 .active2,#mermaid-1595081563900 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1595081563900 .activeText0,#mermaid-1595081563900 .activeText1,#mermaid-1595081563900 .activeText2,#mermaid-1595081563900 .activeText3{fill:#000 !important}#mermaid-1595081563900 .done0,#mermaid-1595081563900 .done1,#mermaid-1595081563900 .done2,#mermaid-1595081563900 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1595081563900 .doneText0,#mermaid-1595081563900 .doneText1,#mermaid-1595081563900 .doneText2,#mermaid-1595081563900 .doneText3{fill:#000 !important}#mermaid-1595081563900 .crit0,#mermaid-1595081563900 .crit1,#mermaid-1595081563900 .crit2,#mermaid-1595081563900 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1595081563900 .activeCrit0,#mermaid-1595081563900 .activeCrit1,#mermaid-1595081563900 .activeCrit2,#mermaid-1595081563900 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1595081563900 .doneCrit0,#mermaid-1595081563900 .doneCrit1,#mermaid-1595081563900 .doneCrit2,#mermaid-1595081563900 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1595081563900 .milestone{transform:rotate(45deg) scale(0.8, 0.8)}#mermaid-1595081563900 .milestoneText{font-style:italic}#mermaid-1595081563900 .doneCritText0,#mermaid-1595081563900 .doneCritText1,#mermaid-1595081563900 .doneCritText2,#mermaid-1595081563900 .doneCritText3{fill:#000 !important}#mermaid-1595081563900 .activeCritText0,#mermaid-1595081563900 .activeCritText1,#mermaid-1595081563900 .activeCritText2,#mermaid-1595081563900 .activeCritText3{fill:#000 !important}#mermaid-1595081563900 .titleText{text-anchor:middle;font-size:18px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:10px}#mermaid-1595081563900 g.classGroup text .title{font-weight:bolder}#mermaid-1595081563900 g.clickable{cursor:pointer}#mermaid-1595081563900 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563900 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563900 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563900 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1595081563900 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563900 .dashed-line{stroke-dasharray:3}#mermaid-1595081563900 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1595081563900 .commit-id,#mermaid-1595081563900 .commit-msg,#mermaid-1595081563900 .branch-label{fill:lightgrey;color:lightgrey;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .pieTitleText{text-anchor:middle;font-size:25px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .slice{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px}#mermaid-1595081563900 g.stateGroup .state-title{font-weight:bolder;fill:#000}#mermaid-1595081563900 g.stateGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1595081563900 g.stateGroup line{stroke:#9370db;stroke-width:1}#mermaid-1595081563900 .transition{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1595081563900 .stateGroup .composit{fill:white;border-bottom:1px}#mermaid-1595081563900 .stateGroup .alt-composit{fill:#e0e0e0;border-bottom:1px}#mermaid-1595081563900 .state-note{stroke:#aa3;fill:#fff5ad}#mermaid-1595081563900 .state-note text{fill:black;stroke:none;font-size:10px}#mermaid-1595081563900 .stateLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1595081563900 .stateLabel text{fill:#000;font-size:10px;font-weight:bold;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1595081563900 .node circle.state-start{fill:black;stroke:black}#mermaid-1595081563900 .node circle.state-end{fill:black;stroke:white;stroke-width:1.5}#mermaid-1595081563900 #statediagram-barbEnd{fill:#9370db}#mermaid-1595081563900 .statediagram-cluster rect{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1595081563900 .statediagram-cluster rect.outer{rx:5px;ry:5px}#mermaid-1595081563900 .statediagram-state .divider{stroke:#9370db}#mermaid-1595081563900 .statediagram-state .title-state{rx:5px;ry:5px}#mermaid-1595081563900 .statediagram-cluster.statediagram-cluster .inner{fill:white}#mermaid-1595081563900 .statediagram-cluster.statediagram-cluster-alt .inner{fill:#e0e0e0}#mermaid-1595081563900 .statediagram-cluster .inner{rx:0;ry:0}#mermaid-1595081563900 .statediagram-state rect.basic{rx:5px;ry:5px}#mermaid-1595081563900 .statediagram-state rect.divider{stroke-dasharray:10,10;fill:#efefef}#mermaid-1595081563900 .note-edge{stroke-dasharray:5}#mermaid-1595081563900 .statediagram-note rect{fill:#fff5ad;stroke:#aa3;stroke-width:1px;rx:0;ry:0}:root{--mermaid-font-family: '"trebuchet ms", verdana, arial';--mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive}
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1595081563900 {
+    color: rgb(51, 51, 51);
+    font: 16px / 25.6px "trebuchet ms", verdana, arial;
+  }</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M280.43359375,57.64033768937203L155.7734375,113L155.7734375,158" marker-end="url(#arrowhead138)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead138" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M155.7734375,218L155.7734375,243L232.5401278409091,268" marker-end="url(#arrowhead139)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead139" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M368.88671875,57.64033768937203L493.546875,113L493.546875,158" marker-end="url(#arrowhead140)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead140" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M493.546875,218L493.546875,243L416.7801846590909,268" marker-end="url(#arrowhead141)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead141" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M324.66015625,328L324.66015625,353L324.66015625,378" marker-end="url(#arrowhead142)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead142" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M272.69765625,438L194.75390625,483L194.75390625,528" marker-end="url(#arrowhead143)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead143" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M194.75390625,588L194.75390625,613L253.80220170454544,638" marker-end="url(#arrowhead144)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead144" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M376.62265625,438L454.56640625,483L454.56640625,558L454.56640625,613L395.51811079545456,638" marker-end="url(#arrowhead145)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead145" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M324.66015625,698L324.66015625,723L324.66015625,748" marker-end="url(#arrowhead146)" style=" stroke-width: 3.5px;fill:none"></path><defs><marker id="arrowhead146" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(155.7734375,113)" style="opacity: 1;"><g transform="translate(-98.90625,-20)" class="label"><rect rx="0" ry="0" width="197.8125" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="197.8125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">pid是blocked链表的头</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(493.546875,113)" style="opacity: 1;"><g transform="translate(-108.90625,-20)" class="label"><rect rx="0" ry="0" width="217.8125" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="217.8125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">pid不是blocked链表的头</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(194.75390625,483)" style="opacity: 1;"><g transform="translate(-100.7109375,-20)" class="label"><rect rx="0" ry="0" width="201.421875" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="201.42578125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">指定pid的next不是null</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(454.56640625,558)" style="opacity: 1;"><g transform="translate(-90.7109375,-20)" class="label"><rect rx="0" ry="0" width="181.421875" height="40" style="fill:#e8e8e8;"></rect><foreignobject width="181.42578125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">指定pid的next是null</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0" style="fill:#e8e8e8;"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="A" transform="translate(324.66015625,38)" style="opacity: 1;"><rect rx="0" ry="0" x="-44.2265625" y="-30" width="88.453125" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34.2265625,-20)"><foreignobject width="68.45703125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">wakeup</div></foreignobject></g></g></g><g class="node default" id="B" transform="translate(155.7734375,188)" style="opacity: 1;"><rect rx="5" ry="5" x="-147.7734375" y="-30" width="295.546875" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-137.7734375,-20)"><foreignobject width="275.546875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">block链表头改为指定pid的next</div></foreignobject></g></g></g><g class="node default" id="C" transform="translate(493.546875,188)" style="opacity: 1;"><rect rx="5" ry="5" x="-140" y="-30" width="280" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-130,-20)"><foreignobject width="260" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">last的next改为指定pid的next</div></foreignobject></g></g></g><g class="node default" id="D" transform="translate(324.66015625,298)" style="opacity: 1;"><rect rx="5" ry="5" x="-159.421875" y="-30" width="318.84375" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-149.421875,-20)"><foreignobject width="298.84765625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">指定pid的next改为cur_pcb的next</div></foreignobject></g></g></g><g class="node default" id="E" transform="translate(324.66015625,408)" style="opacity: 1;"><rect rx="5" ry="5" x="-129.53125" y="-30" width="259.0625" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-119.53125,-20)"><foreignobject width="239.0625" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">cur_pcb的next改为指定pid</div></foreignobject></g></g></g><g class="node default" id="F" transform="translate(194.75390625,558)" style="opacity: 1;"><rect rx="5" ry="5" x="-134.1015625" y="-30" width="268.203125" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-124.1015625,-20)"><foreignobject width="248.203125" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">指定pid的next的last改为pid</div></foreignobject></g></g></g><g class="node default" id="G" transform="translate(324.66015625,668)" style="opacity: 1;"><rect rx="5" ry="5" x="-125.84375" y="-30" width="251.6875" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-115.84375,-20)"><foreignobject width="231.69921875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">指定pid的last改为cur_pcb</div></foreignobject></g></g></g><g class="node default" id="H" transform="translate(324.66015625,778)" style="opacity: 1;"><rect rx="5" ry="5" x="-131.15625" y="-30" width="262.3125" height="60" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-121.15625,-20)"><foreignobject width="242.32421875" height="40"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">指定pid的pstate改为READY</div></foreignobject></g></g></g></g></g></g></svg></div><h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99">代码编写：</h6>
+
+<ol>
+<li>阻塞链表的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> blockheader<span class="token punctuation">;</span>
+</pre><ol start="2">
+<li><code>block</code>的实现。</li>
+</ol>
+<ul>
+<li>暂存当前cur_pcb于cur_pcb_temp</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> cur_pcb_temp <span class="token operator">=</span> cur_pcb<span class="token punctuation">;</span>
+</pre><ul>
+<li>类似<code>schedule</code>的流程实现。</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c">pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> BLOCKED<span class="token punctuation">;</span>
+<span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+cur_pcb <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cur_pcb <span class="token operator">=</span> pcbheader<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">reg_swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> RUNNING<span class="token punctuation">;</span>
+</pre><ul>
+<li>将cur_pcb_temp指向的PCB表移出ready-running链表，移入blocked链表的头。</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>cur_pcb_temp <span class="token operator">==</span> pcbheader<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    pcbheader <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span>
+<span class="token punctuation">{</span>
+    pcbndsp<span class="token punctuation">[</span>pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>last<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">=</span> blockheader<span class="token punctuation">;</span>
+pcbndsp<span class="token punctuation">[</span>pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">]</span><span class="token punctuation">.</span>last <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>last<span class="token punctuation">;</span>
+pcbndsp<span class="token punctuation">[</span>cur_pcb_temp<span class="token punctuation">]</span><span class="token punctuation">.</span>last <span class="token operator">=</span> null<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>blockheader <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    pcbndsp<span class="token punctuation">[</span>blockheader<span class="token punctuation">]</span><span class="token punctuation">.</span>last <span class="token operator">=</span> cur_pcb_temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+blockheader <span class="token operator">=</span> cur_pcb_temp<span class="token punctuation">;</span>
+</pre><ol start="3">
+<li>wakeup的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token keyword">int</span> pid<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pid <span class="token operator">==</span> blockheader<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        blockheader <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span>
+    <span class="token punctuation">{</span>
+        pcbndsp<span class="token punctuation">[</span>pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>last<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">=</span> pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    pcbndsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">=</span> pid<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>next <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        pcbndsp<span class="token punctuation">[</span>pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>next<span class="token punctuation">]</span><span class="token punctuation">.</span>last <span class="token operator">=</span> pid<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    pcbndsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>last <span class="token operator">=</span> cur_pcb<span class="token punctuation">;</span>
+    pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">=</span> READY<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="2-%E5%A6%82%E6%9E%9C%E9%87%87%E7%94%A8%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E5%B0%B1%E8%A6%81%E5%88%86%E7%A6%BB%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E7%9A%84%E7%BA%BF%E7%A8%8B%E7%9B%B8%E5%85%B3%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%88%90%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E9%87%8D%E6%9E%84%E8%BF%9B%E7%A8%8B%E8%A1%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">2. 如果采用线程控制块，就要分离进程控制块的线程相关项目，组成线程控制块，重构进程表数据结构。</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-1">理论准备：</h6>
+
+<ol>
+<li>需要增加一种<code>pstate</code>，<code>BLOCKED</code>。</li>
+<li>需要增加一个成员变量，父进程<code>fpid</code>，以便<code>exit</code>时对父进程执行<code>wakeup</code>操作。</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-1">代码编写：</h6>
+
+<ol>
+<li>增加一种<code>pstate</code>。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token macro property">#<span class="token directive keyword">define</span> READY 0</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> RUNNING 1</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> BLOCKED 2</span>
+</pre><ol start="2">
+<li>增加<code>fpid</code>。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">struct</span> PCB
+<span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> reg pregs<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> pid<span class="token punctuation">;</span>
+    <span class="token keyword">char</span> pname<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">char</span> pstate<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> fpid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> <span class="token function">new_pcb</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>pname<span class="token punctuation">,</span> <span class="token keyword">int</span> cursor<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> neo_pcb <span class="token operator">=</span> <span class="token function">new_node</span><span class="token punctuation">(</span>cursor<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pcbheader<span class="token punctuation">,</span> pcbndsp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>neo_pcb <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>fpid <span class="token operator">=</span> cur_pcb<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> neo_pcb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="3-%E4%BF%AE%E6%94%B9%E5%86%85%E6%A0%B8%E4%BB%A3%E7%A0%81%E5%A2%9E%E5%8A%A0%E9%98%BB%E5%A1%9Eblock-%E5%94%A4%E9%86%92wakeup-%E7%9D%A1%E7%9C%A0sleep-%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8Bdo_fork-%E6%92%A4%E9%94%80%E7%BA%BF%E7%A8%8Bdo_exit%E5%92%8C%E7%AD%89%E5%BE%85%E7%BA%BF%E7%A8%8B%E7%BB%93%E6%9D%9Fdo_wait%E7%AD%89%E8%BF%87%E7%A8%8B%E5%AE%9E%E7%8E%B0%E4%BD%A0%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6">3. 修改内核代码，增加阻塞block()、唤醒wakeup()、睡眠sleep()、创建线程do_fork()、撤销线程do_exit()和等待线程结束do_wait()等过程，实现你的线程控制。</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-2">理论准备：</h6>
+
+<ol>
+<li><code>fork</code>的设计：调用<code>new_pcb</code>在<code>cur_pcb</code>前生成一个新的PCB表，将<code>cur_pcb</code>的<code>pregs</code>拷贝给新的PCB表，分配新的栈给<code>cur_pcb</code>，将<code>cur_pcb</code>对应的栈拷贝给新的PCB表对应的栈，返回值通过修改<code>regs</code>及<code>pregs</code>的<code>ax</code>实现。</li>
+<li><code>pregs</code>拷贝<code>reg_cpy</code>的实现：类似<code>reg_swap</code>，使用指针类型转换加一个循环实现。注意由于实验6中，进入某进程时会将其PCB表中的<code>pregs</code>和<code>regs</code>进行交换，对<code>regs</code>进行保护，因而调用时应将<code>regs</code>，而不是<code>pcbsp[cur_pcb].pregs</code>拷贝给<code>pcbsp[pid].pregs</code>。</li>
+<li>栈分配的实现：老师给出的方案是每个栈256字节，我认为栈空间不大，而且浪费了PCB表<code>pid</code>和<code>ss</code>段地址一一对应的关系。可以通过在<code>pid</code>和<code>ss</code>间建立映射，<code>ss=0x1000*(pid-1)</code>。由于<code>pid</code>使用的直接是在<code>pcbsp</code>中的下标，<code>0</code>是<code>null</code>，<code>1</code>是尾节点，所以从<code>2</code>开始。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>pid</th>
+<th>ss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0x1000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0x2000</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0x9000</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>栈拷贝<code>_stack_cpy</code>的实现：由于涉及到“段:偏移”的寻址方式，因而直接用汇编实现比较方便。另外注意nasm对栈的操作最小的单位是<code>word</code>，因而一次拷贝一个<code>word</code>是相对好的选择。</li>
+<li><code>exit</code>的设计：如果父进程的<code>pstate</code>是<code>BLOCKED</code>则唤醒，此时父进程一定在子进程后（因为创建时子进程在父进程前，<code>wakeup</code>中将进程放在当前进程后）然后直接调用实验6编写的<code>sync_ret</code>，完成删除节点和调度的工作。</li>
+<li>封装成系统调用：<code>wakeup</code>之外的函数没有参数，因而系统调用也不设置参数。<code>wakeup</code>的参数指定<code>pid</code>由<code>ebx</code>传递。</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-2">代码编写：</h6>
+
+<ol>
+<li><code>reg_cpy</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">reg_cpy</span><span class="token punctuation">(</span><span class="token keyword">struct</span> reg<span class="token operator">*</span> reg1<span class="token punctuation">,</span> <span class="token keyword">struct</span> reg<span class="token operator">*</span> reg2<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span>p1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>reg1<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span>p2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span>reg2<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">16</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        p1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> p2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre><ol start="2">
+<li>栈分配的实现。</li>
+</ol>
+<ul>
+<li>映射关系在创建进程时的体现。</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> <span class="token function">new_pcb</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>pname<span class="token punctuation">,</span> <span class="token keyword">int</span> cursor<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> neo_pcb <span class="token operator">=</span> <span class="token function">new_node</span><span class="token punctuation">(</span>cursor<span class="token punctuation">,</span> <span class="token operator">&amp;</span>pcbheader<span class="token punctuation">,</span> pcbndsp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>neo_pcb <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> cs <span class="token operator">=</span> <span class="token number">0x1000</span> <span class="token operator">*</span> <span class="token punctuation">(</span>neo_pcb <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>cs <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ss <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        pcbsp<span class="token punctuation">[</span>neo_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ds <span class="token operator">=</span> cs<span class="token punctuation">;</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> neo_pcb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><ul>
+<li>映射关系在<code>fork</code>中的体现。</li>
+</ul>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token function">reg_cpy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ss <span class="token operator">=</span> <span class="token number">0x1000</span> <span class="token operator">*</span> <span class="token punctuation">(</span>pid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</pre><ol start="3">
+<li>栈拷贝<code>_stack_cpy</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="x86asm" class="language-x86asm"><code>_stack_cpy:
+    mov ax, word [esp + 4]
+    mov es, ax
+    mov ax, word [esp + 12]
+    mov fs, ax
+    mov eax, dword [esp + 8]
+    mov ecx, dword [esp + 16]
+_stack_cpy_loop:
+    mov dx, word [fs:ecx]
+    mov word [es:eax], dx
+    add eax, 2
+    add ecx, 2
+    cmp eax, dword [esp + 20] 
+    jnz _stack_cpy_loop
+_stack_cpy_end:
+    o32 ret
+</code></pre><ol start="4">
+<li><code>fork</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> pid <span class="token operator">=</span> <span class="token function">new_pcb</span><span class="token punctuation">(</span><span class="token string">"Thread"</span><span class="token punctuation">,</span> cur_pcb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pid <span class="token operator">==</span> null<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        regs<span class="token punctuation">.</span>ax <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">reg_cpy</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">,</span> <span class="token operator">&amp;</span>regs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ax <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ss <span class="token operator">=</span> <span class="token number">0x1000</span> <span class="token operator">*</span> <span class="token punctuation">(</span>pid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">_stack_cpy</span><span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>ss<span class="token punctuation">,</span> pcbsp<span class="token punctuation">[</span>pid<span class="token punctuation">]</span><span class="token punctuation">.</span>pregs<span class="token punctuation">.</span>sp<span class="token punctuation">,</span> regs<span class="token punctuation">.</span>ss<span class="token punctuation">,</span> regs<span class="token punctuation">.</span>sp<span class="token punctuation">,</span> <span class="token number">0xffff</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    regs<span class="token punctuation">.</span>ax <span class="token operator">=</span> pid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><ol start="5">
+<li><code>exit</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>fpid<span class="token punctuation">]</span><span class="token punctuation">.</span>pstate <span class="token operator">==</span> BLOCKED<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">wakeup</span><span class="token punctuation">(</span>pcbsp<span class="token punctuation">[</span>cur_pcb<span class="token punctuation">]</span><span class="token punctuation">.</span>fpid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">sync_ret</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><ol start="6">
+<li>封装成系统调用。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c">_int_21h_64h<span class="token operator">:</span>
+    call dword fork
+    jmp _int_21h_end
+_int_21h_65h<span class="token operator">:</span>
+    call dword exit
+    jmp _int_21h_end
+_int_21h_66h<span class="token operator">:</span>
+    call dword block
+    jmp _int_21h_end
+_int_21h_67h<span class="token operator">:</span>
+    push dword ebx
+    call dword wakeup
+    jmp _int_21h_end
+</pre><h5 class="mume-header" id="4-%E4%BF%AE%E6%94%B9%E6%89%A9%E5%B1%95c%E5%BA%93%E5%B0%81%E8%A3%85%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8Bfork-%E6%92%A4%E9%94%80%E7%BA%BF%E7%A8%8Bexit0-%E7%9D%A1%E7%9C%A0sleep%E5%92%8C%E7%AD%89%E5%BE%85%E7%BA%BF%E7%A8%8B%E7%BB%93%E6%9D%9Fwait%E7%AD%89%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E6%93%8D%E4%BD%9C">4. 修改扩展C库，封装创建线程fork()、撤销线程exit(0)、睡眠sleep()和等待线程结束wait()等系统调用操作。</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-3">理论准备：</h6>
+
+<ol>
+<li>类似实验5，可以将所有asm的代码写成内联汇编嵌入到C代码中，不过注意其格式不是x86asm，有如源操作数在前目的操作数在后等的诸多区别。另外定义前需要先声明。</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-3">代码编写：</h6>
+
+<ol>
+<li><code>_fork</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> <span class="token function">_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">__asm__</span><span class="token punctuation">(</span>
+    <span class="token string">"_fork:\n"</span>
+    <span class="token string">"    mov  %ebx, %edx\n"</span>
+    <span class="token string">"    mov  $0x64, %ah\n"</span>
+    <span class="token string">"    int  $0x21\n"</span>
+    <span class="token string">"    mov  %edx, %ebx\n"</span>
+    <span class="token string">"    ret\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ol start="2">
+<li><code>_exit</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">_exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">__asm__</span><span class="token punctuation">(</span>
+    <span class="token string">"_exit:\n"</span>
+    <span class="token string">"    mov  %ebx, %edx\n"</span>
+    <span class="token string">"    mov  $0x65, %ah\n"</span>
+    <span class="token string">"    int  $0x21\n"</span>
+    <span class="token string">"    mov  %edx, %ebx\n"</span>
+    <span class="token string">"    ret\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ol start="3">
+<li><code>_block</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">_block</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">__asm__</span><span class="token punctuation">(</span>
+    <span class="token string">"_block:\n"</span>
+    <span class="token string">"    mov  %ebx, %edx\n"</span>
+    <span class="token string">"    mov  $0x66, %ah\n"</span>
+    <span class="token string">"    int  $0x21\n"</span>
+    <span class="token string">"    mov  %edx, %ebx\n"</span>
+    <span class="token string">"    ret\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ol start="4">
+<li><code>_wakeup</code>的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">void</span> <span class="token function">_wakeup</span><span class="token punctuation">(</span><span class="token keyword">int</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">__asm__</span><span class="token punctuation">(</span>
+    <span class="token string">"_wakeup:\n"</span>
+    <span class="token string">"    mov  %ebx, %edx\n"</span>
+    <span class="token string">"    mov  4(%esp), %ebx\n"</span>
+    <span class="token string">"    mov  $0x67, %ah\n"</span>
+    <span class="token string">"    int  $0x21\n"</span>
+    <span class="token string">"    mov  %edx, %ebx\n"</span>
+    <span class="token string">"    ret\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h5 class="mume-header" id="5-%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%BA%94%E7%94%A8%E7%9A%84%E7%94%A8%E6%88%B7%E7%A8%8B%E5%BA%8F%E5%B1%95%E7%A4%BA%E4%BD%A0%E7%9A%84%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8%E6%95%88%E6%9E%9C%E7%A4%BA%E8%8C%83%E8%BF%9B%E7%A8%8B%E5%88%9B%E5%BB%BA2%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%88%86%E5%88%AB%E7%BB%9F%E8%AE%A1%E5%85%A8%E5%B1%80%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%AD%97%E6%AF%8D%E5%92%8C%E6%95%B0%E5%AD%97%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%8F%A6%E9%80%89%E5%85%B6%E4%BB%96%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%BA%94%E7%94%A8">5. 设计一个多线程应用的用户程序，展示你的多线程模型的应用效果。示范：进程创建2个线程，分别统计全局数组中的字母和数字的出现次数。你也可以另选其他多进程应用。</h5>
+
+<h6 class="mume-header" id="%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87-4">理论准备：</h6>
+
+<ol>
+<li>老师提供的代码是一个线程统计字母数，一个线程打印字母数，我认为这也能很好地说明问题，因而选用了这个代码。</li>
+<li>注意由于<code>fork</code>的主线程需要有一个PCB表，最初写的调用用户程序的CALL命令并不会建立PCB表，而SYNC命令会建立PCB表，所以对于需要多线程的用户程序，要使用SYNC命令调用。</li>
+<li>第一次用CALL调用。</li>
+</ol>
+<ul>
+<li><code>cur_pcb=1</code>是尾节点。而<code>schedule</code>有逻辑判断：如果<code>cur_pcb</code>是尾节点，不启动轮转，因而无法进入子进程。</li>
+<li><code>_block</code>阻塞当前进程，需要对<code>schedule</code>的依赖，而CALL不依赖<code>schedule</code>因此不会因<code>_block</code>阻塞，因此能够打印0。</li>
+<li>由于<code>fork</code>的运行，ready-running链表头不是尾节点了。</li>
+<li><code>_block</code>的运行，完成了一次类似<code>schedule</code>的流程，导致<code>cur_pcb</code>修改成了ready-running的头，因此<code>cur_pcb</code>不再是尾节点，因此后续的<code>schedule</code>将被启动。</li>
+</ul>
+<ol start="4">
+<li>第二次用CALL调用。由于上述原因可以进入子进程，但是仍然无法<code>_block</code>。但是可能因为子进程执行比较快，提前完成了计数，所以即使没有<code>_block</code>，也能有打印在计数后，因此显示正常。</li>
+<li>如果用SYNC调用，则会正常操作并会返回字母数。</li>
+<li>注意！对于多线程用户程序只有使用SYNC才是正确的，使用CALL会导致ready-running链表有无法清理的项，在此只是为了说明原理的对这种现象的解释。</li>
+<li>由于所有的debug都是在此步完成，所以将debug的方式也在此说明。有两种方式，一种是使用bochsdbg直接对软盘debug，可以找到asm部分代码的错误，但是比较耗时；另一种是在C模拟多线程的操作，进而可以找到C部分代码的逻辑错误，而且高效。在使用bochsdbg来debug时，我先在内核设置断点，并反汇编，获得内核部分的代码和地址，存在txt文件中，再进行后续断点调试。debug的代码均保存在dbg文件夹中。</li>
+</ol>
+<h6 class="mume-header" id="%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99-4">代码编写：</h6>
+
+<ol>
+<li>用户程序COUNT.COM多线程部分的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> pid <span class="token operator">=</span> <span class="token function">_fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>pid <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token string">"Error in fork!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>pid<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">_block</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token string">"Number of letters = %d"</span><span class="token punctuation">,</span> LetterNr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">else</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">'\0'</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token string">'a'</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token string">'z'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token string">'A'</span> <span class="token operator">&amp;&amp;</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token string">'Z'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            LetterNr<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">_exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><ol start="2">
+<li>多线程模拟代码的实现。</li>
+</ol>
+<pre data-role="codeBlock" data-info="C" class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">cmd_sync</span><span class="token punctuation">(</span><span class="token string">"COUNT.COM"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">schedule</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">ffork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">block</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">eexit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">schedule</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h6 class="mume-header" id="%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C">运行结果：</h6>
+
+<ol>
+<li>执行SYNC。<br>
+<img src="./18308045_谷正阳_EX7_files/sync.png" alt="avatar"></li>
+<li>第一次执行CALL。<br>
+<img src="./18308045_谷正阳_EX7_files/call1.png" alt="avatar"></li>
+<li>第二次执行CALL。<br>
+<img src="./18308045_谷正阳_EX7_files/call2.png" alt="avatar"></li>
+</ol>
+<h3 class="mume-header" id="%E4%BA%94-%E5%AE%9E%E9%AA%8C%E4%BA%AE%E7%82%B9">五、实验亮点：</h3>
+
+<ol>
+<li>完成全部任务。</li>
+<li>链表实现5状态模型。</li>
+<li>使用内联汇编的方法做到只使用.h文件就可以封装全部的库。</li>
+<li>利用设计原理，解释一个出错的现象。</li>
+<li>使用<code>pid</code>和<code>ss</code>间映射的方式，为子进程分配栈（本质上也是依托链表串起来了，不连续存放省空间）。</li>
+<li>使用流程图、表格、图片，更清楚地解释原理。</li>
+<li>使用用C语言模拟的方式调试代码。</li>
+</ol>
+<h3 class="mume-header" id="%E5%85%AD-%E5%AE%9E%E9%AA%8C%E5%8F%8D%E6%80%9D">六、实验反思：</h3>
+
+<p>最近时间充裕了，我觉得可能还可以再做几个实验？争取把布置的实验全部做完。</p>
+
+      </div>
+      
+      
+    
+    
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.getElementsByClassName('mermaid'))
+}
+</script><div class="mermaidTooltip" style="opacity: 0;"></div>
+    
+    
+    
+    
+    
+  
+    </body></html>

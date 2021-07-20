@@ -1,0 +1,53 @@
+Best Order: ['Anticoagulants', 'Disability', 'Mortality']
+Width: 2
+Time consumed: 97.6864 us
+
+	VariableElimination:
+	Time consumed: 112.242 us
+
+	BucketElimination:
+	Time consumed: 183.2551 us
+
+Min-Degree Order: ['Disability', 'Anticoagulants', 'Mortality']
+Width: 2
+Time consumed: 18.4411 us
+
+	VariableElimination:
+	Time consumed: 92.7689 us
+
+	BucketElimination:
+	Time consumed: 177.7824 us
+
+Min-Fill Order: ['Anticoagulants', 'Disability', 'Mortality']
+Width: 2
+Time consumed: 17.1774 us
+
+	VariableElimination:
+	Time consumed: 88.7226 us
+
+	BucketElimination:
+	Time consumed: 243.1793 us
+
+Median Order: ['Disability', 'Mortality', 'Anticoagulants']
+Width: 2
+	VariableElimination:
+	Time consumed: 94.8631 us
+
+	BucketElimination:
+	Time consumed: 185.1518 us
+
+Worst Order: ['Mortality', 'Disability', 'Anticoagulants']
+Width: 2
+	VariableElimination:
+	Time consumed: 96.6514 us
+
+	BucketElimination:
+	Time consumed: 296.9719 us
+
+Average Order:
+	VariableElimination:
+	Time consumed: 124.827333333 us
+
+	BucketElimination:
+	Time consumed: 264.1065 us
+

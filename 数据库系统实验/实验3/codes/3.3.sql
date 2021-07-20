@@ -1,0 +1,7 @@
+USE SCHOOL
+SELECT SNAME
+FROM STUDENTS
+WHERE SID NOT IN (SELECT SID
+                    FROM CHOICES, COURSES
+                    WHERE CHOICES.CID = COURSES.CID
+                    AND CNAME = 'Java')

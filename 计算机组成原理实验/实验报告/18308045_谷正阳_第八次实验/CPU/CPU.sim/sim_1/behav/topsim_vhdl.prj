@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl blk_mem_gen_v8_3_1  "../../../CPU.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd"
+vhdl xil_defaultlib  "../../../CPU.srcs/sources_1/ip/irom/sim/irom.vhd"
+
+# Do not sort compile order
+nosort

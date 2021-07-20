@@ -1,0 +1,7 @@
+/* Example 1: A hello world program */
+program xyz;
+class Test {
+    method void main() {
+        System.println('Hello World !!!');
+    }
+}

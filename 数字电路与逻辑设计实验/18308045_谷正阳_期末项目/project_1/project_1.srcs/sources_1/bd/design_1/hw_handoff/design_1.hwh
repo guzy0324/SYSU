@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jul  2 09:32:33 2021" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="design_1" PACKAGE="csga324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="O0" SIGIS="undef" SIGNAME="sysu_74LS283_0_S0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O1" SIGIS="undef" SIGNAME="sysu_74LS283_0_S1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O2" SIGIS="undef" SIGNAME="sysu_74LS283_0_S2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O3" SIGIS="undef" SIGNAME="sysu_74LS283_0_S3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M" SIGIS="undef" SIGNAME="External_Ports_M">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS86_0" PORT="B1"/>
+        <CONNECTION INSTANCE="sysu_74LS86_0" PORT="B2"/>
+        <CONNECTION INSTANCE="sysu_74LS86_0" PORT="B3"/>
+        <CONNECTION INSTANCE="sysu_74LS86_0" PORT="B4"/>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="Ci"/>
+        <CONNECTION INSTANCE="sysu_74LS08_0" PORT="A4"/>
+        <CONNECTION INSTANCE="sysu_74LS04_0" PORT="A1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="F" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS32_0" PORT="Y3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I0" SIGIS="undef" SIGNAME="External_Ports_I0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="A0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I1" SIGIS="undef" SIGNAME="External_Ports_I1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="A1"/>
+        <CONNECTION INSTANCE="sysu_74LS32_0" PORT="B1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I2" SIGIS="undef" SIGNAME="External_Ports_I2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="A2"/>
+        <CONNECTION INSTANCE="sysu_74LS32_0" PORT="A1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="I3" SIGIS="undef" SIGNAME="External_Ports_I3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sysu_74LS283_0" PORT="A3"/>
+        <CONNECTION INSTANCE="sysu_74LS08_0" PORT="A1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/sysu_74LS04_0" HWVERSION="1.0" INSTANCE="sysu_74LS04_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_74LS04" VLNV="sysu:user:sysu_74LS04:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_74LS04_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A3" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A5" SIGIS="undef"/>
+        <PORT DIR="I" NAME="A6" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="sysu_74LS04_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="B3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y5" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y6" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_74LS08_0" HWVERSION="1.0" INSTANCE="sysu_74LS08_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_74LS08" VLNV="sysu:user:sysu_74LS08:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_74LS08_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="sysu_74LS283_0_S3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="sysu_74LS04_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS04_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A4" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B4" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="A3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="B4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="A3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="B3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_74LS283_0" HWVERSION="1.0" INSTANCE="sysu_74LS283_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_74LS283" VLNV="xilinx.com:user:sysu_74LS283:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_74LS283_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="External_Ports_I3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_I0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="Y4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ci" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S3" SIGIS="undef" SIGNAME="sysu_74LS283_0_S3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O3"/>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="sysu_74LS283_0_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O2"/>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="sysu_74LS283_0_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O1"/>
+            <CONNECTION INSTANCE="sysu_74LS32_0" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="sysu_74LS283_0_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Co" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_74LS32_0" HWVERSION="1.0" INSTANCE="sysu_74LS32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_74LS32" VLNV="sysu:user:sysu_74LS32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_74LS32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_I2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="External_Ports_I1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="sysu_74LS283_0_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="sysu_74LS283_0_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="sysu_74LS08_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="Y4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A4" SIGIS="undef"/>
+        <PORT DIR="I" NAME="B4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="B1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS08_0" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="sysu_74LS32_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="F"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_74LS86_0" HWVERSION="1.0" INSTANCE="sysu_74LS86_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_74LS86" VLNV="xilinx.com:user:sysu_74LS86:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Delay" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_74LS86_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="sysu_low_level_0_low">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_low_level_0" PORT="low"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="sysu_high_level_0_high">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_high_level_0" PORT="high"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="sysu_low_level_0_low">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_low_level_0" PORT="low"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A4" SIGIS="undef" SIGNAME="sysu_high_level_0_high">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_high_level_0" PORT="high"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B4" SIGIS="undef" SIGNAME="External_Ports_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="B3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="B1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y4" SIGIS="undef" SIGNAME="sysu_74LS86_0_Y4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS283_0" PORT="B0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_high_level_0" HWVERSION="1.0" INSTANCE="sysu_high_level_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_high_level" VLNV="xilinx.com:user:sysu_high_level:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_high_level_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="high" SIGIS="undef" SIGNAME="sysu_high_level_0_high">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="A2"/>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="A4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/sysu_low_level_0" HWVERSION="1.0" INSTANCE="sysu_low_level_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sysu_low_level" VLNV="xilinx.com:user:sysu_low_level:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sysu_low_level_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="low" SIGIS="undef" SIGNAME="sysu_low_level_0_low">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="A1"/>
+            <CONNECTION INSTANCE="sysu_74LS86_0" PORT="A3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

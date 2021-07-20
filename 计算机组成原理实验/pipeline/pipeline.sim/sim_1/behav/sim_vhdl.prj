@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl dist_mem_gen_v8_0_9  "../../../pipeline.ip_user_files/ipstatic/dist_mem_gen_v8_0_9/simulation/dist_mem_gen_v8_0.vhd"
+vhdl xil_defaultlib  "../../../pipeline.srcs/sources_1/ip/InstructionROM/sim/InstructionROM.vhd"
+vhdl blk_mem_gen_v8_3_1  "../../../pipeline.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd"
+vhdl xil_defaultlib  "../../../pipeline.srcs/sources_1/ip/DataRAM/sim/DataRAM.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,347 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Thu Dec 12 21:14:31 2019
+| Host         : DESKTOP-7HN2EN2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   294 |
+| Minimum Number of register sites lost to control set restrictions |    22 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           17 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              70 |           18 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2048 |         1390 |
+| Yes          | Yes                   | No                     |            1056 |          579 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+---------------------------+------------------------+------------------+----------------+
+|           Clock Signal          |       Enable Signal       |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------------------+---------------------------+------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                  |                           |                        |                1 |              2 |
+|  imem/pc_reg[1]                 |                           |                        |                2 |              2 |
+|  smg_ip_model/clk_400Hz_reg_n_0 |                           |                        |                1 |              4 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[72][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[73][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[74][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[75][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[76][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[77][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[78][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[79][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[7][7]_0[0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[80][7][0]    | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[81][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[82][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[83][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[84][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[85][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[86][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[87][7]_2[0]  | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[88][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[89][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[8][7][0]     | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[90][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[91][7]_2[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[92][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[93][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[94][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[95][7]_1[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[96][7]_3[0]  | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[97][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[98][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[99][7]_0[0]  | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[9][7][0]     | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[6][7]_2[0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/E[0]                 | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[100][7]_1[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[0][7][0]     | reset_IBUF             |                8 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[101][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[102][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[103][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[104][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[105][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[106][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[107][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[108][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[109][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[10][7][0]    | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[110][7]_1[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[111][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[112][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[113][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[114][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[115][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[116][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[117][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[118][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[119][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[11][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[120][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[121][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[122][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[123][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[124][7]_0[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[125][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[126][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[127][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[128][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[129][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[12][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[130][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[131][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[132][7]_1[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[133][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[134][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[135][7][0]   | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[136][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[137][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[138][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[139][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[13][7][0]    | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[140][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[141][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[142][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[143][7][0]   | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[144][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[145][7]_0[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[146][7]_1[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[147][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[148][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[149][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[14][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[150][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[151][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[152][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[153][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[154][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[155][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[156][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[157][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[158][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[159][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[15][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[160][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[161][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[162][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[163][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[164][7]_1[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[165][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[166][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[167][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[168][7][0]   | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[169][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[16][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[170][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[171][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[172][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[173][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[174][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[175][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[176][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[177][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[178][7][0]   | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[179][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[17][7]_0[0]  | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[180][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[181][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[182][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[183][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[184][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[185][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[186][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[187][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[188][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[189][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[18][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[190][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[191][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[192][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[193][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[194][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[195][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[196][7]_0[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[197][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[198][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[199][7]_3[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[19][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[1][7]_0[0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[200][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[201][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[202][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[203][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[204][7][0]   | reset_IBUF             |                8 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[205][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[206][7]_1[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[207][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[208][7]_0[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[209][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[20][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[210][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[211][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[212][7]_0[0] | reset_IBUF             |                3 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[213][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[214][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[215][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[216][7]_0[0] | reset_IBUF             |                3 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[217][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[218][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[219][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[21][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[220][7]_1[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[221][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[222][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[223][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[224][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[225][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[226][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[227][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[228][7][0]   | reset_IBUF             |                8 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[229][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[22][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[230][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[231][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[232][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[233][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[234][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[235][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[236][7]_1[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[237][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[238][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[239][7]_0[0] | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[23][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[240][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[241][7]_0[0] | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[242][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[243][7][0]   | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[244][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[245][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[246][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[247][7]_0[0] | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[248][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[249][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[24][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[250][7]_0[0] | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[251][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[252][7][0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[253][7][0]   | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[254][7][0]   | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[25][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[26][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[27][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[28][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[29][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[2][7][0]     | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[30][7]_1[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[31][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[32][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[33][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[34][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[35][7]_0[0]  | reset_IBUF             |                3 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[36][7]_2[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[38][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[39][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[3][7][0]     | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[40][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[41][7]_1[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[42][7]_2[0]  | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[43][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[44][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[45][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[46][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[47][7]_1[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[48][7]_0[0]  | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[49][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[4][7][0]     | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[50][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[51][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[52][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[53][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[54][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[55][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[56][7][0]    | reset_IBUF             |                4 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[57][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[58][7][0]    | reset_IBUF             |                3 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[59][7][0]    | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[5][7]_0[0]   | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[60][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[61][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[62][7][0]    | reset_IBUF             |                8 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[63][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[64][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[65][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[66][7]_0[0]  | reset_IBUF             |                6 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[67][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[68][7]_1[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[69][7][0]    | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[37][7][0]    | reset_IBUF             |                7 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[70][7]_0[0]  | reset_IBUF             |                5 |              8 |
+| ~clkin_IBUF_BUFG                | imem/RAM_reg[71][7][0]    | reset_IBUF             |                6 |              8 |
+|  imem/hi_reg[31]_60             |                           |                        |               13 |             20 |
+|  clk_IBUF_BUFG                  |                           | smg_ip_model/clk_400Hz |                8 |             31 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[9][31]      | reset_IBUF             |               20 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[10][31]     | reset_IBUF             |               15 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[11][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[12][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[13][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[14][31]     | reset_IBUF             |               14 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[15][31]     | reset_IBUF             |               19 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[16][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[17][31]     | reset_IBUF             |               12 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[18][31]     | reset_IBUF             |               17 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[19][31]     | reset_IBUF             |               15 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[1][31]      | reset_IBUF             |               15 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[20][31]     | reset_IBUF             |               18 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[21][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[22][31]     | reset_IBUF             |               13 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[23][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[24][31]     | reset_IBUF             |               18 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[25][31]     | reset_IBUF             |               16 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[26][31]     | reset_IBUF             |               17 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[27][31]     | reset_IBUF             |               19 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[28][31]     | reset_IBUF             |               20 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[29][31]     | reset_IBUF             |               20 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[2][31]      | reset_IBUF             |               15 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[30][31]     | reset_IBUF             |               25 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[31][31]_0   | reset_IBUF             |               21 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[3][31]      | reset_IBUF             |               20 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[4][31]      | reset_IBUF             |               18 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[5][31]      | reset_IBUF             |               24 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[6][31]      | reset_IBUF             |               19 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[7][31]      | reset_IBUF             |               19 |             32 |
+| ~clkin_IBUF_BUFG                | imem/regs_reg[8][31]      | reset_IBUF             |               24 |             32 |
+| ~clkin_IBUF_BUFG                |                           | reset_IBUF             |               10 |             39 |
+| ~clkin_IBUF_BUFG                | mainctr/mult_or_div       | reset_IBUF             |               30 |             64 |
++---------------------------------+---------------------------+------------------------+------------------+----------------+
+
+

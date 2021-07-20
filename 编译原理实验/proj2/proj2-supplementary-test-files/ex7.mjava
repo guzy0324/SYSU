@@ -1,0 +1,19 @@
+program xyz;
+class Test
+{
+ declarations
+ int x;
+ int[][] y = int[2][2];
+ enddeclarations
+
+ method int  main ( val int x ; int y)
+ declarations
+ int h;
+ Point p;
+ enddeclarations
+
+ {
+   y[3][h] := 7;
+   p.value.p1 := 4; 
+ }
+}

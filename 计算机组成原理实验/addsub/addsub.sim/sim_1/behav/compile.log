@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/addsub/addsub.srcs/sources_1/new/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/addsub/addsub.srcs/sim_1/new/addsub8_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub8_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/addsub/addsub.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

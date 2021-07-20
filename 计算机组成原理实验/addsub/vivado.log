@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Nov 06 15:55:36 2019
+# Process ID: 20884
+# Current directory: G:/project/addsub
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7104 G:\project\addsub\addsub.xpr
+# Log file: G:/project/addsub/vivado.log
+# Journal file: G:/project/addsub\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/project/addsub/addsub.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 863.449 ; gain = 270.781
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

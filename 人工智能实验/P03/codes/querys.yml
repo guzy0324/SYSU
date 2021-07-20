@@ -1,0 +1,5 @@
+- [{'Mortality': 'True', 'CTScanResult': 'Ischemic Stroke'}, {'PatientAge': '31-65'}]
+- [{'Disability': 'Moderate', 'CTScanResult': 'Hemmorraghic Stroke'}, {'PatientAge': '65+', 'MRIScanResult': 'Hemmorraghic Stroke'}]
+- [{'StrokeType': 'Hemmorraghic Stroke'}, {'PatientAge': '65+','CTScanResult': 'Hemmorraghic Stroke', 'MRIScanResult': 'Ischemic Stroke'}]
+- [{'Anticoagulants': 'Used'}, {'PatientAge': '31-65'}]
+- [{'Disability': 'Negligible'}, {}]

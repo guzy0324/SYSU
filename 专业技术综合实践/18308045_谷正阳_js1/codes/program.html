@@ -1,0 +1,38 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+ <head>
+   <title>编程器</title>
+   <script>
+     var run = new Function(
+         "var x = document.getElementById('x').value;"
+         +"var y = document.getElementById('y').value;"
+         +"var program = document.getElementById('program');"
+         +"eval(program.value)")
+   </script>
+    <style>
+        th:nth-of-type(2n){text-align: left}
+        th:nth-of-type(2n+1){text-align: right}
+    </style>
+ </head>
+ <body>
+    <h1>编程器</h1>
+    <table>
+        <tr>
+            <th><label for="x">x:</label></th>
+            <th><input type=“text" id="x"></th>
+        </tr>
+        <tr>
+            <th><label for="y">y:</label></th>
+            <th><input type=“text" id="y"></th>
+        </tr>
+        <tr>
+            <th valign=top><label for="program">program:</label></th>
+            <th><textarea id="program" rows=10 cols=28></textarea></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><input type="button"  value="运行"  onclick="run()"></th>
+        </tr>
+    </table>
+ </body>
+</html>

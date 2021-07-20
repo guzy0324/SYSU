@@ -1,0 +1,37 @@
+/* ex2: Class */
+program ex2;
+class rect
+{
+	declarations
+		int width=3, length=7;
+	enddeclarations
+	method int getArea()
+	{
+	system.println('test case 2:  '); 
+	system.println(width);  
+	system.println(length); 
+	return (width * length); 
+	}
+}
+
+class mc
+{
+	declarations
+		int len;
+	enddeclarations
+	method void main()
+	declarations
+		int area; 
+	enddeclarations
+	{
+	if( rect.width > 0 )
+        {
+	   rect.width := 5;
+        };
+	rect.getArea();
+	rect.length := 4;
+	area := rect.getArea();
+	system.println(area);
+	system.println(rect.getArea()); 
+	}
+}

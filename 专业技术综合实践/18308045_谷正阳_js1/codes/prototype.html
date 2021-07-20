@@ -1,0 +1,27 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+<head>
+  <title>prototype</title>
+  <script>
+    function Stu(name, age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+    Stu.prototype.major = "Computer"
+    Stu.prototype.toString = function() {console.log(this.name + "; " + this.age + "; " + this.major);};
+    var stus = new Array(6);
+    for (let i = 0; i < 6; ++i)
+    {
+        stus[i] = new Stu("stu" + i, Math.round(Math.random() * 4 + 18));
+    }
+    for (let i in stus)
+    {
+        stus[i].toString();
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
+

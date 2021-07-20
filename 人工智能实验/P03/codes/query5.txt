@@ -1,0 +1,53 @@
+Best Order: ['Anticoagulants', 'CTScanResult', 'PatientAge', 'MRIScanResult', 'StrokeType', 'Mortality']
+Width: 2
+Time consumed: 9006.1265 us
+
+	VariableElimination:
+	Time consumed: 280.4427 us
+
+	BucketElimination:
+	Time consumed: 197.8579 us
+
+Min-Degree Order: ['PatientAge', 'Anticoagulants', 'Mortality', 'CTScanResult', 'StrokeType', 'MRIScanResult']
+Width: 2
+Time consumed: 21.5814 us
+
+	VariableElimination:
+	Time consumed: 196.3944 us
+
+	BucketElimination:
+	Time consumed: 247.5501 us
+
+Min-Fill Order: ['Anticoagulants', 'CTScanResult', 'PatientAge', 'MRIScanResult', 'StrokeType', 'Mortality']
+Width: 2
+Time consumed: 61.1665 us
+
+	VariableElimination:
+	Time consumed: 262.3826 us
+
+	BucketElimination:
+	Time consumed: 197.0379 us
+
+Median Order: ['Anticoagulants', 'CTScanResult', 'StrokeType', 'PatientAge', 'MRIScanResult', 'Mortality']
+Width: 4
+	VariableElimination:
+	Time consumed: 579.2487 us
+
+	BucketElimination:
+	Time consumed: 668.1145 us
+
+Worst Order: ['StrokeType', 'Mortality', 'MRIScanResult', 'PatientAge', 'CTScanResult', 'Anticoagulants']
+Width: 6
+	VariableElimination:
+	Time consumed: 1596.0871 us
+
+	BucketElimination:
+	Time consumed: 1708.5908 us
+
+Average Order:
+	VariableElimination:
+	Time consumed: 653.299398611 us
+
+	BucketElimination:
+	Time consumed: 675.711248611 us
+

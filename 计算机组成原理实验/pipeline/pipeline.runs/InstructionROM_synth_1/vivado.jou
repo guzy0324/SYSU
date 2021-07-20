@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Dec 18 15:42:20 2019
+# Process ID: 2972
+# Current directory: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1
+# Command line: vivado.exe -log InstructionROM.vds -mode batch -messageDb vivado.pb -notrace -source InstructionROM.tcl
+# Log file: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1/InstructionROM.vds
+# Journal file: C:/Users/guzy0/pipeline/pipeline.runs/InstructionROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstructionROM.tcl -notrace

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x766EE21F766EE21F" bd:device="xc7s50csga324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.4" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>O0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>O1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>O2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>O3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>M</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>F</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>I0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>I1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>I2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>I3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_74LS283_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_74LS283" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_74LS283_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_74LS86_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_74LS86" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_74LS86_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_74LS32_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_74LS32" spirit:vendor="sysu" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_74LS32_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_74LS08_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_74LS08" spirit:vendor="sysu" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_74LS08_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_74LS04_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_74LS04" spirit:vendor="sysu" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_74LS04_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_high_level_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_high_level" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_high_level_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>sysu_low_level_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="sysu_low_level" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sysu_low_level_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS86_0_Y1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="B3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS86_0_Y2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="Y2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="B2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS86_0_Y3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="Y3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="B1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS86_0_Y4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="Y4"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="B0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS283_0_S0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="S0"/>
+        <spirit:externalPortReference spirit:portRef="O0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS283_0_S1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="S1"/>
+        <spirit:externalPortReference spirit:portRef="O1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="A2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS283_0_S2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="S2"/>
+        <spirit:externalPortReference spirit:portRef="O2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="B2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS283_0_S3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="S3"/>
+        <spirit:externalPortReference spirit:portRef="O3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="B2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A3_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="I3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="A3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="A1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net</spirit:name>
+        <spirit:externalPortReference spirit:portRef="M"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="B1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="B2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="B3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="B4"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="Ci"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="A4"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS04_0" spirit:portRef="A1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS32_0_Y1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="B1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A1_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="I1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="B1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>A2_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="I2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="A2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="A1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS32_0_Y2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="Y2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="A2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS08_0_Y1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="A3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS08_0_Y2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="Y2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="B4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS08_0_Y3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="Y3"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="A3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS08_0_Y4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="Y4"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="B3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS32_0_Y3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS32_0" spirit:portRef="Y3"/>
+        <spirit:externalPortReference spirit:portRef="F"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_74LS04_0_Y1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS04_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS08_0" spirit:portRef="B3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_high_level_0_high</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_high_level_0" spirit:portRef="high"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="A2"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="A4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sysu_low_level_0_low</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="sysu_low_level_0" spirit:portRef="low"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="A1"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS86_0" spirit:portRef="A3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>I0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="I0"/>
+        <spirit:internalPortReference spirit:componentRef="sysu_74LS283_0" spirit:portRef="A0"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sources_1/new/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chaoadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.srcs/sim_1/new/similator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/project/pri_carry/pri_carry.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

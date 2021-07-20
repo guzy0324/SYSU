@@ -1,0 +1,86 @@
+\documentclass[UTF8, a4paper, 11pt]{article}
+\usepackage{diagbox}
+\usepackage{subfigure}
+\usepackage[UTF8, scheme=plain]{ctex}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{amsmath}
+\newtheorem{myDef}{Definition}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\geometry{scale=0.8}
+\linespread{1.5}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage[linesnumbered,boxed]{algorithm2e}    
+\usepackage{xeCJK}
+\usepackage{indentfirst} 
+\usepackage{amssymb}
+\graphicspath{{Pics/}} 	% 在于.tex同级的目录下创建名为pic的文件夹，存放图片
+
+
+\setlength{\parindent}{2em}
+
+\lstset{
+    language={python},
+    frame=shadowbox,
+    breaklines=true,
+    numbers=left,
+    backgroundcolor=\color[RGB]{245,245,244},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    numberstyle={\color[RGB]{0,192,192}\tiny},
+    basicstyle=\footnotesize \fontspec{Source Code Pro}
+}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
+
+\title{	
+\normalfont \normalsize
+\textsc{School of Data and Computer Science, Sun Yat-sen University} \\ [25pt] %textsc small capital letters
+\rule{\textwidth}{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge report\\ % The assignment title
+\rule{\textwidth}{2pt} \\[0.5cm] % Thick bottom horizontal rule
+\author{18308045 谷正阳}
+\date{\normalsize\today}
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Alternative architecture}
+阅读\texttt{layer\_utils}，它已经构建了许多多层的结构，包括\texttt{affine\_relu}，\texttt{affine\_bn\_relu}，\texttt{conv\_relu}，\texttt{conv\_bn\_relu}，\texttt{conv\_relu\_pool}。
+而且它使用的conv是从\texttt{fast\_layer}中最好的\texttt{conv\_fast}（不同卷积层实现的对比间\texttt{fast\_layer}的注释）。
+因而我在建立\texttt{AlternativeArchitecture}时，直接使用了\texttt{layer\_utils}。
+
+卷积神经网络的一般结构为：
+\begin{equation*}
+	\{INPUT\rightarrow[[CONV\rightarrow RELU]\times N\rightarrow POOL?]\times M\rightarrow[FC\rightarrow RELU]*K\rightarrow FC\},
+\end{equation*}
+一半是卷积部分，一半是全连接部分。
+我分别用\texttt{conv\_dims}和\texttt{affine\_dims}表示两者。
+其中卷积部分，每一层可能带\texttt{bn}也可能带\texttt{pool}，因此设后两个参数分别为\texttt{bn}和\texttt{pool}的参数字典，每个\texttt{conv\_dim}有如下形式：
+\begin{lstlisting}
+(F, HH, WW, conv_param, bn_param, pool_param)
+\end{lstlisting}
+全连接部分，每一层可能带\texttt{bn}，因此设最后一个参数为\texttt{bn}的参数字典，每个\texttt{affine\_dim}有如下形式：
+\begin{lstlisting}
+(D, bn_param)
+\end{lstlisting}
+\section{调参过程}
+以markdown语法写在\texttt{ConvolutionalNetworks.ipynb}中。
+%\clearpage
+%\bibliography{E:/Papers/LiuLab}
+%\bibliographystyle{apalike}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

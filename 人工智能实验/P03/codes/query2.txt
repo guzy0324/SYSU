@@ -1,0 +1,53 @@
+Best Order: ['Anticoagulants', 'Mortality', 'StrokeType']
+Width: 2
+Time consumed: 74.2208 us
+
+	VariableElimination:
+	Time consumed: 144.0175 us
+
+	BucketElimination:
+	Time consumed: 216.7502 us
+
+Min-Degree Order: ['Anticoagulants', 'StrokeType', 'Mortality']
+Width: 3
+Time consumed: 13.4956 us
+
+	VariableElimination:
+	Time consumed: 175.8051 us
+
+	BucketElimination:
+	Time consumed: 255.2833 us
+
+Min-Fill Order: ['Anticoagulants', 'StrokeType', 'Mortality']
+Width: 3
+Time consumed: 19.3098 us
+
+	VariableElimination:
+	Time consumed: 199.2011 us
+
+	BucketElimination:
+	Time consumed: 288.9629 us
+
+Median Order: ['Mortality', 'StrokeType', 'Anticoagulants']
+Width: 3
+	VariableElimination:
+	Time consumed: 254.3693 us
+
+	BucketElimination:
+	Time consumed: 309.1276 us
+
+Worst Order: ['StrokeType', 'Mortality', 'Anticoagulants']
+Width: 4
+	VariableElimination:
+	Time consumed: 299.1487 us
+
+	BucketElimination:
+	Time consumed: 462.7408 us
+
+Average Order:
+	VariableElimination:
+	Time consumed: 194.948833333 us
+
+	BucketElimination:
+	Time consumed: 267.959333333 us
+

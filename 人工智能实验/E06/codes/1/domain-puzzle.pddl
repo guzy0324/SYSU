@@ -1,0 +1,18 @@
+(define (domain puzzle)
+    (:requirements :strips :equality:typing)
+    (:types num loc)
+    (:predicates
+        (at ?x - num ?y - loc)
+        (adjacent ?x ?y - loc)
+    )
+    (:action slide
+        :parameters (?x - num ?from ?to - loc)
+        :precondition (and (at ?x ?from)
+                            (at n0 ?to)
+                            (adjacent ?from ?to))
+        :effect (and (not (at ?x ?from))
+                        (not (at n0 ?to))
+                        (at n0 ?from)
+                        (at ?x ?to))
+    )
+)

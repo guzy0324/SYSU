@@ -1,0 +1,22 @@
+     1                                  BITS 16
+     2                                  extern _upper
+     3                                  extern _Message
+     4                                  global _start
+     5                                  _start:
+     6 00000000 8CC8                        mov ax,cs
+     7 00000002 8ED8                        mov ds,ax
+     8 00000004 8EC0                        mov es,ax
+     9 00000006 8ED0                        mov ss,ax
+    10 00000008 0E                          push cs
+    11 00000009 E8(0000)                    call _upper
+    12 0000000C 66BD[00000000]              mov ebp,_Message
+    13 00000012 8CD8                        mov ax,ds
+    14 00000014 8EC0                        mov es,ax
+    15 00000016 B90A00                      mov cx,10
+    16 00000019 B80113                      mov ax,1301h
+    17 0000001C BB0700                      mov bx,0007h
+    18 0000001F B60A                        mov dh,10
+    19 00000021 B20A                        mov dl,10
+    20 00000023 CD10                        int 10h
+    21                                  _end:
+    22 00000025 EBFE                        jmp $
