@@ -8,7 +8,13 @@ import torch
 
 
 class RottenTomatoes(Dataset):
-    def __init__(self, path, N, k, device="CPU", vectorizer=None, train=True):
+    def __init__(self,
+                 path,
+                 N,
+                 k,
+                 device="cpu",
+                 vectorizer=None,
+                 train=True):
         df = pandas.read_csv(path, sep="\t")
         if vectorizer == None:
             self.vectorizer = Pipeline([
@@ -24,6 +30,10 @@ class RottenTomatoes(Dataset):
                                    device=self.device)
         self.train = train
         if train:
+            self.weight = 1.0 / torch.tensor(
+                df["Sentiment"].value_counts(sort=False).to_numpy(),
+                dtype=torch.float32,
+                device=device)
             self.sentiment = torch.tensor(df["Sentiment"].values,
                                           device=self.device)
 
