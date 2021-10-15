@@ -4,7 +4,7 @@ import torch
 from torch.autograd import Variable
 import torch.optim as optim
 
-import rnn
+import rnn as rnn_lstm
 
 start_token = 'G'
 end_token = 'E'

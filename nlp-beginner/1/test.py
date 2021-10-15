@@ -1,6 +1,6 @@
 import torch
 from RottenTomatoes import *
-from SoftMax import *
+from torch import nn
 from tqdm import tqdm
 from pandas import DataFrame
 
@@ -13,7 +13,7 @@ C = 5
 if __name__ == '__main__':
     torch.manual_seed(seed)
     test = RottenTomatoes('test.tsv', N, k, device, "vectorizer", False)
-    model = SoftMax(k, C, device=device)
+    model = nn.Linear(k, C).to(torch.device(device))
     model.load_state_dict(torch.load("SoftMax"))
     res = {"PhraseId": range(156061, 222353), "Sentiment": []}
     with torch.no_grad():

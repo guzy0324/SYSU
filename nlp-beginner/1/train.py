@@ -2,7 +2,7 @@ import numpy as np
 import torch
 from RottenTomatoes import *
 from torch.utils.data import random_split, DataLoader
-from SoftMax import *
+from torch import nn
 from torch import optim
 from torch_lr_finder import LRFinder
 from tqdm import tqdm
@@ -15,9 +15,9 @@ ratio = 0.8
 C = 5
 batch_size = 128
 batch_size2 = 1024
-start_lr = 0.9
-end_lr = 70
-num_iter = 1000
+start_lr = 0.1
+end_lr = 5
+num_iter = 100
 shuffle = True
 find_lr = False
 epoch = 1000
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     train_len = int(ratio * len(data))
     valid_len = len(data) - train_len
     train, valid = random_split(data, [train_len, valid_len])
-    model = SoftMax(k, C, device)
+    model = nn.Linear(k, C).to(torch.device(device))
     # criterion = nn.CrossEntropyLoss(data.weight)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=start_lr)
