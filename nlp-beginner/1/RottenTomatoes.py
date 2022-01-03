@@ -8,13 +8,7 @@ import torch
 
 
 class RottenTomatoes(Dataset):
-    def __init__(self,
-                 path,
-                 N,
-                 k,
-                 device="cpu",
-                 vectorizer=None,
-                 train=True):
+    def __init__(self, path, N, k, device="cpu", vectorizer=None, train=True):
         df = pandas.read_csv(path, sep="\t")
         if vectorizer == None:
             self.vectorizer = Pipeline([
